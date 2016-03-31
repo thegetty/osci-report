@@ -1,0 +1,18 @@
+= wrap_layout :application do
+  - if current_page.data.title == "Introduction" and environment? :pdf
+    .bleed{ :data => { :catalogue => "introduction" }}
+  - if current_page.data.title == "References Cited" and environment? :pdf
+    .bleed{ :data => { :catalogue => "backmatter" }}
+  - if current_page.data.cover
+    - image_url = image_path(current_page.data.cover)
+    %header.page-cover{:style => "background-image: url('#{image_url}')"}
+  %article.page
+    %header.page-header
+      %h1#page-title.page-title= current_page.data.title
+      - if current_page.data.subtitle
+        %h3.page-subtitle= current_page.data.subtitle
+      - if current_page.data.author and current_page.data.subtitle != "History of the Excavations"
+        - current_page.data.author.each do |author|
+          %h3.page-author= "#{author.first_name} #{author.last_name}"
+    %main.page-content
+      = yield

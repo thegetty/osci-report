@@ -1,19 +1,155 @@
-body {
-  background-color: $light-gray;
-  color: $medium-gray;
+// scss-lint:disable SingleLinePerSelector
+
+html { min-height: 100vh; }
+
+.body-copy {
+  p {
+    /* margin-bottom: 0; */
+    /* + p { text-indent: $base-spacing; } */
+  }
+
+  /* h2, h3, h4 { margin-top: $small-spacing; } */
+
+  p, ol, ul { font-size: 1.25rem; }
+  ol { @extend %default-ol; }
+  ul { @extend %default-ul; }
+
+  @include media($medium-screen-up) {
+    p, ol, ul { font-size: 1.35rem; }
+  }
+
+  @include media($large-screen-up) {
+    p, ol, ul { font-size: 1.45rem; }
+  }
+
+  blockquote {
+    background-color: $light-gray;
+    border-radius: $base-border-radius;
+    margin: $base-spacing 0;
+    padding: $small-spacing;
+    /* h2, h3, h4 { margin-top: 0; } */
+
+    p { margin-bottom: 0; }
+  }
 }
 
-.delete-me {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
+.container {
+  @include outer-container;
+  padding: 0 $small-spacing;
 
-  .container {
-    text-align: center;
+  @include media($large-screen-up) { padding: 0; }
+}
 
-    h1 {
-      font-weight: 200;
+.footnotes {
+  border-top: $base-border;
+  margin-top: $base-spacing;
+  padding-top: $small-spacing;
+  text-align: center;
+
+  &::before {
+    content: "Notes";
+    font-family: "Freight Text Pro SC";
+    font-size: 1.35em;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+  }
+
+  ol { margin-top: $small-spacing; }
+
+  p, ol, ul {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+.section-heading {
+  margin-top: $base-spacing;
+  margin-bottom: $small-spacing / 4;
+}
+
+.subheading {
+  margin-top: 0;
+}
+// scss-lint:enable SingleLinePerSelector
+.hide-on-mobile {
+  @include media($small-screen) { display: none; }
+}
+
+.centered { text-align: center; }
+
+.smcaps {
+  @include font-feature-settings("c2sc", "smcp", "kern");
+  font-variant: all-small-caps;
+}
+
+.force-wrap {
+  @include prefixer(hyphens, auto, webkit moz ms spec);
+  overflow-wrap: break-word;
+  // word-break: break-all;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.expander {
+  @include transition($base-transition);
+  .expander-trigger { display: block; }
+  .expander-content { margin-bottom: $base-spacing; }
+  .expander--hidden { display: none;}
+}
+
+
+// Inline Figure Styles
+figcaption { margin-top: $small-spacing * 0.5; }
+
+.figure-group {
+  + p {
+    clear: both;
+    text-indent: $base-spacing;
+  }
+
+  @include media($large-screen-up) { clear: both; }
+}
+
+.inline-figure {
+  @include margin(($base-spacing * 1.5) $small-spacing);
+  @include padding(null $small-spacing);
+  cursor: pointer;
+
+  + p { text-indent: $base-spacing; }
+}
+
+.figure-left,
+.figure-group-left {
+  @include media($large-screen-up) {
+    float: left;
+    margin-left: 0;
+    width: 48%;
+  }
+}
+
+.figure-right,
+.figure-group-right {
+  @include media($large-screen-up) {
+    float: right;
+    margin-right: 0;
+    width: 48%;
+  }
+}
+
+.figure-group-right,
+.figure-group-left {
+  @include media($large-screen-up) {
+    .inline-figure {
+      @include margin(($base-spacing * 0.75) $small-spacing);
+    }
+
+    .inline-figure:first-child {
+      @include margin(($base-spacing * 1.5) $small-spacing ($base-spacing * 0.75));
+    }
+
+    .inline-figure:last-child {
+      @include margin(($base-spacing * 0.75) $small-spacing ($base-spacing * 1.5));
     }
   }
 }
