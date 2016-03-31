@@ -1,17 +1,17 @@
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+$base-font-family: "Freight Text Pro", "Minion Pro", serif;
+$heading-font-family: "Overpass";
 
 // Font Sizes
 $base-font-size: 1em;
 
 // Line height
-$base-line-height: 1.5;
+$base-line-height: 1.35;
 $heading-line-height: 1.2;
 
 // Other Sizes
 $base-border-radius: 3px;
-$base-spacing: $base-line-height * 1.25em;
+$base-spacing: $base-line-height * 1.5em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 

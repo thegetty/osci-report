@@ -2,34 +2,35 @@
 
 html { min-height: 100vh; }
 
+// Body Copy baseline styles
+// -----------------------------------------------------------------------------
 .body-copy {
-  p {
-    /* margin-bottom: 0; */
-    /* + p { text-indent: $base-spacing; } */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margion-bottom: 1rem;
+    margin-top: 1em;
   }
 
-  /* h2, h3, h4 { margin-top: $small-spacing; } */
-
-  p, ol, ul { font-size: 1.25rem; }
+  p, ol, ul {font-size: $base-font-size * 1.25;}
   ol { @extend %default-ol; }
   ul { @extend %default-ul; }
-
-  @include media($medium-screen-up) {
-    p, ol, ul { font-size: 1.35rem; }
-  }
-
-  @include media($large-screen-up) {
-    p, ol, ul { font-size: 1.45rem; }
-  }
 
   blockquote {
     background-color: $light-gray;
     border-radius: $base-border-radius;
     margin: $base-spacing 0;
     padding: $small-spacing;
-    /* h2, h3, h4 { margin-top: 0; } */
 
     p { margin-bottom: 0; }
+  }
+
+  @include media($medium-screen-up) {
+    p, ol, ul {font-size: $base-font-size * 1.4;}
+  }
+  
+  @include media($large-screen-up) {
+    p, ol, ul {font-size: $base-font-size * 1.6;}
   }
 }
 
@@ -62,24 +63,21 @@ html { min-height: 100vh; }
   }
 }
 
-.section-heading {
-  margin-top: $base-spacing;
-  margin-bottom: $small-spacing / 4;
-}
-
-.subheading {
-  margin-top: 0;
-}
 // scss-lint:enable SingleLinePerSelector
-.hide-on-mobile {
-  @include media($small-screen) { display: none; }
-}
 
-.centered { text-align: center; }
+// Utility Classes
+// -----------------------------------------------------------------------------
+.ctr {
+  text-align: center;
+}
 
 .smcaps {
   @include font-feature-settings("c2sc", "smcp", "kern");
   font-variant: all-small-caps;
+}
+
+.mobile-hide {
+  @include media($small-screen) { display: none; }
 }
 
 .force-wrap {
@@ -89,67 +87,4 @@ html { min-height: 100vh; }
   -ms-word-break: break-all;
   word-break: break-word;
   word-wrap: break-word;
-}
-
-.expander {
-  @include transition($base-transition);
-  .expander-trigger { display: block; }
-  .expander-content { margin-bottom: $base-spacing; }
-  .expander--hidden { display: none;}
-}
-
-
-// Inline Figure Styles
-figcaption { margin-top: $small-spacing * 0.5; }
-
-.figure-group {
-  + p {
-    clear: both;
-    text-indent: $base-spacing;
-  }
-
-  @include media($large-screen-up) { clear: both; }
-}
-
-.inline-figure {
-  @include margin(($base-spacing * 1.5) $small-spacing);
-  @include padding(null $small-spacing);
-  cursor: pointer;
-
-  + p { text-indent: $base-spacing; }
-}
-
-.figure-left,
-.figure-group-left {
-  @include media($large-screen-up) {
-    float: left;
-    margin-left: 0;
-    width: 48%;
-  }
-}
-
-.figure-right,
-.figure-group-right {
-  @include media($large-screen-up) {
-    float: right;
-    margin-right: 0;
-    width: 48%;
-  }
-}
-
-.figure-group-right,
-.figure-group-left {
-  @include media($large-screen-up) {
-    .inline-figure {
-      @include margin(($base-spacing * 0.75) $small-spacing);
-    }
-
-    .inline-figure:first-child {
-      @include margin(($base-spacing * 1.5) $small-spacing ($base-spacing * 0.75));
-    }
-
-    .inline-figure:last-child {
-      @include margin(($base-spacing * 0.75) $small-spacing ($base-spacing * 1.5));
-    }
-  }
 }

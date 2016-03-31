@@ -1,0 +1,53 @@
+<div id="js-nav">
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="javascript:void(0);" id="navbar-search" @click="loadSearchIndex">
+        <i class="navbar-search-icon"></i>
+      </a>
+    </div>
+    <div class="navbar-center">
+      <% if prev_chapter_path %>
+        <% link_to prev_chapter_path, { :id => "prev-link" } do %>
+          <i class="navbar-prev-link"></i>
+        <% end %>
+      <% end %>
+      <div class="navbar-center-info">
+        <%= link_to data.book.title.short, "/index.html", { :class => "navbar-site-title"} %>
+        <% unless current_page.data.sort_order == 0 %>
+          <i class="navbar-breadcrumb"></i>
+          <span class="navbar-page-title">
+            <%= current_page.data.title %>
+          </span>
+        <% end %>
+      </div>
+      <% if next_chapter_path %>
+        <% link_to next_chapter_path, { :id => "next-link" } do %>
+          <i class="navbar-next-link"></i>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="navbar-right">
+      <a href="javascript:void(0);" id="navbar-menu">
+        <i class="navbar-menu-icon"></i>
+      </a>
+    </div>
+    <div class="search-input">
+      <input class="search-field"
+             placeholder="search"
+             name="search"
+             v-model="query">
+      </input>
+    </div>
+    <div class="search-close">
+      <a href="javascript:void(0);" id="search-close">
+        <i class="search-close-icon"></i>
+      </a>
+    </div>
+  </nav>
+  <!-- <nav class="search-results"> -->
+    <%#= partial "partials/search_results" %>
+  <!-- </nav> -->
+  <!-- <nav class="nav-sidebar"> -->
+    <%#= partial "partials/sidebar" %>
+  <!-- </nav> -->
+</div>

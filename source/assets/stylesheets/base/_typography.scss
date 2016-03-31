@@ -1,7 +1,10 @@
 body {
+  @include font-feature-settings("kern", "liga", "pnum");
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   line-height: $base-line-height;
 }
 
@@ -18,16 +21,16 @@ h6 {
 }
 
 // Type scale
-h1 { font-size: 1.65em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.25em; }
-h4 { font-size: 1.125em; }
+h1 { font-size: 1.75em; }
+h2 { font-size: 1.65em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.25em; }
 
 @include media($medium-screen-up) {
-  h1 { font-size: 2.25em; }
-  h2 { font-size: 2em; }
-  h3 { font-size: 1.5em; }
-  h4 { font-size: 1.25em; }
+  h1 { font-size: 2.75em; }
+  h2 { font-size: 2.5em; }
+  h3 { font-size: 2em; }
+  h4 { font-size: 1.5em; }
 }
 
 p {
