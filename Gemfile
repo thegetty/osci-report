@@ -14,3 +14,10 @@ gem "middleman-livereload", "~> 3.4"
 gem "middleman-sprockets", "= 4.0.0.rc.1"
 gem "neat", "~> 1.7"
 gem "sassc", "~> 1.8"
+
+group :test do
+  gem "rspec"
+  gem "capybara"
+  gem "capybara-webkit"
+  gem "selenium-webdriver"
+end
