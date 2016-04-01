@@ -2,6 +2,9 @@ require_relative "book/helpers.rb"
 
 class Book < Middleman::Extension
   expose_to_template :chapters
+  # Expose to template is preferred, but as an alternative
+  # it is possible to call extensions[:book].chapters for example,
+  # in any place where the implied 'self' is the running MM app
 
   def initialize(app, options_hash = {}, &block)
     super
