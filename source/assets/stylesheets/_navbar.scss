@@ -1,0 +1,87 @@
+$navbar-bg-color: #fff;
+$navbar-border: $base-border;
+$navbar-height: 60px;
+$navbar-icon-size: 24px;
+$navbar-z-index: 9999;
+
+.navbar {
+  @include display(flex);
+  @include flex-direction(row);
+  @include flex-wrap(nowrap);
+  @include justify-content(space-between);
+  background-color: $navbar-bg-color;
+  border-bottom: $navbar-border;
+  font-family: $heading-font-family;
+  font-weight: normal;
+  height: $navbar-height;
+  line-height: $navbar-height;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $navbar-z-index;
+}
+
+// Top-level units
+.navbar-left,
+.navbar-right {
+  @include flex(1);
+}
+
+.navbar-left {
+  padding-left: $base-spacing;
+}
+
+.navbar-right {
+  padding-right: $base-spacing;
+  text-align: right;
+}
+
+.navbar-center {
+  @include display(flex);
+  @include flex(3 0 auto);
+  @include justify-content(center);
+  text-align: center;
+}
+
+// Inside center unit
+.navbar-center-info {
+  margin: 0 $base-spacing;
+  text-align: center;
+}
+
+.navbar-next-link,
+.navbar-prev-link {
+  @extend .mobile-hide;
+  font-size: $navbar-icon-size * 0.75;
+}
+
+.navbar-prev-link {
+  @extend .ion-chevron-left;
+}
+
+.navbar-next-link {
+  @extend .ion-chevron-right;
+}
+
+// Inside navbar-center-info
+.navbar-breadcrumb {
+  @extend .ion-android-arrow-dropright;
+  @extend .mobile-hide;
+  margin: 0 $small-spacing;
+}
+
+.navbar-page-title {
+  @extend .mobile-hide;
+}
+
+// Inside left unit
+.navbar-search-icon {
+  @extend .ion-search;
+  font-size: $navbar-icon-size;
+}
+
+// Inside right unit
+.navbar-menu-icon {
+  @extend .ion-navicon;
+  font-size: $navbar-icon-size * 1.5;
+}

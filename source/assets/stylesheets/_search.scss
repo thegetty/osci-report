@@ -1,0 +1,76 @@
+$search-bg: darken($base-background-color, 10%);
+$search-text-color: $base-font-color;
+
+// Specificity hack required to override browser defaults here
+.search-input.search-input {
+  @include flex(24);
+  display: none;
+  padding: $small-spacing;
+
+  input {
+    @include appearance(none);
+    background-color: $search-bg;
+    border: 0;
+    box-shadow: none;
+    color: $search-text-color;
+    font-family: $heading-font-family;
+    outline: none;
+    width: 100%;
+  }
+}
+
+.search-close {
+  @include flex(1);
+  display: none;
+  padding-right: $base-spacing;
+  text-align: right;
+}
+
+.search-close-icon {
+  @extend .ion-android-close;
+  font-size: $navbar-icon-size;
+}
+
+.search-active {
+  @include align-items(flex-start);
+  background-color: $search-bg;
+  color: $search-text-color;
+
+  .navbar-center,
+  .navbar-right {
+    display: none;
+  }
+
+  .search-input,
+  .search-close {
+    display: block;
+  }
+}
+
+.search-results {
+  @include transform(translateY(-100%));
+  @include transition(all 0.1s ease-in-out);
+  @include size(100% 100%);
+  @include position(fixed);
+  background-image: $search-bg;
+  font-family: $heading-font-family;
+  line-height: 2.5;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  padding-top: $navbar-height;
+  z-index: ($navbar-z-index - 1);
+
+  &.search-active {
+    @include transform(translateY(0));
+  }
+}
+
+.search-results-inner {
+  padding: $small-spacing $base-spacing;
+}
+
+.search-results-list-item {
+  @include padding(null $base-spacing);
+  border-bottom: $base-border;
+  font-size: 1.25em;
+}

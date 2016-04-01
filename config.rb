@@ -1,5 +1,8 @@
+require "extensions/book"
+
 activate :directory_indexes
 activate :autoprefixer
+activate :book
 
 set :relative_links, true
 set :css_dir, "assets/stylesheets"
