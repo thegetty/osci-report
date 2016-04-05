@@ -3,17 +3,25 @@ require_relative "book/book_chapter.rb"
 
 module Book
   class BookExtension < Middleman::Extension
-    attr_reader :chapters
-    attr_reader :info
     self.defined_helpers = [Book::Helpers]
+    option :pdf_output_path, "dist/book.pdf", "Where to write generated PDF"
+    option :prince_cli_flags, "--no-artificial-fonts", "Command-line flags for Prince PDF utility"
+
+    # @return [Array<Middleman::Sitemap::Resource>] an array of resource objects
+    # which have been extended with the methods in the BookChapter module.
+    attr_reader :chapters
+
+    # @return [Middleman::Util::EnhancedHash] with the contents of the book.yml data file
+    attr_reader :info
 
     def initialize(app, options_hash = {}, &block)
       super
       @info = @app.data.book
 
+      # PDF Generation via Prince CLI
       app.after_build do |builder|
-        # TODO: PDF generation happens here
-        generate_pagelist if environment? :pdf
+        book = app.extensions[:book]
+        book.generate_pdf if environment? :pdf
       end
     end
 
@@ -26,6 +34,24 @@ module Book
     # @return [String]
     def author
       info.author_as_it_appears
+    end
+
+    # Calls the Prince CLI utility with args based on extension options
+    # @return +nil+
+    def generate_pdf
+      pagelist = generate_pagelist
+      output   = options.pdf_output_path
+      flags    = options.prince_cli_flags
+      puts `prince #{pagelist} -o #{output} #{flags}`
+    end
+
+    # Generate a list of files to pass to the Prince CLI
+    # @return [String]
+    def generate_pagelist
+      arg_string  = ""
+      baseurl     = @app.config.build_dir + "/"
+      chapters.each { |c| arg_string += baseurl + c.destination_path + " " }
+      arg_string
     end
 
     # This method should read title info from the book.yml data file and
@@ -50,20 +76,6 @@ module Book
         chapter.extend Book::Chapter
         chapter.book = self
       end
-    end
-
-    # Generate a list of files to pass to the Prince CLI
-    # @return [String]
-    def generate_pagelist
-      arg_string  = ""
-      baseurl     = @app.config.build_dir + "/"
-      suffix      = "/index.html"
-
-      chapters.each do |c|
-        arg_string += baseurl + c.destination_path.gsub(".html", suffix) + " "
-      end
-
-      arg_string
     end
   end
 
