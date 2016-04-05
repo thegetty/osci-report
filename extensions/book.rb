@@ -4,7 +4,7 @@ require_relative "book/book_chapter.rb"
 module Book
   class BookExtension < Middleman::Extension
     attr_reader :chapters
-    self.defined_helpers = [ Book::Helpers ]
+    self.defined_helpers = [Book::Helpers]
     # expose_to_template :chapters
     # Expose to template is preferred, but as an alternative
     # it is possible to call extensions[:book].chapters for example,
@@ -16,7 +16,11 @@ module Book
 
     def after_configuration
       generate_chapters
-      # puts generate_pagelist
+    end
+
+    app.after_build do |builder|
+      # TODO: PDF generation happens here
+      generate_pagelist if environment? :pdf
     end
 
     # This method should read author info from the book.yml data file and
@@ -39,10 +43,15 @@ module Book
     # @return [Array<Middleman::Sitemap::Resource>] an array of resource objects
     # which have been extended with the methods in the BookChapter module.
     def generate_chapters
-      contents       = @app.sitemap.resources.find_all { |p| p.data.sort_order }
-      @chapters      = contents.sort_by { |p| p.data.sort_order }
-      @chapters.each { |p| p.extend Book::Chapter }
-      @chapters.each { |p| p.book = self }
+      contents  = @app.sitemap.resources.find_all { |p| p.data.sort_order }
+      @chapters = contents.sort_by { |p| p.data.sort_order }
+
+      # Convert each resource with sort_order into a Book::Chapter and
+      # pass a reference to the running BookExtension instance for future use
+      chapters.each do |chapter|
+        chapter.extend Book::Chapter
+        chapter.book = self
+      end
     end
 
     # Generate a list of files to pass to the Prince CLI
@@ -52,8 +61,8 @@ module Book
       baseurl     = @app.config.build_dir + "/"
       suffix      = "/index.html"
 
-      chapters.each do |chapter|
-        arg_string += baseurl + chapter.destination_path.gsub(".html", suffix) + " "
+      chapters.each do |c|
+        arg_string += baseurl + c.destination_path.gsub(".html", suffix) + " "
       end
 
       arg_string
