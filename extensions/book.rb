@@ -16,6 +16,7 @@ module Book
 
     def after_configuration
       generate_chapters
+      # puts generate_pagelist
     end
 
     # This method should read author info from the book.yml data file and
@@ -42,6 +43,20 @@ module Book
       @chapters      = contents.sort_by { |p| p.data.sort_order }
       @chapters.each { |p| p.extend Book::Chapter }
       @chapters.each { |p| p.book = self }
+    end
+
+    # Generate a list of files to pass to the Prince CLI
+    # @return [String]
+    def generate_pagelist
+      arg_string  = ""
+      baseurl     = @app.config.build_dir + "/"
+      suffix      = "/index.html"
+
+      chapters.each do |chapter|
+        arg_string += baseurl + chapter.destination_path.gsub(".html", suffix) + " "
+      end
+
+      arg_string
     end
   end
 
