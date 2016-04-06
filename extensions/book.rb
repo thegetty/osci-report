@@ -6,6 +6,7 @@ module Book
     self.defined_helpers = [Book::Helpers]
     option :pdf_output_path, "dist/book.pdf", "Where to write generated PDF"
     option :prince_cli_flags, "--no-artificial-fonts", "Command-line flags for Prince PDF utility"
+    expose_to_template :chapters, :title, :author
 
     # @return [Array<Middleman::Sitemap::Resource>] an array of resource objects
     # which have been extended with the methods in the BookChapter module.
@@ -36,6 +37,13 @@ module Book
       info.author_as_it_appears
     end
 
+    # This method should read title info from the book.yml data file and
+    # return a properly-formated string with the book's title
+    # @return [String]
+    def title
+      info.title.main
+    end
+
     # Calls the Prince CLI utility with args based on extension options
     # @return +nil+
     def generate_pdf
@@ -52,13 +60,6 @@ module Book
       baseurl     = @app.config.build_dir + "/"
       chapters.each { |c| arg_string += baseurl + c.destination_path + " " }
       arg_string
-    end
-
-    # This method should read title info from the book.yml data file and
-    # return a properly-formated string with the book's title
-    # @return [String]
-    def title
-      info.title.main
     end
 
     private

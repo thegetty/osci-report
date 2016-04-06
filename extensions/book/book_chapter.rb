@@ -4,13 +4,8 @@
 # https://github.com/middleman/middleman-blog/blob/master/lib/middleman-blog/blog_article.rb
 module Book
   module Chapter
-    # Chapters have a @book instance variable that points back to the active BookExtension
-    # instance which created them. This is necesary so the chapters can compare themselves
-    # to one another in order for the next and previous methods to work, etc.
-    # Since Chapter is a Module and not a class (the underlying class is a standard
-    # Middleman::Sitemap::Resource object), there is no initialize method to run on instantiation.
-
-    # TODO: Implement some kind of accesss control for book=, this should prob not be public
+    # @return [Book::BookExtension] reference to the parent BookExtension instance
+    # (necessary for comparison between chapters)
     attr_accessor :book
 
     # self.extended callback
@@ -33,6 +28,8 @@ module Book
       data.author || @book.author
     end
 
+    # The chapter's order in the sequence
+    # @return [Fixnum]
     def rank
       data.sort_order
     end
