@@ -45,13 +45,14 @@ module Book
     # Returns the next chapter object, or false if this is the last chapter
     # @return [Middleman::Sitemap::Resource]
     def next_chapter
-      @book.chapters.find { |p| p.rank > self.rank }
+      @book.chapters.find { |p| p.rank == self.rank + 1 }
     end
 
     # Returns the previous chapter object, or false if this is the first chapter
     # @return [Middleman::Sitemap::Resource]
+    # TODO: fix this method, currently it always returns to the cover page
     def prev_chapter
-      @book.chapters.find { |p| p.rank < self.rank }
+      @book.chapters.find { |p| p.rank == self.rank - 1 }
     end
   end
 end
