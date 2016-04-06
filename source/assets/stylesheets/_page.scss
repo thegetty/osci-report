@@ -34,7 +34,7 @@ $navbar-height: 60px;
 }
 
 .page-header {
-  /* margin-bottom: $base-spacing * 1.5; */
+  margin-bottom: $small-spacing;
   margin-top: em($navbar-height) + $base-spacing;
 }
 
@@ -46,12 +46,17 @@ $navbar-height: 60px;
   color: $medium-gray;
   font-size: 1.5em;
   font-weight: normal;
-  margin-bottom: 0;
+  /* margin-bottom: $base-spacing; */
   margin-top: 0.25rem;
 }
 
 // Page Content
 // -----------------------------------------------------------------------------
-.page-content {
-  @extend .body-copy;
+.page-content { @extend .body-copy; }
+
+.section-heading {
+  margin-bottom: $small-spacing / 2;
+
+  &:first-of-type { margin-top: 0; }
+  & + h3 { margin-top: 0;}
 }

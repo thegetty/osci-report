@@ -9,10 +9,7 @@
   %article.page
     %header.page-header
       %h1#page-title.page-title= current_page.data.title
-      - if current_page.data.subtitle
-        %h3.page-subtitle= current_page.data.subtitle
-      - if current_page.data.author and current_page.data.subtitle != "History of the Excavations"
-        - current_page.data.author.each do |author|
-          %h3.page-author= "#{author.first_name} #{author.last_name}"
+      - if current_page.data.author
+        %h3.page-author= current_page.data.author
     %main.page-content
       = yield

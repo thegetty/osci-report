@@ -1,9 +1,9 @@
 ---
 title: Introduction
+author: Deborah Marrow, Director, Getty Foundation
 sort_order: 1
 layout: page
 ---
-_Deborah Marrow, Director, Getty Foundation_
 
 The Getty Foundation’s Online Scholarly Catalogue Initiative (OSCI) launched in
 2009 with the goals of rethinking the museum scholarly collection catalogue for

@@ -1,5 +1,5 @@
-$navbar-bg-color: #fff;
-$navbar-border: $base-border;
+$navbar-bg-color: tint($action-color, 65%);
+$navbar-border: solid 1px shade($navbar-bg-color, 20%);
 $navbar-height: 60px;
 $navbar-icon-size: 24px;
 $navbar-z-index: 9999;
