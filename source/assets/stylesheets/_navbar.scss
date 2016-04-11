@@ -1,5 +1,6 @@
-$navbar-bg-color: #fff;
-$navbar-border: $base-border;
+$navbar-bg-color: tint($blue, 5%);
+$navbar-text-color: #fff;
+$navbar-border: solid 1px tint($navbar-bg-color, 15%);
 $navbar-height: 60px;
 $navbar-icon-size: 24px;
 $navbar-z-index: 9999;
@@ -9,8 +10,10 @@ $navbar-z-index: 9999;
   @include flex-direction(row);
   @include flex-wrap(nowrap);
   @include justify-content(space-between);
+  @include link-color($navbar-text-color);
+
   background-color: $navbar-bg-color;
-  border-bottom: $navbar-border;
+  color: $navbar-text-color;
   font-family: $heading-font-family;
   font-weight: normal;
   height: $navbar-height;

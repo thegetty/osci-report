@@ -1,3 +1,17 @@
+// Mixins
+
+@mixin link-color ($base-color) {
+  a {
+    color: $base-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: transparentize($base-color, 0.65);
+    }
+  }
+}
+
 // scss-lint:disable SingleLinePerSelector
 
 html { min-height: 100vh; }
@@ -26,11 +40,11 @@ html { min-height: 100vh; }
   }
 
   @include media($medium-screen-up) {
-    p, ol, ul {font-size: $base-font-size * 1.4;}
+    p, ol, ul { font-size: $base-font-size * 1.4; }
   }
-  
+
   @include media($large-screen-up) {
-    p, ol, ul {font-size: $base-font-size * 1.6;}
+    p, ol, ul { font-size: $base-font-size * 1.6; }
   }
 }
 
