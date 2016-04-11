@@ -27,24 +27,25 @@ $navbar-z-index: 9999;
 // Top-level units
 .navbar-left,
 .navbar-right {
-  @include flex(1);
+  @include flex(3);
 }
 
 .navbar-left {
   background-image: url(image-path("getty_logo.svg"));
   background-repeat: no-repeat;
+  background-position: center left;
   opacity: 0.5;
   padding-left: $base-spacing;
 }
 
 .navbar-right {
-  padding-right: $base-spacing;
+  padding-right: $small-spacing;
   text-align: right;
 }
 
 .navbar-center {
   @include display(flex);
-  @include flex(3 0 auto);
+  @include flex(1 0 auto);
   @include justify-content(center);
   text-align: center;
 }
