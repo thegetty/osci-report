@@ -1,10 +1,9 @@
 $sliding-panel-position: "left";        // "left" or "right"
-$sliding-panel-bg-color: $medium-gray;
 $sliding-panel-width: 20rem;
 $sliding-panel-z-index: 99999;
 $sliding-panel-border-color: $dark-gray;
-$sliding-panel-background: lighten($sliding-panel-border-color, 5%);
-$sliding-panel-color: darken(#FFF, 25%);
+$sliding-panel-background: shade($blue, 25%);
+$sliding-panel-color: #fff;
 $sliding-panel-border: 1px solid $sliding-panel-border-color;
 $sliding-panel-color-hover: #fff;
 $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
@@ -15,6 +14,7 @@ $sliding-panel-fade-screen-bg: #000;
   @include size(100% 100%);
   @include transform(translateX(-100%));
   @include transition(all 0.1s ease-in-out);
+  @include link-color($sliding-panel-color);
 
   background-color: $sliding-panel-background;
   color: $sliding-panel-color;
@@ -40,16 +40,6 @@ $sliding-panel-fade-screen-bg: #000;
 
   &.visible {
     @include transform(translateX(0));
-  }
-
-  // link styles
-  a {
-    color: $sliding-panel-color;
-
-    &:hover,
-    &:active {
-      color: $sliding-panel-color-hover;
-    }
   }
 }
 
