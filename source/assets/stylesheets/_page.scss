@@ -71,7 +71,7 @@ $navbar-height: 60px;
 }
 
 .page-sidebar-column {
-  @include media($medium-screen-up) { @include span-columns(2); @include shift(0); }
+  @include media($medium-screen-up) { @include span-columns(3); @include shift(0); }
   @include media($large-screen-up) { @include span-columns(2); @include shift(0); }
   @include omega();
 }
