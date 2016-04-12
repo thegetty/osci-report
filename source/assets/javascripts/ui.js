@@ -149,6 +149,13 @@ function lightBoxSetup() {
   }
 }
 
+// make sure to provide $navbar-height as an offset value
+function stickySetup() {
+  $(".page-sidebar-column").stick_in_parent({
+    offset_top: 70
+  });
+}
+
 // Use this function as "export"
 // Calls all other functions defined here inside of this one
 function uiSetup() {
@@ -159,4 +166,5 @@ function uiSetup() {
   footnoteScroll();
   anchorScroll(window.location.hash);
   citationDate();
+  stickySetup();
 }
