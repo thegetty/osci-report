@@ -15,16 +15,24 @@ $navbar-height: 60px;
 // Page Header
 // -----------------------------------------------------------------------------
 .page-cover {
-  background-color: $light-gray;
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+
+  background-color: tint($light-gray, 30%);
   background-position: center top;
   background-size: cover;
-  height: 300px;
+  height: 200px;
+  margin-bottom: $base-spacing;
+  margin-top: $navbar-height;
+  padding: $small-spacing;
 
-  @include media($medium-screen-up) {height: 400px;}
-  @include media($medium-screen-up) {height: 550px;}
+  @include media($medium-screen-up) { height: 300px; }
+  @include media($large-screen-up) { height: 350px; }
 
-  + .page .page-header {
-    margin-top: $base-spacing;
+  .page-title,
+  .page-author {
+    text-align: center;
   }
 }
 
@@ -52,7 +60,21 @@ $navbar-height: 60px;
 
 // Page Content
 // -----------------------------------------------------------------------------
+// For single-column content
 .page-content { @extend .body-copy; }
+
+// For main + sidebar layouts
+.page-main-column {
+  @extend .body-copy;
+  @include media($medium-screen-up) { @include span-columns(7); @include shift(1); }
+  @include media($large-screen-up) { @include span-columns(7); @include shift(2); }
+}
+
+.page-sidebar-column {
+  @include media($medium-screen-up) { @include span-columns(2); @include shift(0); }
+  @include media($large-screen-up) { @include span-columns(2); @include shift(0); }
+  @include omega();
+}
 
 .section-heading {
   margin-bottom: $small-spacing / 2;

@@ -3,13 +3,28 @@
     .bleed{ :data => { :catalogue => "introduction" }}
   - if current_page.data.title == "References Cited" and environment? :pdf
     .bleed{ :data => { :catalogue => "backmatter" }}
-  - if current_page.data.cover
-    - image_url = image_path(current_page.data.cover)
-    %header.page-cover{:style => "background-image: url('#{image_url}')"}
+  -# - if current_page.data.cover
+    -# - image_url = image_path(current_page.data.cover)
+    -# %header.page-cover{:style => "background-image: url('#{image_url}')"}
+  %header.page-cover
+    %h1.page-title= current_page.data.title
+    - if current_page.data.author
+      %h3.page-author= current_page.data.author
   %article.page
-    %header.page-header
-      %h1#page-title.page-title= current_page.data.title
-      - if current_page.data.author
-        %h3.page-author= current_page.data.author
-    %main.page-content
-      = yield
+    -# %header.page-header
+      -# %h1#page-title.page-title= current_page.data.title
+      -# - if current_page.data.author
+        -# %h3.page-author= current_page.data.author
+    - if current_page.data.sidebar
+      %main.page-main-column
+        = yield
+      %aside.page-sidebar-column
+        %h4 Sidebar Test
+        %p= lorem.paragraph
+        %ul
+          %li= lorem.words(5)
+          %li= lorem.words(5)
+          %li= lorem.words(5)
+    - else
+      %main.page-content
+        = yield
