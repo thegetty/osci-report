@@ -3,17 +3,16 @@
 # the official Middleman-Blog extension:
 # https://github.com/middleman/middleman-blog/blob/master/lib/middleman-blog/blog_article.rb
 module Book
-  module Chapter
+  class Chapter < Middleman::Sitemap::Resource
     # @return [Book::BookExtension] reference to the parent BookExtension instance
     # (necessary for comparison between chapters)
-    attr_accessor :book
+    attr_reader :book
 
-    # self.extended callback
-    # This code runs every time the module is extended into an object instance
-    # def self.extended(base)
-    #   puts "Module #{self} is being used by #{base}"
-    #   puts base.metadata
-    # end
+    # Pass in a reference to the parent Book extension for later use
+    def initialize(store, path, source, book)
+      super(store, path, source)
+      @book = book
+    end
 
     # The title of the chapter, set in frontmatter
     # @return [String]
@@ -43,13 +42,13 @@ module Book
     end
 
     # Returns the next chapter object, or false if this is the last chapter
-    # @return [Middleman::Sitemap::Resource]
+    # @return [Book::Chapter]
     def next_chapter
       @book.chapters.find { |p| p.rank == self.rank + 1 }
     end
 
     # Returns the previous chapter object, or false if this is the first chapter
-    # @return [Middleman::Sitemap::Resource]
+    # @return [Book::Chapter]
     # TODO: fix this method, currently it always returns to the cover page
     def prev_chapter
       @book.chapters.find { |p| p.rank == self.rank - 1 }

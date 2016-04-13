@@ -17,7 +17,8 @@ module Book
 
     def initialize(app, options_hash = {}, &block)
       super
-      @info = @app.data.book
+      @info     = @app.data.book
+      @chapters = []
 
       # PDF Generation via Prince CLI
       app.after_build do |builder|
@@ -26,8 +27,11 @@ module Book
       end
     end
 
-    def after_configuration
-      generate_chapters
+    # Manipulator method
+    # @return [Array<Middleman::Sitemap::Resource>] an array of resource objects
+    def manipulate_resource_list(resources)
+      generate_chapters!(resources)
+      resources
     end
 
     # This method should read author info from the book.yml data file and
@@ -63,19 +67,24 @@ module Book
     end
 
     private
-    # Mixes in the BookChapter methods to all Resource objects which contain
-    # sort_order in their frontmatter data, and returns them in this order.
-    # @return [Array<Middleman::Sitemap::Resource>] an array of resource objects
-    # which have been extended with the methods in the BookChapter module.
-    def generate_chapters
-      contents  = @app.sitemap.resources.find_all { |p| p.data.sort_order }
-      @chapters = contents.sort_by { |p| p.data.sort_order }
+    # This method is meant to be called inside the manipulate_resource_list method
+    # It modifies the resource list and returns nothing
+    # By swapping out certain resource objects with a custom Chapter class that inherits
+    # from Middleman::Sitemap::Resource, we can add custom methods for chapter-specific features
+    # @return +nil+
+    def generate_chapters!(resources)
+      contents = resources.find_all { |p| p.data.sort_order }
+      contents.sort_by { |p| p.data.sort_order }
+      contents.each do |p|
+        source, path, metadata = p.source_file, p.destination_path, p.metadata
+        chapter = Book::Chapter.new(@app.sitemap, path, source, self)
 
-      # Convert each resource with sort_order into a Book::Chapter and
-      # pass a reference to the running BookExtension instance for future use
-      chapters.each do |chapter|
-        chapter.extend Book::Chapter
-        chapter.book = self
+        # Make sure to explicitly add metadata or else things will break
+        chapter.add_metadata(metadata)
+
+        resources.delete p
+        resources.push chapter
+        @chapters.push chapter
       end
     end
   end
