@@ -49,7 +49,10 @@ html { min-height: 100vh; }
 }
 
 .container {
-  @include outer-container;
+  @include display(flex);
+  @include justify-content(center);
+  margin: 0 auto;
+  max-width: 1000px;
   padding: 0 $small-spacing;
 
   @include media($large-screen-up) { padding: 0; }

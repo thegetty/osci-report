@@ -3,6 +3,7 @@ title: Lessons Learned
 layout: page
 sort_order: 3
 sidebar: true
+sections: true
 ---
 ## Lesson 1: Online Publishing Is Authoritative
 {:.section-heading}
