@@ -2,6 +2,7 @@
 title: Three Models of Online Catalogues
 sort_order: 4
 layout: page
+sections: true
 ---
 Three basic models of catalogue emerged from the initiative. All three share a
 tripartite process: start with raw collections data; transform that data into
@@ -22,6 +23,7 @@ which represents the top layer, in predesigned formats and layouts.
 > \[Illustration: Diagram of tripartite structure\]
 
 ## The OSCI Toolkit Model
+{:.section-heading}
 
 “*We chose this model so we could have adaptable and user-friendly
 layouts, which allows us to accommodate the specific content needs of
@@ -88,6 +90,7 @@ to the source code are available at
 [http://oscitoolkit.org](http://oscitoolkit.org).
 
 ## The Web Content Management Model
+{:.section-heading}
 
 "*SFMOMA chose to integrate the Rauschenberg Research Project into the
 Collections area of the museum's website in order to maximize its
@@ -136,7 +139,8 @@ and printed.
 
 > \[Screen Shots SFMOMA, NG, Tate, Walker\]
 
-### The Museum System/eMuseum Model
+## The Museum System/eMuseum Model
+{:.section-heading}
 
 “*We wanted to pull the information from the TMS database, and this
 model allowed us to do that. We didn’t want the staff to have to learn a

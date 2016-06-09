@@ -21,6 +21,10 @@ end
 
 configure :build do
   activate :relative_assets
+  activate :minify_html
+  activate :minify_css
+  activate :minify_javascript
+  activate :gzip
 end
 
 activate :deploy do |deploy|

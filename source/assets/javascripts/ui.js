@@ -32,7 +32,7 @@ function footnoteScroll() {
     var distance = $(jq(target)).offset().top;
 
     $("html, body").animate({
-      scrollTop: distance - 60
+      scrollTop: distance - 70
     }, 250);
 
   });
@@ -151,14 +151,33 @@ function lightBoxSetup() {
 
 // make sure to provide $navbar-height as an offset value
 function stickySetup() {
-  $(".page-sidebar-column").stick_in_parent({
+  $(".page-sidebar-inner").stick_in_parent({
     offset_top: 70
   });
+}
+
+function sidebarSetup() {
+  if ($(".section-nav")) {
+    $(".section-heading").each(function(index, section) {
+      var listItem    = document.createElement("li");
+      var sectionLink = document.createElement("a");
+      var sectionText = document.createTextNode(section.innerHTML);
+      var target      = "#" + section.id;
+
+      sectionLink.setAttribute("href", target);
+      sectionLink.setAttribute("class", "section-link");
+      sectionLink.appendChild(sectionText);
+      listItem.appendChild(sectionLink);
+
+      $(".section-nav").append(listItem);
+    });
+  }
 }
 
 // Use this function as "export"
 // Calls all other functions defined here inside of this one
 function uiSetup() {
+  sidebarSetup();
   keyboardNav();
   offCanvasNav();
   expanderSetup();
