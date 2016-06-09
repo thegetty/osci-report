@@ -60,7 +60,7 @@ In addition, the museums realized that publishing online would allow them to do 
 
 But how many options were too many? In the end, each museum selected those features that best suited its respective catalogues.
 
-![Features](assets/images/nga_imagecomparison.jpg)
+![Features](assets/images/nga_imagecomparison.png)
 <br />
 EXAMPLES OF FEATURES: Image comparison from National Gallery, Zoom, Note Taking from Seattle, Conservation from Tate
 {:.figure}
