@@ -195,25 +195,20 @@ The OSCI museums found ways to engage scholarly audiences in the online environm
 
 However, through [usability studies](#) \[rollover definition\], informal user groups, and feedback from beta sites, the OSCI museums found that more general audiences were keenly interested in online resources about their collections. Furthermore, they learned that the online catalogues could be used in teaching at all levels. This awareness led several participating museums to refine the content they provided as well as its presentation.
 
-> VIDEO: Judy talking about forgoing digital publishing as turning back on large, diverse audience and responsibility of museums to dissemination info on collections. Digital as most efficient path 4:54-5:33
+<blockquote class="video-quote">
+  <div class="video">
+    <!-- <img src="/assets/images/robin.png" /> -->
+    <iframe src="https://www.youtube.com/embed/17SXDmVfb0A?rel=0&amp;showinfo=0;start=294" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="quote">
+    <p>“forgoing digital publishing is in a sense turning your back on a potentially large audience”</p>
+    <p class="attribution">—Judy Metro (NGA)</p>
+  </div>  
+</blockquote>
 
 NGA followed, for example, what they called the “skim, swim, dive” approach, referring to a way of structuring each catalogue entry so that the reader can choose to read a short synopsis, explore additional information, or dig deeply into scholarly content and comparative material.
 
-> provide supporting illustrations
-
-> VIDEO: Robin talking about “writing to the medium” and reaching broader audiences 4:06-4:33
-
 In order to broaden their potential audience, the Walker Art Museum decided to make their catalogue more closely resemble a magazine. As Robin Dowden, former director of new media initiatives at the Walker explained, “Our aim was to take some of the best story-telling innovations from our favorite long-form journalism sites and smartly bring them into the scholarly realm: seductive imagery, rich media, snippets of content that draw you in. Our catalogue is a blend of book and magazine. It meets the expectations of scholarly readers but also reaches out to broader audiences.”
-
-<blockquote class="video-quote">
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/17SXDmVfb0A?rel=0&amp;showinfo=0;start=246" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <div class="quote">
-    <p>This project “brought together a constellation of perspectives, documentation and content around each individual artwork that takes this into a new realm beyond the traditional scholarly collection catalogue.”</p>
-    <p class="attribution">—Robdin Dowden (The Walker)</p>
-  </div>  
-</blockquote>
 
 An online catalogue can reach more readers than its printed counterpart. From June to September 2014, the Art Institute of Chicago reached readers in seventy-one countries, while the Walker reported a similarly wide reach, extending to seventy-five countries in its first year after launch.
 
