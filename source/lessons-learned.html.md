@@ -2,10 +2,9 @@
 title: Lessons Learned
 layout: page
 sort_order: 3
-sidebar: true
 sections: true
 ---
-## Lesson 1: <br />Online Publishing Is Authoritative
+## Lesson 1: Online Publishing Is Authoritative
 {:.section-heading}
 
 > *“The means of production and display may have changed, but it’s a peer reviewed scholarly catalogue with all that that implies.”*
@@ -31,7 +30,7 @@ At the beginning of the Online Scholarly Catalogue Initiative (OSCI), the validi
 
 Usability studies commissioned by several of the museums showed that the OSCI catalogues earned the trust of researchers precisely by using these standards and conventions.
 
-## Lesson 2: <br />Choose Technology Wisely
+## Lesson 2: Choose Technology Wisely
 {:.section-heading}
 
 ### Understand your needs and ambitions
@@ -108,7 +107,7 @@ The OSCI cohort was creating a new genre: a scholarly collection catalogue did n
 
 In the end, the OSCI museums developed [three models](#). Each met the technology capacities of the respective institutions and conveyed the desired content and features.
 
-## Lesson 3: <br />Rightsize the Project
+## Lesson 3: Rightsize the Project
 {:.section-heading}
 
 > *“Initially our OSCI project encompassed all of the Pulverer Collection of premodern Japanese illustrated books but with over 60,000 images to manage, we quickly realized the scope was too large. Sharpening our focus to a set of key works by Hokusai allowed us to use the publication as a pilot project and work out the technical challenges with a smaller data set. We are now well underway with completing the cataloguing for the entire collection and adding new scholarly essays.”*
@@ -138,7 +137,7 @@ This didn’t mean, however, that the OSCI cohort accepted the traditional limit
   </div>  
 </blockquote>
 
-## Lesson 4: <br />Know Your Content
+## Lesson 4: Know Your Content
 {:.section-heading}
 
 ### Make sure the data is clean
@@ -160,7 +159,7 @@ It was also necessary for the OSCI museums to anticipate the inclusion of multim
 From stitched together high-resolution images to allow for zooming, to layered images showing various states of an artwork, to video footage both archival and newly created, online catalogue offer a wealth of new formats to consider.
 {:.figure}
 
-## Lesson 5: <br />Intellectual Property Is Manageable
+## Lesson 5: Intellectual Property Is Manageable
 {:.section-heading}
 
 OSCI participants recognized from the start that copyright law and permissions would impact their scholarly catalogues, although no one was quite sure what that impact would be. In an ideal world, the museums wanted high-resolution images that could be magnified, downloaded, stored, and linked. Many rights holders, however, worry that such functionality could lead to unauthorized image use.
@@ -178,7 +177,7 @@ SAM needed to secure rights from museums in Asia for its catalogue and discovere
 
 Although approvals for online use of images frequently comes with a time limit, none of the OSCI museums are tracking these limits, assuming that the rights-granting organization will do so. Most OSCI participants believe that within a few years, museums and rights-granting organizations will have eased their policies on the use of images in electronic media. A more comprehensive change, however, in the general approach of museums, artists, and artists’ estates to the online use of their images is needed for the issue to fade completely.
 
-## Lesson 6: <br />Find Ways to Serve Multiple Audiences; or, Online Catalogues Aren’t Just for Scholars
+## Lesson 6: Find Ways to Serve Multiple Audiences; or, Online Catalogues Aren’t Just for Scholars
 {:.section-heading}
 
 > *“Museums are moving too slowly with technology, and they need to
@@ -218,7 +217,7 @@ In order to broaden their potential audience, the Walker Art Museum decided to m
 
 An online catalogue can reach more readers than its printed counterpart. From June to September 2014, the Art Institute of Chicago reached readers in seventy-one countries, while the Walker reported a similarly wide reach, extending to seventy-five countries in its first year after launch.
 
-## Lesson 7: <br />Design Matters
+## Lesson 7: Design Matters
 {:.section-heading}
 
 The design parameters for an online catalogue can be much more elastic than those for print. While audiences are accustomed to the experience of reading a book—leafing through its contents and turning pages—the experience of reading online can be more dynamic. The trick is to take advantage of this opportunity without confusing the reader. Most OSCI participants found that it was important to have a designer involved early in the process.
@@ -251,7 +250,7 @@ One of the only certainties of digital technology is change—this is equally tr
 
 > Screenshots or gifs as examples
 
-## Lesson 8: <br />Get the right people and structure in place
+## Lesson 8: Get the right people and structure in place
 {:.section-heading}
 
 > VIDEO: CHAD talking about all the people/skills you need 15:28
@@ -311,7 +310,7 @@ Many OSCI institutions reorganized to better facilitate cross-departmental work.
 
 At the Art Institute, the Publications Department became the Publishing Department, carrying with it the responsibility for both print and electronic publications, as well as for imaging. At SFMOMA, community engagement, publications, interpretive media, the Web team, and the design studio were all brought together in the Department of Content Strategy and Digital Engagement, headed by the museum’s chief content officer, and reporting to the museum’s deputy director for curatorial affairs.
 
-## Lesson 9: <br />Think Sustainably
+## Lesson 9: Think Sustainably
 {:.section-heading}
 
 > VIDEO: ROBIN about how this changed the way she worked and realizing no finite endpoint with digital publishing 3:34-4:04 and if using, cut quote above for balance
