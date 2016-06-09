@@ -16,16 +16,18 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$light-blue: #bed7e2;
-$blue: #4b89a5;
-$dark-blue: #1e5c77;
-$dark-gray: #333;
+$light-blue: #f8fbf7;
+$blue: #73C4C8;
+$dark-blue: #13b7bf;
+$dark-gray: #0e0e11;
 $medium-gray: #999;
 $light-gray: #ddd;
+$orange: #f77f15;
+$dark-orange: #ed6714;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: #117f98;
+$action-color: $dark-blue;
 
 // Border
 $base-border-color: $light-gray;
