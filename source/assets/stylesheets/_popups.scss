@@ -1,0 +1,86 @@
+.popup {
+  @include transition($base-transition);
+  border-bottom: 1.5px solid $action-color;
+  cursor: pointer;
+  position: relative;
+  text-indent: 0;
+
+  &:hover {
+    border-bottom: 2.5px solid tint($action-color, 20%);
+  }
+}
+
+.popup-content {
+  @include transition($base-transition);
+  background-color: tint($light-gray, 75%);
+  border: 1px solid $light-gray;
+  border-bottom: 2.5px solid tint($action-color, 20%);
+  display: inline-block;
+  float: left;
+  font-family: $heading-font-family;
+  font-size: 0.85rem;
+  left: 0;
+  margin-bottom: -30px;
+  max-height: 0;
+  opacity: 0;
+  padding: $small-spacing;
+  pointer-events: none;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  &.visible {
+    margin-bottom: $small-spacing;
+    margin-top: $small-spacing;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.popup-definition {
+  .popup-content {
+    &.visible {
+      max-height: 6em;
+    }
+  }
+}
+
+.popup-location {
+  .popup-content {
+    &.visible {
+      height: 300px;
+      max-height: 300px;
+    }
+  }
+}
+
+.popup-pic {
+  // Specificity hack needed to override default img/fig styles
+  .popup-content.popup-content {
+    margin: 0 0 -30px;
+    text-align: center;
+
+    img {
+      height: 0;
+      max-height: 0;
+    }
+
+    &.visible {
+      height: 300px;
+      margin-bottom: $small-spacing;
+      margin-top: $small-spacing;
+      max-height: 300px;
+
+      img {
+        height: 75%;
+        max-height: 75%;
+
+        @include media($medium-screen-up) {
+          height: 87%;
+          max-height: 87%;
+        }
+      }
+    }
+  }
+}
