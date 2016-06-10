@@ -99,14 +99,14 @@ $navbar-height: 60px;
 }
 
 .page-main-column .figure {
-  // font-size: 1em;
   font-size: $base-font-size * 1.2;
   line-height: 1.4em;
   font-family: Karla;
-  margin-top: -$base-spacing;
   color: $dark-orange;
   width: 94%;
-  margin: 0px 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: $small-spacing * 1.3;
 }
 
 .page-main-column .section-heading {
@@ -130,9 +130,6 @@ $navbar-height: 60px;
 
 .page-main-column ul {
   list-style-type: circle;
-  // font-family: Overpass;
-  // font-size: 1.3em;
-  // line-height: 1.4em;
   font-size: $base-font-size * 1.2;
   line-height: 1.4em;
   font-family: Karla;
@@ -162,11 +159,6 @@ $navbar-height: 60px;
   -o-transition: width 2s ease, padding-bottom 2s ease;
   transition: width 2s ease, padding-bottom 2s ease;
 }
-
-// .video:hover {
-// 	width: 100%;
-// 	padding-bottom: 56.25%;
-// }
 
 .video-quote:hover {
 	 color: $medium-gray;
