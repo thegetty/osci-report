@@ -1,0 +1,28 @@
+---
+- id: cms
+  definition: "definition TK"
+
+- id: dams
+  definition: "definition TK"
+
+- id: information-architecture
+  definition: "definition TK"
+
+- id: functional-requirements-docs
+  definition: "definition TK"
+
+- id: usability-studies
+  definition: "definition TK"
+
+- id: permanent-url
+  definition: "definition TK"
+
+- id: responsive-design
+  definition: "definition TK"
+
+- id: html
+  definition: "definition TK"
+
+- id: controlled-vocabularies
+  definition: "definition TK"  
+---
