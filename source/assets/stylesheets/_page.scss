@@ -201,3 +201,20 @@ $navbar-height: 60px;
     margin-right: $small-spacing;
   }
 }
+
+#skim-swim-dive {
+  position: relative;
+  #submarine {
+    position: absolute;
+    width: 30%;
+    top: 1%;
+    transition: top 4s ease;
+    display: block;
+    margin-left: 50%;
+  }
+}
+#skim-swim-dive:hover {
+  #submarine {
+    top: 60%;
+  }
+}
