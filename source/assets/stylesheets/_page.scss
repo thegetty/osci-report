@@ -10,11 +10,8 @@ $navbar-height: 60px;
   @include justify-content(center);
 
   background-color: tint($light-gray, 30%);
-  background-image: url('/assets/images/congruent_pentagon.png');
-  background-repeat: repeat;
-  // background-image: url('/assets/images/00087501.jpg');
-  // background-position: center top;
-  // background-size: cover;
+  background-position: center center;
+  background-size: cover;
   height: 200px;
   margin-bottom: $base-spacing;
   margin-top: $navbar-height;

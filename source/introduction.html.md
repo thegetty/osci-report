@@ -3,6 +3,7 @@ title: Introduction
 author: Deborah Marrow, Director, Getty Foundation
 sort_order: 1
 layout: page
+cover: tate_pissarro.png
 ---
 
 The Getty Foundation’s Online Scholarly Catalogue Initiative (OSCI) launched in

@@ -1,5 +1,7 @@
 = wrap_layout :application do
-  %header.page-cover
+  - if current_page.data.cover
+    - image_url = image_path(current_page.data.cover)
+  %header.page-cover{:style => "background-image: url('#{image_url}')"}
     %h1.page-title= current_page.data.title
     - if current_page.data.author
       %h3.page-author= current_page.data.author

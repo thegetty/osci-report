@@ -3,6 +3,7 @@ title: Three Models of Online Catalogues
 sort_order: 4
 layout: page
 sections: true
+cover: freersackler_1.png
 ---
 Three basic models of catalogue emerged from the initiative. All three share a
 tripartite process: start with raw collections data; transform that data into
