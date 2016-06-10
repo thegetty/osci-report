@@ -125,7 +125,7 @@ $navbar-height: 60px;
   margin-top: $small-spacing * .5;
 }
 
-.page-main-column ul {
+.page-main-column ul.features {
   list-style-type: circle;
   font-size: $base-font-size * 1.2;
   line-height: 1.4em;
