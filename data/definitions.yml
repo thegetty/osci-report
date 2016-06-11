@@ -24,5 +24,24 @@
   definition: "definition TK"
 
 - id: controlled-vocabularies
-  definition: "definition TK"  
+  definition: "definition TK"
+
+- id: api
+  definition: "definition TK"
+
+- id: seo
+  definition: "definition TK"
+
+- id: discoverability
+  definition: "definition TK"
+
+- id: metatags
+  definition: "definition TK"
+
+- id: dedicated-search
+  definition: "definition TK"
+
+- id: microsite
+  definition: "definition TK"
+
 ---
