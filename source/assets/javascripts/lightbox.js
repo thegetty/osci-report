@@ -6,7 +6,7 @@ function lightBox(index) {
 
   // build items array
   var slides  = [];
-  var figures = document.querySelectorAll(".inline-figure");
+  var figures = document.querySelectorAll(".gallery-slide");
   var options = { index: index };
 
   // document query selector returns an HTMLCollection, not a true array
