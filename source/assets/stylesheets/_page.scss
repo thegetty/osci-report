@@ -211,6 +211,7 @@ figcaption {
   font-size: $base-font-size * 1.1;
   font-family: Karla;
   color: $dark-orange;
+  margin-top: $small-spacing * .5;
 }
 
 .inline-figure,
@@ -224,6 +225,6 @@ figcaption {
 .figure-gallery img {
   width: 30%;
   float: left;
-  margin: 0 3% ($small-spacing * .5) 0;
+  margin: 0 3% $small-spacing 0;
   padding: 0;
 }

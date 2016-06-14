@@ -8,7 +8,29 @@ cover: tate_ginner.png
 ## Art Institute of Chicago
 {:.section-heading}
 
-[*http://www.artic.edu/collections/books/online-scholarly-catalogues*](http://www.artic.edu/collections/books/online-scholarly-catalogues)
+<div class="figure-gallery">
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/aic_01.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/aic_02.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/aic_03.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/aic_04.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/aic_05.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/aic_06.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figcaption>
+    <a href="http://www.artic.edu/collections/books/online-scholarly-catalogues" target="blank">http://www.artic.edu/collections/books/online-scholarly-catalogues</a>
+  </figcaption>
+</div>
 
 The Art Institute of Chicago’s first two online catalogues, *Monet: Paintings and Drawings from the Art Institute of Chicago* and *Renoir: Paintings and Drawings from the Art Institute of Chicago*, featuring forty-seven artworks by Monet and twenty-five by Renoir, were released in summer 2014. Entries about each artwork were designed to be as comprehensive as possible, with each including new art-historical research and unprecedented high-resolution imaging that allows readers to zoom in to see the artist’s brushstrokes, and previously unpublished technical photography (such as X-ray, infrared, and other imaging), which unveils information hidden beneath the surface of the work using interactive, layered images. Conservation reports on each artwork offer in-depth studies of the artists’ process and incorporate new scientific data on their materials. Other features include a glossary, an automatic citation tool, scanned archival materials, and biographical information about significant historical collectors for the museum. The catalogues were peer-reviewed and they are editioned, not updated, on a regular basis.
 
@@ -19,7 +41,29 @@ Art Institute of Chicago, AAM Bronze MUSE Award, Interactive Kiosks (2014) for �
 ## Freer and Sackler Galleries
 {:.section-heading}
 
-[*http://pulverer.si.edu/*](http://pulverer.si.edu/)
+<div class="figure-gallery">
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/freersackler_01.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/freersackler_02.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/freersackler_03.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/freersackler_04.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/freersackler_05.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/freersackler_06.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figcaption>
+    <a href="http://pulverer.si.edu/" target="blank">http://pulverer.si.edu/</a>
+  </figcaption>
+</div>
 
 In 2007 the Freer and Sackler Galleries acquired the Gerhard Pulverer Collection, a private collection of premodern Japanese illustrated books numbering about 900 titles in 2,200 volumes, which includes approximately 70,000 images. The goal of the Freer/Sackler OSCI project is to provide a model for museums with large collections of manuscripts and rare books. To make the project more manageable, the Freer/Sackler team decided to focus its efforts on a smaller subset of the holdings and produce a microsite fully realizing the material in forty-six books representing the work of Edo period artist and printmaker, Katsushika Hokusai. This catalogue was published in June 2014. The essays in the catalogue have been peer-reviewed.
 
@@ -30,7 +74,29 @@ Freer/Sackler Galleries, Bronze “Telly” Award (2015) for the Ukiyo-e techniq
 ## Los Angeles County Museum of Art
 {:.section-heading}
 
-[*http://seasian.catalog.lacma.org*](http://seasian.catalog.lacma.org)
+<div class="figure-gallery">
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/lacma_01.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/lacma_02.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/lacma_03.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/lacma_04.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/lacma_05.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/lacma_06.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figcaption>
+    <a href="http://seasian.catalog.lacma.org" target="blank">http://seasian.catalog.lacma.org</a>
+  </figcaption>
+</div>
 
 LACMA launched its online scholarly catalogue dedicated to the museums’s collection of Southeast Asian art in October 2013. The publication focuses on thirty-four highlights from the museum’s collection, complemented by numerous comparative images and including extended essays on topics such as light symbolism, female deities, and the impact of Buddhism on Sri Lankan and Southeast Asian art. Southeast Asian art is the first in a series of online scholarly catalogues designed to provide an in-depth, Web-based reading experience enhanced with unique media features such as videos, 360-degree image rotation for select objects, and an easy online citation tool.
 
@@ -39,7 +105,29 @@ LACMA’s publication is a stand-alone website, which is not dynamically connect
 ## National Gallery of Art
 {:.section-heading}
 
-[*http://www.nga.gov/content/ngaweb/research/online-editions/17th-century-dutch-paintings.html*](http://www.nga.gov/content/ngaweb/research/online-editions/17th-century-dutch-paintings.html)
+<div class="figure-gallery">
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/nga_01.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/nga_02.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/nga_03.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/nga_04.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/nga_05.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/nga_06.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figcaption>
+    <a href="http://www.nga.gov/content/ngaweb/research/online-editions/17th-century-dutch-paintings.html" target="blank">http://www.nga.gov/content/ngaweb/research/online-editions/17th-century-dutch-paintings.html</a>
+  </figcaption>
+</div>
 
 The NGA has a long history of producing peer-reviewed “systematic catalogues” on its permanent collections. For the OSCI project, its team thoroughly updated and enlarged Arthur K. Wheelock’s out-of-print catalogue documenting the gallery’s seventeenth-century Dutch paintings, outfitted it with tools for students and scholars—and with overviews and curator-led video tours for broader audiences—and integrated this rich content within the gallery’s public website. The tools allow for a customized reading experience and include preformatted citations, sophisticated image comparison capabilities, PDF print and download options, archived editions, and permanent URLs. The catalogue was published in April 2014 and is editioned, not dynamically updated, although it will be reviewed and refreshed on a five-year cycle. Bringing this enhanced systematic catalogue online has changed the course of the entire series of museum permanent collection catalogues from print to digital and led to the renaming of the series (seventeen previously published and about fifteen new collection volumes). NGA Online Editions is intended as a model for institutions wishing to give prominence to authoritative, peer-reviewed scholarship and engaging media in their online presentation of collection information.
 
@@ -50,7 +138,29 @@ National Gallery of Art, George Wittenborn Award (2015) from ARLIS (Art Librarie
 ## San Francisco Museum of Modern Art
 {:.section-heading}
 
-[*http://www.sfmoma.org/explore/collection/project/rauschenberg\_research\_project*](http://www.sfmoma.org/explore/collection/project/rauschenberg_research_project)
+<div class="figure-gallery">
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/sfmoma_01.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/sfmoma_02.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/sfmoma_03.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/sfmoma_04.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/sfmoma_05.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/sfmoma_06.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figcaption>
+    <a href="http://www.sfmoma.org/explore/collection/project/rauschenberg_research_project" target="blank">http://www.sfmoma.org/explore/collection/project/rauschenberg_research_project</a>
+  </figcaption>
+</div>
 
 *The Rauschenberg Research Project* was launched by SFMOMA in July 2013, with eighty-seven artworks by twentieth-century American artist Robert Rauschenberg. The catalogue incorporates a variety of layered, media-rich content, including essays, numerous images, and video interviews with the artist, as well as archival and conservation documentation. All catalogue content is fully integrated into the Collections section of the museum’s website. Rauschenberg works appear alongside other works in the online collection, but are augmented with the substantial resources produced for this publication. Since launching the project, SFMOMA has added one newly acquired artwork, *Rosalie/Red Cheek/Temporary Letter/Stock* (1971). In conjunction with this addition, the OSCI team included new bibliographic and exhibition citations culled since launch as part of a planned annual review and update.
 
@@ -63,7 +173,29 @@ SFMOMA, Association of Art Museum Curators Awards for Excellence, Exhibition Cat
 ## Seattle Art Museum
 {:.section-heading}
 
-[*http://chinesepainting.seattleartmuseum.org/OSCI*](http://chinesepainting.seattleartmuseum.org/OSCI)
+<div class="figure-gallery">
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/seattle_01.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/seattle_02.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/seattle_03.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/seattle_04.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/seattle_05.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/seattle_06.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figcaption>
+    <a href="http://chinesepainting.seattleartmuseum.org/OSCI" target="blank">http://chinesepainting.seattleartmuseum.org/OSCI</a>
+  </figcaption>
+</div>
 
 SAM’s OSCI project focused on a core of approximately 130 works from the permanent collection of Chinese painting and calligraphy, many of which were recently acquired and not yet published. The catalogue launched in October 2013. A significant goal for SAM’s team was to develop a model for how technology can best be utilized to allow for viewing scrolls online. During the planning phase, the scope of the project increased to include commissioning scholarly essays from outside contributors and creating a means to obtain user-generated scholarly content related to the seals and inscriptions found on the artworks, beyond the work done by SAM staff and its contracted scholars.
 
@@ -74,7 +206,29 @@ Seattle Art Museum, AAM (Alliance of American Museums) Gold MUSE Award, Online P
 ## Tate
 {:.section-heading}
 
-[*http://www.tate.org.uk/art/research-publications/camden-town-group*](http://www.tate.org.uk/art/research-publications/camden-town-group)
+<div class="figure-gallery">
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/tate_01.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/tate_02.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/tate_03.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/tate_04.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/tate_05.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/tate_06.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figcaption>
+    <a href="http://www.tate.org.uk/art/research-publications/camden-town-group" target="blank">http://www.tate.org.uk/art/research-publications/camden-town-group</a>
+  </figcaption>
+</div>
 
 In creating its first online catalogue of the work of the Camden Town Group, which launched in May 2012, Tate developed a number of custom-built systems, integrating them with the existing online collection publication architecture. These include a cataloguing system, a collection research asset manager (CRAM), and two new data loaders to update existing systems within the collection publication architecture.
 
@@ -85,7 +239,29 @@ The CRAM is used to ingest and manage assets used within a research project—im
 ## Walker Art Center
 {:.section-heading}
 
-[http://www.walkerart.org/collections/publications](http://www.walkerart.org/collections/publications)
+<div class="figure-gallery">
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/walker_01.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/walker_02.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/walker_03.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/walker_04.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/walker_05.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figure markdown="0" class="gallery-slide">
+    <img src="/assets/images/projects/walker_06.jpg" data-size="1440x810" alt="" />
+  </figure>
+  <figcaption>
+    <a href="http://www.walkerart.org/collections/publications" target="blank">http://www.walkerart.org/collections/publications</a>
+  </figcaption>
+</div>
 
 The Walker Art Center’s Living Collections Catalogue was conceived as a series of thematic volumes selected to foreground the Walker’s multidisciplinary collecting strategies. In keeping with the Walker’s interest in crossing disciplinary boundaries, the first volume developed during the planning phase was devoted to *performativity*, a term that lends itself to analysis and debate across artistic practices. This first volume launched in June 2014. Beginning with the second volume, the Walker modified the conceptual and administrative framework for its project to align with exhibitions and presentations from its collections and archives. *Art Expanded, 1958–1978* explores themes in the exhibition of the same title. Plans for upcoming volumes include the Merce Cunningham Dance Company Collection.
 
