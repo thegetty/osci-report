@@ -134,10 +134,10 @@ function expanderSetup() {
 // }
 
 function lightBoxSetup() {
-  if ($(".inline-figure")) {
-    $figures = $(".inline-figure img");
+  if ($(".gallery-slide")) {
+    $figures = $(".gallery-slide img");
     $figures.on("click", function(e) {
-      var figs = document.querySelectorAll(".inline-figure");
+      var figs = document.querySelectorAll(".gallery-slide");
       var target = _.findIndex(figs, function(figure) {
         return figure.id == e.target.parentNode.id;
       });
