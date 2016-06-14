@@ -101,7 +101,7 @@ $navbar-height: 60px;
 }
 
 .page-main-column .section-heading {
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: $small-spacing / 2;
 
   &:first-of-type { margin-top: 0; }
@@ -109,7 +109,10 @@ $navbar-height: 60px;
 }
 
 .page-main-column h3 {
-  font-weight: 700;
+  font-weight: 400;
+  border-left: 2px solid $dark-blue;
+  padding-left: $small-spacing * .5;
+  margin-left: -$small-spacing * .5;
 }
 
 .page-main-column .attribution {
@@ -171,7 +174,7 @@ $navbar-height: 60px;
   margin: 0 $small-spacing;
   padding: $small-spacing * .75;
   border: 2px solid $orange;
-  border-radius: $base-border-radius * 2;
+  border-radius: $base-border-radius;
   font-family: Overpass;
   font-weight: 400;
   a {
