@@ -2,7 +2,7 @@
 title: The Online Scholarly Catalogue Initiative
 subtitle: A Final Report from the The Getty Foundation
 layout: cover
-cover: library.jpg
+## cover: library.jpg
 sort_order: 0
 sidebar: false
 ---

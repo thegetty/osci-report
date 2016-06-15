@@ -16,7 +16,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   @include flex-direction(column);
   @include flex-wrap(nowrap);
   @include justify-content(flex-end);
-  background-color: $dark-gray;
+  background-color: $medium-gray;
   background-image: url(image_path("cover_option1.jpg"));
   background-position: center 45%;
   background-repeat: no-repeat;
@@ -26,18 +26,18 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 }
 
 .cover-inner {
-  @include background-image(linear-gradient($gr-start 0%, $gr-stop1 100%));
-  background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop1 100%);
+  // @include background-image(linear-gradient($gr-start 0%, $gr-stop1 100%));
+  // background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop1 100%);
   color: #fff;
   padding: 2em 0.5em;
   text-align: center;
-  text-shadow: 3px 3px 5px $rgb-gr-stop1;
+  // text-shadow: 3px 3px 5px $rgb-gr-stop1;
   width: 100%;
 
   @include media($medium-screen-up) {
     padding: 4em 2em;
-    @include background-image(linear-gradient($gr-start 0%, $gr-stop2 100%));
-    background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop2 100%);
+    // @include background-image(linear-gradient($gr-start 0%, $gr-stop2 100%));
+    // background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop2 100%);
   }
 
   @include media($large-screen-up) {
