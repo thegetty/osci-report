@@ -37,6 +37,7 @@ The Art Institute of Chicago’s first two online catalogues, *Monet: Paintings 
 For this project, the team contracted with the IMA Lab to create a prototype authoring environment, the ChicagoCodeX (CCX), built in the open-source content management system Drupal; the CCX became the basis for the OSCI Toolkit. The Art Institute published both volumes on the fully implemented CCX. The museum uses a custom-built CMS called Collection Images Text and Index (CITI), which includes a basic digital asset system (DAMS), and a CITI-driven clone for its website. There is currently no connection between CITI and OSCI, but there has been development within CITI with the goal of making it possible to publish metadata and tombstone information from CITI directly to the OSCI platform in the future. The Art Institute is in the beginning of a multiyear implementation of a DAMS project using Fedora. CITI will be used as an authoring environment for all assets, including the ones related to OSCI, and these assets will be stored in the DAMS. Future OSCI catalogues will be able to retrieve assets and metadata directly from the DAMS. 
 
 Art Institute of Chicago, AAM Bronze MUSE Award, Interactive Kiosks (2014) for “Renoir’s True Colors” which utilized components of their OSCI catalogue.
+{:.ion-ribbon-b .award}
 
 ## Freer and Sackler Galleries
 {:.section-heading}
@@ -69,7 +70,8 @@ In 2007 the Freer and Sackler Galleries acquired the Gerhard Pulverer Collection
 
 Working with the IMA Lab and using components of the OSCI Toolkit in a custom-built website, the team has created the first phase of a catalogue that will eventually include the entire Pulverer Collection. The initial version of the site was designed to prototype all of the components of the full site: scholarly essays and video interviews about aspects of the collection, a fully searchable database of the titles with complete cataloguing according to accepted protocols for Japanese book catalogues, and a password-protected area of the site where researchers can save searches, annotate text on the site, and make their own research notes. The site draws cataloguing data from the museum’s TMS database, images from the Smithsonian’s DAMS, and uses the museum’s own CMS to manage the site. The content of Freer/Sackler’s catalogue is dynamic and updated on a regular basis. (ASK NANCY: F/S’s CMS or Smithsonian’s)
 
-Freer/Sackler Galleries, Bronze “Telly” Award (2015) for the Ukiyo-e technique video in its OSCI catalogue
+Freer/Sackler Galleries, Bronze “Telly” Award (2015) for the Ukiyo-e technique video in its OSCI catalogue.
+{:.ion-ribbon-b .award}
 
 ## Los Angeles County Museum of Art
 {:.section-heading}
@@ -133,7 +135,8 @@ The NGA has a long history of producing peer-reviewed “systematic catalogues�
 
 The technology plan for the project involves the use of the website’s existing CMS (Adobe Experience Manager, formerly called CQ5) to store long text files as well as to retrieve collection data from TMS and digital images from Extensis Portfolio. The needs of the OSCI project were addressed in the context of the institution’s overall Web and digital strategy.
 
-National Gallery of Art, George Wittenborn Award (2015) from ARLIS (Art Libraries Society) for excellence in art publishing for its OSCI catalogue
+National Gallery of Art, George Wittenborn Award (2015) from ARLIS (Art Libraries Society) for excellence in art publishing for its OSCI catalogue.
+{:.ion-ribbon-b .award}
 
 ## San Francisco Museum of Modern Art
 {:.section-heading}
@@ -168,7 +171,8 @@ SFMOMA uses Gallery Systems’ EmbARK software for cataloguing and managing its 
 
 Independent consultants Frankly, Green ~+~ Webb conducted postlaunch evaluations of the Rauschenberg Research Project, including quantitative data analysis and qualitative audience interviews assessing the site’s findability, usability, and perception. The overall response was extremely positive, although it also highlighted areas for improvement. Changes went live with the annual update. The catalogue will continue to evolve as new works are acquired and areas such as exhibition histories are supplemented. The sustainability and portability of the Rauschenberg Research Project was confirmed during a global website redesign in late 2015. (JOAN REVIEW THIS)
 
-SFMOMA, Association of Art Museum Curators Awards for Excellence, Exhibition Catalogues, Honorable Mention (2013) for its OSCI catalogue
+SFMOMA, Association of Art Museum Curators Awards for Excellence, Exhibition Catalogues, Honorable Mention (2013) for its OSCI catalogue.
+{:.ion-ribbon-b .award}
 
 ## Seattle Art Museum
 {:.section-heading}
@@ -201,7 +205,8 @@ SAM’s OSCI project focused on a core of approximately 130 works from the perma
 
 SAM uses TMS for collections management, including the media module for managing its digital assets. As a medium-size museum, SAM has little internal or external information technology support. The intent of its team was to enhance the online authoring and publishing process around TMS, creating add-ins within the existing system. Museum staff worked closely with their TMS vendor, Gallery Systems, to design a software component that would add desired functionalities and use the company’s e-Museum framework to publish content online. The SAM catalogue is synced with TMS and is updated as information in the CMS is updated.
 
-Seattle Art Museum, AAM (Alliance of American Museums) Gold MUSE Award, Online Presence (2014) for its OSCI catalogue
+Seattle Art Museum, AAM (Alliance of American Museums) Gold MUSE Award, Online Presence (2014) for its OSCI catalogue.
+{:.ion-ribbon-b .award}
 
 ## Tate
 {:.section-heading}
@@ -267,4 +272,5 @@ The Walker Art Center’s Living Collections Catalogue was conceived as a series
 
 The Living Collections Catalogue design adopts a visual aesthetic for navigation and page layouts that blends the best qualities of the book, magazine, and online forms. Essays and archival nodes within a volume are editioned, while links out to the collections database provide artwork details that are updated dynamically. The project deepens and expands the online publishing platform built for the Walker’s website as a whole, including an authoring tool with sufficient options to handle a variety of text and media compositions.
 
-Walker Art Center, Museums and the Web, Best of the Web Award for Research/Collections Online (2015) for its OSCI catalogue
+Walker Art Center, Museums and the Web, Best of the Web Award for Research/Collections Online (2015) for its OSCI catalogue.
+{:.ion-ribbon-b .award}
