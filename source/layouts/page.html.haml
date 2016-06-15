@@ -12,12 +12,13 @@
       .page-sidebar-inner
         %ul
           %li
-            %h5= title
+            %h5= link_to title, "index.html"
           - chapters.each do |chapter|
-            - if current_page.data.title == chapter.title
-              %li
-                %strong= chapter.title
-                - if current_page.data.sections
-                  %ul.section-nav
-            - else
-              %li= link_to chapter.title, chapter
+            - if chapter.data.sidebar != false
+              - if current_page.data.title == chapter.title
+                %li
+                  %strong= chapter.title
+                  - if current_page.data.sections
+                    %ul.section-nav
+              - else
+                %li= link_to chapter.title, chapter

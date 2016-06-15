@@ -4,6 +4,7 @@ subtitle: A Final Report from the The Getty Foundation
 layout: cover
 cover: library.jpg
 sort_order: 0
+sidebar: false
 ---
 
 Publishing scholarly collection catalogues is a critical part of a museum's mission. Based on meticulous research, these catalogues make available detailed information about the individual works in a museum's collection, ensuring the contents a place in art history. Yet printed volumes are costly to produce and difficult to update regularly; their potential content often exceeds allotted space. One could say they are like thoroughbred horses confined to stock pens.
