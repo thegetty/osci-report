@@ -2,7 +2,7 @@
 title: What's Next?
 sort_order: 7
 layout: page
-cover: tate_ratcliffe.png
+cover: banners/tate_ratcliffe.png
 ---
 > “*This is not an end. It is the beginning. We realize that we can keep doing this*.”
 >

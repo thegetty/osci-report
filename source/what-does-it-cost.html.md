@@ -2,7 +2,7 @@
 title: What does it cost?
 sort_order: 5
 layout: page
-cover: aic_monet.png
+cover: banners/aic_monet.png
 ---
 What does it cost to publish an online collection catalogue? This is one of the most frequent questions that the Getty Foundation gets asked about OSCI, and it is hard to answer. The OSCI projects were diverse by design, and the costs to produce them varied widely depending on the scope, scale, and ambition of the catalogue project, as well as the size and content of the collection. Some of the participating partners needed additional staffing, others had sufficient in-house capacity. Some OSCI projects required large technology investments, others did not. In short, there is no clear way to compare apples to apples.
 

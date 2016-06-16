@@ -3,7 +3,7 @@ title: Projects at a Glance
 sort_order: 2
 layout: page
 sections: true
-cover: tate_ginner.png
+cover: banners/tate_ginner.png
 ---
 ## Art Institute of Chicago
 {:.section-heading}
