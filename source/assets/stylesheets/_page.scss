@@ -237,6 +237,7 @@ figcaption {
   margin-left: 3%;
   margin-right: 3%;
   margin-bottom: $small-spacing * 1.3;
+  overflow: auto;
 }
 
 .figure-gallery img {
@@ -244,4 +245,53 @@ figcaption {
   float: left;
   margin: 0 3% $small-spacing 0;
   padding: 0;
+}
+
+.showcase-opener {
+  margin-bottom: $base-spacing;
+  color: $medium-gray;
+}
+
+.showcase {
+  padding-bottom: $base-spacing;
+  margin-bottom: $base-spacing * 2;
+  border-bottom: 2px solid $medium-gray;
+  p {
+    clear: both;
+  }
+  p.showcase-image {
+    clear: none;
+    float: left;
+    width: 40%;
+    margin-right: $base-spacing;
+    margin-bottom: $small-spacing;
+  }
+  .showcase-gallery img {
+    width: 44%;
+    float: left;
+    margin: 0 3% $small-spacing 3%;
+    box-shadow: 1px 1px 3px $medium-gray;
+  }
+  .showcase-gallery figcaption {
+    width: 94%;
+    margin: 0 3%;
+    color: $dark-gray;
+  }
+  ul.features {
+    padding-left: $base-spacing;
+    font-family: Overpass;
+    font-size: $base-font-size;
+    li {
+      margin-bottom: 3px;
+    }
+  }
+  h4 {
+    font-size: $base-font-size * 1.2;
+    line-height: 1.4em;
+    margin-top: $small-spacing * .25;
+    margin-bottom: $small-spacing * .5;
+    a {
+      font-weight: 700;
+    }
+  }
 }

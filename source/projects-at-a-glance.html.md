@@ -1,6 +1,6 @@
 ---
 title: Projects at a Glance
-sort_order: 2
+sort_order: 
 layout: page
 sections: true
 cover: banners/tate_ginner.png
