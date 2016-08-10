@@ -16,18 +16,10 @@
   @include media($medium-screen-up) { height: 202px; }
   @include media($large-screen-up) { height: 224px; }
 
-  .page-title,
-  .page-author {
-    text-align: center;
+  .page-title {
     color: $medium-gray;
-    font-weight: 400;
-    font-size: 2em;
   }
 
-  .page-title {
-    font-size: 3.5em;
-    font-weight: 700;
-  }
 }
 
 .grid-nav {
@@ -37,18 +29,26 @@
 
 .grid-trigger {
   width: 30.33%;
-  height: 40vh;
+  height: 35vh;
   margin-right: 1.5%;
   margin-left: 1.5%;
   margin-bottom: $base-spacing;
-  background-color: #eee;
   background-position: center center;
   float: left;
   padding: $small-spacing;
-  h2 {
-    font-size: 1.5em;
-    font-weight: 700;
+  h3, h4 {
     color: #fff;
+  }
+}
+
+.grid-trigger:hover {
+  h3 {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: flip;
+    animation-name: flip;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
   }
 }
 
@@ -61,44 +61,103 @@
 
 .grid-content {
   margin-top: $base-spacing;
-  p.grid-image {
-    float: left;
-    width: 40%;
-    margin-right: $base-spacing;
-    margin-bottom: $small-spacing;
+}
+
+$grid-color-1: #FE938C;
+$grid-color-2: #399E5A;
+$grid-color-3: #6EF9F5;
+$grid-color-4: #26532B;
+$grid-color-5: #63E2C6;
+$grid-color-6: #FF6F59;
+$grid-color-7: #5ABCB9;
+$grid-color-8: #F6BD60;
+$grid-color-9: #254441;
+
+#trigger-1 {
+  background-color: $grid-color-1;
+}
+#trigger-1-content h2 {
+  color: $grid-color-1;
+}
+
+#trigger-2 {
+  background-color: $grid-color-2;
+}
+#trigger-2-content h2 {
+  color: $grid-color-2;
+}
+
+#trigger-3 {
+  background-color: $grid-color-3;
+}
+#trigger-3-content h2 {
+  color: $grid-color-3;
+}
+
+#trigger-4 {
+  background-color: $grid-color-4;
+}
+#trigger-4-content h2 {
+  color: $grid-color-4;
+}
+
+#trigger-5 {
+  background-color: $grid-color-5;
+}
+#trigger-5-content h2 {
+  color: $grid-color-5;
+}
+
+#trigger-6 {
+  background-color: $grid-color-6;
+}
+#trigger-6-content h2 {
+  color: $grid-color-6;
+}
+
+#trigger-7 {
+  background-color: $grid-color-7;
+}
+#trigger-7-content h2 {
+  color: $grid-color-7;
+}
+
+#trigger-8 {
+  background-color: $grid-color-8;
+}
+#trigger-8-content h2 {
+  color: $grid-color-8;
+}
+
+#trigger-9 {
+  background-color: $grid-color-9;
+}
+#trigger-9-content h2 {
+  color: $grid-color-9;
+}
+
+
+@-webkit-keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -360deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -360deg);
   }
-  .grid-gallery img {
-    width: 44%;
-    float: left;
-    margin: 0 3% $small-spacing 3%;
-    box-shadow: 1px 1px 3px $medium-gray;
+
+  to {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
   }
-  .grid-gallery figcaption {
-    width: 94%;
-    margin: 0 3%;
-    color: $dark-gray;
+
+}
+
+@keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -360deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -360deg);
   }
-  ul.features {
-    padding-left: $base-spacing;
-    font-family: Overpass;
-    li {
-      margin-bottom: 3px;
-    }
-  }
-  h3 {
-    margin-bottom: 0;
-    margin-top: 0;
-    border-left: none;
-    padding-left: 0;
-    margin-left: 0;
-  }
-  h4 {
-    font-size: $base-font-size * 1.2;
-    line-height: 1.4em;
-    margin-top: $small-spacing * .25;
-    margin-bottom: $small-spacing * .5;
-    a {
-      font-weight: 700;
-    }
+
+  to {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 0deg);
   }
 }

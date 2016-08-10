@@ -19,12 +19,6 @@ html { min-height: 100vh; }
 // Body Copy baseline styles
 // -----------------------------------------------------------------------------
 .body-copy {
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    letter-spacing: -0.5px;
-    margion-bottom: 1rem;
-    margin-top: 1em;
-  }
 
   p, ol, ul {font-size: $base-font-size * 1.25;}
   ol { @extend %default-ol; }
@@ -48,7 +42,7 @@ html { min-height: 100vh; }
   @include display(flex);
   @include justify-content(center);
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 900px;
   padding: 0 $small-spacing;
 
   @include media($large-screen-up) { padding: 0; }

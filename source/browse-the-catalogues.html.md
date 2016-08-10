@@ -4,15 +4,16 @@ sort_order: 2
 layout: grid
 ---
 
+
 {::options parse_block_html="true" /}
 
-<div class="grid">
+<div class="catalogue-grid">
 <div class="grid-content" id="trigger-1-content">
 
 <div class="grid-closer ion-grid"></div>
 
 ![AIC](/assets/images/projects/aic_th_square.jpg)
-{:.grid-image}
+{:.cover-image}
 
 ### Art Institute of Chicago
 
@@ -35,7 +36,7 @@ For this project, the team contracted with the IMA Lab to create a prototype aut
 <div class="grid-closer ion-grid"></div>
 
 ![Freer Sackler](/assets/images/projects/freersackler_th_square.jpg)
-{:.grid-image}
+{:.cover-image}
 
 ### Freer and Sackler Galleries
 
@@ -58,7 +59,7 @@ Working with the IMA Lab and using components of the OSCI Toolkit in a custom-bu
 <div class="grid-closer ion-grid"></div>
 
 ![LACMA](/assets/images/projects/lacma_th_square.jpg)
-{:.grid-image}
+{:.cover-image}
 
 ### Los Angeles County Museum of Art
 
@@ -80,7 +81,7 @@ LACMA’s publication is a stand-alone website, which is not dynamically connect
 <div class="grid-closer ion-grid"></div>
 
 ![NGA](/assets/images/projects/nga_th_square.jpg)
-{:.grid-image}
+{:.cover-image}
 
 ### National Gallery of Art
 
@@ -102,7 +103,7 @@ The technology plan for the project involves the use of the website’s existing
 <div class="grid-closer ion-grid"></div>
 
 ![SFMOMA](/assets/images/projects/sfmoma_th_square.jpg)
-{:.grid-image}
+{:.cover-image}
 
 ### San Francisco Museum of Modern Art
 
@@ -126,7 +127,7 @@ Independent consultants Frankly, Green ~+~ Webb conducted postlaunch evaluations
 <div class="grid-closer ion-grid"></div>
 
 ![Seattle](/assets/images/projects/seattle_th_square.jpg)
-{:.grid-image}
+{:.cover-image}
 
 ### Seattle Art Museum
 
@@ -148,7 +149,7 @@ SAM uses TMS for collections management, including the media module for managing
 <div class="grid-closer ion-grid"></div>
 
 ![Tate](/assets/images/projects/tate_th_square.jpg)
-{:.grid-image}
+{:.cover-image}
 
 ### Tate
 
@@ -173,7 +174,7 @@ The CRAM is used to ingest and manage assets used within a research project—im
 <div class="grid-closer ion-grid"></div>
 
 ![Walker](/assets/images/projects/walker_th_square.jpg)
-{:.grid-image}
+{:.cover-image}
 
 ### Walker Art Center
 
@@ -190,48 +191,47 @@ The Walker Art Center’s Living Collections Catalogue was conceived as a series
 The Living Collections Catalogue design adopts a visual aesthetic for navigation and page layouts that blends the best qualities of the book, magazine, and online forms. Essays and archival nodes within a volume are editioned, while links out to the collections database provide artwork details that are updated dynamically. The project deepens and expands the online publishing platform built for the Walker’s website as a whole, including an authoring tool with sufficient options to handle a variety of text and media compositions.
 
 </div>
-</div>
 
 
 <div class="grid-nav">
 <div class="grid-trigger" id="trigger-1" style="background-image: url('../assets/images/projects/aic_visual.jpg')">
 
-## Art Institute of Chicago
+### Art Institute of Chicago
 
 </div>
 <div class="grid-trigger" id="trigger-2" style="background-image: url('../assets/images/projects/freersackler_visual.jpg')">
 
-## Freer and Sackler Galleries
+### Freer and Sackler Galleries
 
 </div>
 <div class="grid-trigger" id="trigger-3" style="background-image: url('../assets/images/projects/lacma_visual.jpg')">
 
-## Los Angeles County Museum of Art
+### Los Angeles County Museum of Art
 
 </div>
 <div class="grid-trigger" id="trigger-4" style="background-image: url('../assets/images/projects/nga_visual.jpg')">
 
-## National Gallery of Art
+### National Gallery of Art
 
 </div>
 <div class="grid-trigger" id="trigger-5" style="background-image: url('../assets/images/projects/sfmoma_visual.jpg')">
 
-## San Francisco Museum of Modern Art
+### San Francisco Museum of Modern Art
 
 </div>
 <div class="grid-trigger" id="trigger-6" style="background-image: url('../assets/images/projects/seattle_visual.jpg')">
 
-## Seattle Art Museum
+### Seattle Art Museum
 
 </div>
 <div class="grid-trigger" id="trigger-7" style="background-image: url('../assets/images/projects/tate_visual.jpg')">
 
-## Tate
+### Tate
 
 </div>
 <div class="grid-trigger" id="trigger-8" style="background-image: url('../assets/images/projects/walker_visual.jpg')">
 
-## Walker Art Center
+### Walker Art Center
 
 </div>
 </div>
