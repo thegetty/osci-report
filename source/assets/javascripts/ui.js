@@ -94,19 +94,36 @@ function offCanvasNav() {
   });
 }
 
-function expanderSetup() {
-  var $expanderContent  = $(".expander-content");
-  var $expanderTriggers = $(".expander-trigger");
 
-  $($expanderContent).addClass("expander--hidden");
+function gridExpander() {
+  var $gridContent  = $(".grid-content");
+  var $gridTriggers = $(".grid-trigger");
+  var $gridClosers = $(".grid-closer");
 
-  $expanderTriggers.on("click", function() {
-    var $target = $(this).parent().find(".expander-content");
-    $target.slideToggle("fast", function() {
-      $target.toggleClass("expander--hidden");
+  $($gridContent).addClass("grid--hidden");
+
+  $gridTriggers.on("click", function() {
+    var $selector = $(this).attr('id');
+    var $targetId = "#" + $selector + "-content";
+    var $target = $($targetId);
+    $target.slideToggle(800, function() {
+      $target.toggleClass("grid--hidden");
+    });
+    var $previousTarget = $(".grid-content[style='display: block;']");
+    $previousTarget.slideToggle(600, function() {
+      $previousTarget.toggleClass("grid--hidden");
+    });
+    $("html, body").animate({ scrollTop: 0 }, 600);
+  });
+
+  $gridClosers.on("click", function() {
+    var $target = $(this).parent();
+    $target.slideToggle(600, function() {
+      $target.toggleClass("grid--hidden");
     });
   });
 }
+
 
 // function searchSetup() {
 //   var $searchButton = $("#navbar-search");
@@ -253,6 +270,7 @@ function uiSetup() {
   offCanvasNav();
   popupSetup();
   expanderSetup();
+  gridExpander();
   lightBoxSetup();
   footnoteScroll();
   anchorScroll(window.location.hash);
