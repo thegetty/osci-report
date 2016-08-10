@@ -48,29 +48,29 @@ $navbar-height: 60px;
 
 .page-main-column {
   @extend .body-copy;
-  @include flex(5);
+  // @include flex(5);
   @include media($medium-screen-up) {
     padding-right: $base-spacing;
   }
 }
 
-.page-sidebar-column {
-  @include flex(2);
-  font-family: $heading-font-family;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    &:first-of-type { margin-top: 0; }
-  }
-
-  li {
-    margin-bottom: ($small-spacing / 2);
-  }
-}
+// .page-sidebar-column {
+//   @include flex(2);
+//   font-family: $heading-font-family;
+//
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   h6 {
+//     &:first-of-type { margin-top: 0; }
+//   }
+//
+//   li {
+//     margin-bottom: ($small-spacing / 2);
+//   }
+// }
 
 .section-nav {
   background-color: tint($light-gray, 80%);
