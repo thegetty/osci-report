@@ -269,7 +269,6 @@ function uiSetup() {
   keyboardNav();
   offCanvasNav();
   popupSetup();
-  expanderSetup();
   gridExpander();
   lightBoxSetup();
   footnoteScroll();
