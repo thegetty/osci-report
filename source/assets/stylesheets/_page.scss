@@ -48,29 +48,10 @@ $navbar-height: 60px;
 
 .page-main-column {
   @extend .body-copy;
-  // @include flex(5);
   @include media($medium-screen-up) {
     padding-right: $base-spacing;
   }
 }
-
-// .page-sidebar-column {
-//   @include flex(2);
-//   font-family: $heading-font-family;
-//
-//   h1,
-//   h2,
-//   h3,
-//   h4,
-//   h5,
-//   h6 {
-//     &:first-of-type { margin-top: 0; }
-//   }
-//
-//   li {
-//     margin-bottom: ($small-spacing / 2);
-//   }
-// }
 
 .section-nav {
   background-color: tint($light-gray, 80%);
@@ -130,6 +111,10 @@ $navbar-height: 60px;
   h4 a {
     font-weight: 700;
   }
+}
+
+.grid-content h2:first-of-type {
+  margin-top: 0;
 }
 
 .page-main-column .video-quote {
@@ -229,7 +214,12 @@ figcaption {
   font-size: $base-font-size * 1.1;
   font-family: Karla;
   color: $dark-orange;
-  margin-top: $small-spacing * .5;
+  clear: both;
+  padding-top: $small-spacing * .5;
+}
+
+figcaption.float {
+  clear: none;
 }
 
 .inline-figure,
@@ -237,13 +227,16 @@ figcaption {
   width: 94%;
   margin-left: 3%;
   margin-right: 3%;
-  margin-bottom: $small-spacing * 1.3;
+  margin-bottom: $small-spacing * 1.5;
   overflow: auto;
 }
 
 .figure-gallery img {
   width: 30%;
   float: left;
-  margin: 0 3% $small-spacing 0;
+  margin: 0 3% 0 0;
   padding: 0;
+}
+
+.figure-gallery {
 }
