@@ -1,5 +1,5 @@
 ---
-title: Browse the Catalogues
+title: Projects at a Glance
 sort_order: 2
 layout: grid
 ---
