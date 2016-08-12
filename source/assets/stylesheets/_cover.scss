@@ -16,63 +16,90 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   @include flex-direction(column);
   @include flex-wrap(nowrap);
   @include justify-content(flex-end);
-  background-color: $medium-gray;
-  background-image: url(image_path("cover_option1.jpg"));
-  background-position: center 45%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #7ac7cb;
+  background: linear-gradient(#7ac7cb, #7ac7cb, #ffa454);
   height: 100vh;
   z-index: $base-z-index;
 }
 
 .cover-inner {
-  // @include background-image(linear-gradient($gr-start 0%, $gr-stop1 100%));
-  // background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop1 100%);
   color: #fff;
   padding: 2em 0.5em;
+  background-position: center 45%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   text-align: center;
-  // text-shadow: 3px 3px 5px $rgb-gr-stop1;
   width: 100%;
 
   @include media($medium-screen-up) {
     padding: 4em 2em;
-    // @include background-image(linear-gradient($gr-start 0%, $gr-stop2 100%));
-    // background-image: -moz-linear-gradient(transparent 0%, $rgb-gr-stop2 100%);
   }
 
   @include media($large-screen-up) {
   }
+
+  h2 {
+    margin-top: 0;
+  }
+
 }
 // scss-lint:enable VendorPrefix
 // scss-lint:enable NameFormat
 
+
 .cover-title {
-  font-family: Karla;
-  font-size: 2em;
-  font-weight: 700;
-  margin-bottom: 0;
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  font-size: 4em;
+  font-weight: 200;
+  letter-spacing: 1%;
+  margin-bottom: $small-spacing * .25;
   margin-top: 3rem;
+  .diminutive {
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 300;
+    height: 0;
+    margin-top: -.75em;
+    margin-bottom: -.75em;
+    display: block;
+  }
+  .diminutive:before {
+    content: '— '
+  }
+  .diminutive:after {
+    content: ' —'
+  }
 
   @include media($medium-screen-up) {
-    font-size: 3em;
+    font-size: 5em;
+    .diminutive {
+      font-size: 1.5rem;
+    }
   }
 
   @include media($large-screen-up) {
-    font-size: 4em;
+    font-size: 6em;
+    .diminutive {
+      font-size:2rem;
+    }
   }
 }
 
 .cover-subtitle {
-  font-family: Karla;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 1.5em;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 300;
 
   @include media($medium-screen-up) {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   @include media($large-screen-up) {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
@@ -91,15 +118,16 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 .cover-copy {
   @extend .body-copy;
   @extend .container;
-  margin-bottom: 1em;
+  margin-bottom: 5em;
   margin-top: 3em;
-
-  .button {
-    clear: both;
-    display: table;
-    font-family: $heading-font-family;
-    font-size: $base-font-size * .7;
-    margin: 2em auto;
+  h2 {
+    text-align: center;
+  }
+  ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
   }
 }
 
@@ -112,49 +140,35 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   }
 }
 
-.cover-copy-inner {
-  h2 {
-    text-align: center;
-    }
-  ul {
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0;
-  }
-}
-
 .cover-colophon {
-  background-color: $light-gray;
   font-family: $heading-font-family;
   font-weight: 400;
+  color: #cbb283;
+  a {
+    color: #cbb283;
+    text-decoration: underline;
+  }
   padding-bottom: 1.5em;
   padding-top: 1.5em;
 }
 
 .cover-colophon-inner {
-  @extend .container;
+  height: $navbar-height * 1.5;
 }
 
-// .colophon-text {
-//   @include media($large-screen-up) {
-//     float: left;
-//     margin-left: $base-spacing;
-//   }
-//
-//   p { margin-bottom: 0; }
-// }
-
 .colophon-text {
-  float: left;
-  margin-left: $base-spacing;
+  @include media($large-screen-up) {
+    float: left;
+    margin-left: $base-spacing;
+  }
 
   p { margin-bottom: 0; }
 }
 
 .colophon-logo {
   padding-top: $base-spacing;
-  width: 70px;
+  width: $navbar-height;
+  opacity: .7;
 
   @include media($large-screen-up) {
     float: right;

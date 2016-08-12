@@ -22,13 +22,11 @@ $navbar-z-index: 9999;
   top: 0;
   width: 100%;
   z-index: $navbar-z-index;
-  box-shadow: $medium-gray 2px 2px 20px;
 
   .logo {
-    top: 0;
-    left: 0;
     padding: 0;
-    height: $navbar-height;
+    margin: $navbar-height * .25;
+    height: $navbar-height * .5;
     opacity: 0.5;
   }
 
