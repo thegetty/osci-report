@@ -25,7 +25,7 @@ html { min-height: 100vh; }
   ul { @extend %default-ul; }
 
   blockquote {
-    margin: $base-spacing;
+    margin: $small-spacing;
     p { margin-bottom: 0; }
   }
 

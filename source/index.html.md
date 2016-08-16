@@ -11,7 +11,7 @@ Publishing scholarly collection catalogues is a critical part of a museum’s mi
 
 Digital publishing presents an alternative, and the Getty Foundation’s Online Scholarly Catalogue Initiative (OSCI) is helping museums make the transition from printed volumes to multimedia, web-based publications freely available to anyone with a computer, tablet, or smartphone. The Foundation launched OSCI in 2009 in partnership with the J. Paul Getty Museum and eight other institutions: the Art Institute of Chicago; the Arthur M. Sackler and Freer Gallery of Art; the Los Angeles County Museum of Art; the National Gallery of Art, Washington, D. C.; the San Francisco Museum of Modern Art; the Seattle Art Museum; Tate; and the Walker Art Center. The consortium’s goals are to create models for online catalogues that will dramatically increase access to museum collections; make available new, interdisciplinary, up-to-date research; and revolutionize how this research is conducted, presented, and utilized.
 
-## Participating Museums
+### Participating Museums
 
 - Art Institute of Chicago
 - Freer Gallery of Art and Arthur M. Sackler Gallery

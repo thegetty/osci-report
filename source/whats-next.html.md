@@ -6,7 +6,7 @@ cover: banners/tate_ratcliffe.png
 ---
 > “*This is not an end. It is the beginning. We realize that we can keep doing this*.”
 >
-> —Judy Metro, National Gallery of Art (NGA)
+> Judy Metro, National Gallery of Art (NGA)
 > {:.attribution}
 
 What’s next for the online publication of museum collection catalogues? With funding from the Getty Foundation, the IMA Lab is developing enhancements to the OSCI Toolkit, making the software easier to install and more user friendly, and creating a demonstration website to allow potential users to try out the software. Through conference presentations, workshops, and “hackathons,” the IMA Lab staff is helping to build a community of developers who will carry the OSCI Toolkit forward. Updates and innovations will be posted to the [OSCI Toolkit website](http://www.oscitoolkit.org).
