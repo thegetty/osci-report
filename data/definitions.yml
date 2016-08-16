@@ -36,14 +36,13 @@
   definition: "the quality of beinɡ easy to find via a search engine, within an application, or on a website"
 
 - id: metatags
-  definition: "snippets of text that describe the content of a Web page; they do not appear on the page itself, but only in the page's source code.
-  Microsite	an auxiliary website with independent links and addresses that is accessible from a larger, surrounding website"
+  definition: "snippets of text that describe the content of a Web page; they do not appear on the page itself, but only in the page’s source code"
 
 - id: dedicated-search
   definition: "a search field that is set up to return results from a specified, restricted domain"
 
 - id: microsite
-  definition: "definition TK"
+  definition: "an auxiliary website with independent links and addresses that is accessible from a larger, surrounding website"
 
 - id: clean-data
   definition: "information that is consistently formatted and error-free, with the same structure from object to object"
