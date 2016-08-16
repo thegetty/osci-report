@@ -12,18 +12,18 @@
 
 .popup-content {
   @include transition($base-transition);
-  background-color: tint($light-gray, 75%);
-  border: 1px solid $light-gray;
+  background-color: $light-blue;
+  // border: 1px solid $light-gray;
   border-bottom: 2.5px solid tint($action-color, 20%);
+  border-radius: $base-border-radius;
   display: inline-block;
   float: left;
   font-family: $heading-font-family;
-  font-size: 0.85rem;
+  font-size: 1rem;
   left: 0;
   margin-bottom: -30px;
   max-height: 0;
   opacity: 0;
-  padding: $small-spacing;
   pointer-events: none;
   position: relative;
   top: 0;
@@ -33,6 +33,7 @@
   &.visible {
     margin-bottom: $small-spacing;
     margin-top: $small-spacing;
+    padding: $small-spacing;
     opacity: 1;
     pointer-events: auto;
   }
@@ -41,7 +42,7 @@
 .popup-definition {
   .popup-content {
     &.visible {
-      max-height: 6em;
+      max-height: 20em;
     }
   }
 }

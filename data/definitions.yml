@@ -1,47 +1,60 @@
 ---
 - id: cms
-  definition: "definition TK"
+  definition: "a software application or set of related programs that are used to create and manage digital content, such as websites; this usually includes a front-end interface that allows users with limited expertise to add, modify, and remove content from a website without the intervention of a webmaster"
 
 - id: dams
-  definition: "definition TK"
+  definition: "computer software that enables users to upload, annotate, store, retrieve, and distribute digital media files such as photos, video, or audio"
 
 - id: information-architecture
-  definition: "definition TK"
+  definition: "the structure for a website, application, or other project, that allows users to understand where they are at any given point, and where other information they might want is in relation to their current location; the task of developing information architecture is generally shared among designers, software developers, and content experts"
 
 - id: functional-requirements-docs
-  definition: "definition TK"
+  definition: "a list of all of the technical specifications that are desired for a given project"
 
 - id: usability-studies
-  definition: "definition TK"
+  definition: "a method of product evaluation in which users are asked to complete tasks, typically while they are being observed by a researcher, to see where they encounter problems and experience confusion"
 
 - id: permanent-url
-  definition: "definition TK"
+  definition: "an address that identifies the location of a file on the Internet"
 
 - id: responsive-design
-  definition: "definition TK"
+  definition: "a flexible design approach in which the presentation of information changes based on a user's viewing device or web browser"
 
 - id: html
-  definition: "definition TK"
+  definition: "the main programming language used to create content on the World Wide Web"
 
 - id: controlled-vocabularies
-  definition: "definition TK"
+  definition: "a structured arrangement of words and phrases that organize knowledge for subsequent retrieval; controlled vocabulary schemes mandate the use of predefined, authorized terms that have been preselected by the designers of the schemes, in contrast to natural language vocabularies, which have no such restriction"
 
 - id: api
-  definition: "definition TK"
+  definition: "a set of requirements that govern how different software applications talk with one another, making it possible for one program to use information services from another"
 
 - id: seo
-  definition: "definition TK"
+  definition: "the process of maximizing the number of visitors to a particular website by ensuring that the site appears high on the list of results returned by a search engine"
 
 - id: discoverability
-  definition: "definition TK"
+  definition: "the quality of beinɡ easy to find via a search engine, within an application, or on a website"
 
 - id: metatags
-  definition: "definition TK"
+  definition: "snippets of text that describe the content of a Web page; they do not appear on the page itself, but only in the page's source code.
+  Microsite	an auxiliary website with independent links and addresses that is accessible from a larger, surrounding website"
 
 - id: dedicated-search
-  definition: "definition TK"
+  definition: "a search field that is set up to return results from a specified, restricted domain"
 
 - id: microsite
   definition: "definition TK"
+
+- id: clean-data
+  definition: "information that is consistently formatted and error-free, with the same structure from object to object"
+
+- id: collection-management-system
+  definition: "computer software that allows museums to capture and use data related to their collections; a commonly used CMS is The Museum System (TMS)"
+
+- id: drupal
+  definition: "a free, open-source content management system that is designed to be modular and highly flexible"
+
+- id: version-control
+  definition: "the deliberate management and tracking of changes to documents, publications, computer programs, websites, and other collections of information over time"
 
 ---
