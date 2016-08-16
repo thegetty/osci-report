@@ -32,7 +32,7 @@ function footnoteScroll() {
     var distance = $(jq(target)).offset().top;
 
     $("html, body").animate({
-      scrollTop: distance - 60
+      scrollTop: distance - 70
     }, 250);
 
   });
@@ -94,19 +94,36 @@ function offCanvasNav() {
   });
 }
 
-function expanderSetup() {
-  var $expanderContent  = $(".expander-content");
-  var $expanderTriggers = $(".expander-trigger");
 
-  $($expanderContent).addClass("expander--hidden");
+function gridExpander() {
+  var $gridContent  = $(".grid-content");
+  var $gridTriggers = $(".grid-trigger");
+  var $gridClosers = $(".grid-closer");
 
-  $expanderTriggers.on("click", function() {
-    var $target = $(this).parent().find(".expander-content");
-    $target.slideToggle("fast", function() {
-      $target.toggleClass("expander--hidden");
+  $($gridContent).addClass("grid--hidden");
+
+  $gridTriggers.on("click", function() {
+    var $selector = $(this).attr('id');
+    var $targetId = "#" + $selector + "-content";
+    var $target = $($targetId);
+    $target.slideToggle(800, function() {
+      $target.toggleClass("grid--hidden");
+    });
+    var $previousTarget = $(".grid-content[style='display: block;']");
+    $previousTarget.slideToggle(600, function() {
+      $previousTarget.toggleClass("grid--hidden");
+    });
+    $("html, body").animate({ scrollTop: 0 }, 600);
+  });
+
+  $gridClosers.on("click", function() {
+    var $target = $(this).parent();
+    $target.slideToggle(600, function() {
+      $target.toggleClass("grid--hidden");
     });
   });
 }
+
 
 // function searchSetup() {
 //   var $searchButton = $("#navbar-search");
@@ -134,10 +151,10 @@ function expanderSetup() {
 // }
 
 function lightBoxSetup() {
-  if ($(".inline-figure")) {
-    $figures = $(".inline-figure img");
+  if ($(".gallery-slide")) {
+    $figures = $(".gallery-slide img");
     $figures.on("click", function(e) {
-      var figs = document.querySelectorAll(".inline-figure");
+      var figs = document.querySelectorAll(".gallery-slide");
       var target = _.findIndex(figs, function(figure) {
         return figure.id == e.target.parentNode.id;
       });
@@ -151,17 +168,108 @@ function lightBoxSetup() {
 
 // make sure to provide $navbar-height as an offset value
 function stickySetup() {
-  $(".page-sidebar-column").stick_in_parent({
+  $(".page-sidebar-inner").stick_in_parent({
     offset_top: 70
+  });
+}
+
+function sidebarSetup() {
+  if ($(".section-nav")) {
+    $(".section-heading").each(function(index, section) {
+      var listItem    = document.createElement("li");
+      var sectionLink = document.createElement("a");
+      var sectionText = document.createTextNode(section.innerHTML);
+      var target      = "#" + section.id;
+
+      sectionLink.setAttribute("href", target);
+      sectionLink.setAttribute("class", "section-link");
+      sectionLink.appendChild(sectionText);
+      listItem.appendChild(sectionLink);
+
+      $(".section-nav").append(listItem);
+    });
+  }
+}
+
+function popupSetup() {
+  var $popups = $(".popup");
+  $popups.each(function(index) {
+
+    var $popup = $(this);
+
+    // Definition Popup--------------------------------------------------------
+    // ------------------------------------------------------------------------
+    if ($popup.data("definition")) {
+      var $el = $("<div>", {class: "popup-content"});
+      $el.html($popup.data("definition"));
+      $popup.append($el);
+      $popup.on("click", function() {
+        $popup.find(".popup-content").toggleClass("visible");
+      });
+
+    // Location Popup ---------------------------------------------------------
+    // ------------------------------------------------------------------------
+    } else if ($popup.data("location")) {
+      var mapLocation;
+      // Look for location that corresponds to data-location ID
+      mapLocation = _.find(geojsonFeature.features, function(loc) {
+        return loc.properties.id == $popup.data("location");
+      });
+
+      if (mapLocation == undefined) {
+        console.log("No location data for " + $popup.text());
+        $popup.removeClass("popup popup-location");
+
+      } else {
+        var $el, map, coords, label, marker;
+        $el = $("<div>", {class: "popup-content"});
+        $popup.append($el);
+
+        coords = L.latLng([ mapLocation.geometry.coordinates[1], mapLocation.geometry.coordinates[0]]);
+        map    = new PopupMap(coords, $popup.find(".popup-content")[0]).map;
+        marker = L.marker(coords).addTo(map);
+
+        marker.bindPopup(mapLocation.properties.custom_name);
+        $popup.on("click", function() {
+          if (!$popup.find(".popup-content").hasClass("visible")) {
+            map.setView(coords, 6);
+            $popup.find(".popup-content").addClass("visible");
+            window.setTimeout(function() { map.invalidateSize(); }, 300);
+          }
+        });
+      }
+
+    // Image Popup ------------------------------------------------------------
+    // ------------------------------------------------------------------------
+    } else if ($popup.data("pic")) {
+      var picData = JSON.parse($popup.data("pic"));
+      var $el     = $("<figure>", {class: "popup-content"});
+      var $img    = $("<img>", {src: "/publications/romanmosaics/assets/images/pics/" + picData.file });
+      var $figcap = $("<figcaption>");
+
+      $figcap.html(
+        "<a href='" + picData.url + "' target='blank'>" +
+        picData.title + "</a>. " +
+        picData.source_credit
+      );
+      $el.append($img);
+      $el.append($figcap);
+      $popup.append($el);
+      $popup.on("click", function() {
+        $popup.find(".popup-content").toggleClass("visible");
+      });
+    }
   });
 }
 
 // Use this function as "export"
 // Calls all other functions defined here inside of this one
 function uiSetup() {
+  sidebarSetup();
   keyboardNav();
   offCanvasNav();
-  expanderSetup();
+  popupSetup();
+  gridExpander();
   lightBoxSetup();
   footnoteScroll();
   anchorScroll(window.location.hash);

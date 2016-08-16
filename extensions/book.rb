@@ -74,8 +74,8 @@ module Book
     # @return +nil+
     def generate_chapters!(resources)
       contents = resources.find_all { |p| p.data.sort_order }
-      contents.sort_by { |p| p.data.sort_order }
       contents.each do |p|
+
         source, path, metadata = p.source_file, p.destination_path, p.metadata
         chapter = Book::Chapter.new(@app.sitemap, path, source, self)
 
@@ -86,6 +86,11 @@ module Book
         resources.push chapter
         @chapters.push chapter
       end
+
+      # Keep chapters from duplicating themselves endlessly on each livereload
+      # TODO: find out what causes this behavior and remove this workaround
+      @chapters.uniq! { |p| p.data.sort_order }
+      @chapters.sort_by! { |p| p.data.sort_order }
     end
   end
 

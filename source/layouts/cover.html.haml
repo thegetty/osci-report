@@ -1,0 +1,32 @@
+= wrap_layout :application do
+  - if current_page.data.cover
+    - image_url = image_path(current_page.data.cover)
+  .cover
+    .cover-inner
+      %h1.cover-title
+        Museum
+        %br
+        Catalogues
+        %br
+        %span.diminutive in the
+        %br
+        Digital Age
+      %h2.ion-power
+      %h2.cover-subtitle
+        A Final Report on the Getty Foundation’s
+        %br
+        Online Scholarly Catalogue Initiative
+  .cover-copy
+    .cover-copy-inner
+      = yield
+  .cover-colophon
+    .cover-colophon-inner
+      .colophon-text
+        :markdown
+          Grant report published by the Getty Foundation, and licensed under a <br />[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){:rel="license"} except where otherwise noted.
+        = link_to "Privacy Policy", "http://www.getty.edu/legal/privacy.html", :target => "blank"
+        %span &#124;
+        = link_to "Terms of Use", "http://www.getty.edu/legal/copyright.html", :target => "blank"
+      .colophon-logo
+        %a{:href => "http://www.getty.edu/foundation", :target => "_blank", :title => "The Getty" }
+          = tag :img, :src => image_path("getty_logo_cbb283.svg"), :alt => "Getty Logo"

@@ -1,0 +1,178 @@
+$gr-start: hsla(0, 0%, 0%, 0);
+$gr-stop1: hsla(0, 0%, 0%, 0.9);
+$gr-stop2: hsla(0, 0%, 0%, 0.9);
+
+$rgb-gr-stop1: rgba(0, 0, 0, 0.75);
+$rgb-gr-stop2: rgba(0, 0, 0, 0.85);
+
+// For some reason Bourbon's background-image mixin does not seem to output a
+// linear gradient compatible with Firefox, so this has to be done manually.
+// In addition, the image_path function follows a ruby naming convention since
+// it comes from Sprockets; ignore the name rule for this case.
+// scss-lint:disable VendorPrefix
+// scss-lint:disable NameFormat
+.cover {
+  @include display(flex);
+  @include flex-direction(column);
+  @include flex-wrap(nowrap);
+  @include justify-content(flex-end);
+  background-color: #7ac7cb;
+  background: linear-gradient(#7ac7cb, #7ac7cb, #ffa454);
+  height: 100vh;
+  z-index: $base-z-index;
+}
+
+.cover-inner {
+  color: #fff;
+  padding: 2em 0.5em;
+  background-position: center 45%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+
+  @include media($medium-screen-up) {
+    padding: 4em 2em;
+  }
+
+  @include media($large-screen-up) {
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+}
+// scss-lint:enable VendorPrefix
+// scss-lint:enable NameFormat
+
+
+.cover-title {
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  font-size: 4em;
+  font-weight: 200;
+  letter-spacing: 1%;
+  margin-bottom: $small-spacing * .25;
+  margin-top: 3rem;
+  .diminutive {
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 300;
+    height: 0;
+    margin-top: -.75em;
+    margin-bottom: -.75em;
+    display: block;
+  }
+  .diminutive:before {
+    content: '— '
+  }
+  .diminutive:after {
+    content: ' —'
+  }
+
+  @include media($medium-screen-up) {
+    font-size: 5em;
+    .diminutive {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include media($large-screen-up) {
+    font-size: 6em;
+    .diminutive {
+      font-size:2rem;
+    }
+  }
+}
+
+.cover-subtitle {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+
+  @include media($medium-screen-up) {
+    font-size: 1.5em;
+  }
+
+  @include media($large-screen-up) {
+    font-size: 2em;
+  }
+}
+
+.cover-author {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 30em;
+
+  @include media($medium-screen-up) {
+    font-size: 1.5em;
+    margin: 1em auto;
+  }
+}
+
+.cover-copy {
+  @extend .body-copy;
+  @extend .container;
+  margin-bottom: 5em;
+  margin-top: 3em;
+  h3 {
+    text-align: center;
+    margin-bottom: $small-spacing * .25;
+  }
+  ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+.cover-copy-inner {
+  @include media($medium-screen-up) {
+    @include span-columns(10);
+    // @include shift(1);
+
+    p + p { text-indent: 0; }
+  }
+}
+
+.cover-colophon {
+  font-family: $heading-font-family;
+  font-weight: 400;
+  color: #cbb283;
+  a {
+    color: #cbb283;
+    text-decoration: underline;
+  }
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+}
+
+.cover-colophon-inner {
+  height: $navbar-height * 1.5;
+}
+
+.colophon-text {
+  @include media($large-screen-up) {
+    float: left;
+    margin-left: $base-spacing;
+  }
+
+  p { margin-bottom: 0; }
+}
+
+.colophon-logo {
+  padding-top: $base-spacing;
+  width: $navbar-height;
+  opacity: .7;
+
+  @include media($large-screen-up) {
+    float: right;
+    margin-right: $base-spacing;
+    padding-top: 0;
+  }
+}

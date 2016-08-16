@@ -19,37 +19,30 @@ html { min-height: 100vh; }
 // Body Copy baseline styles
 // -----------------------------------------------------------------------------
 .body-copy {
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    letter-spacing: -0.5px;
-    margion-bottom: 1rem;
-    margin-top: 1em;
-  }
 
-  p, ol, ul {font-size: $base-font-size * 1.25;}
+  p, ol, ul {font-size: $base-font-size;}
   ol { @extend %default-ol; }
   ul { @extend %default-ul; }
 
   blockquote {
-    background-color: $light-gray;
-    border-radius: $base-border-radius;
-    margin: $base-spacing 0;
-    padding: $small-spacing;
-
+    margin: $small-spacing;
     p { margin-bottom: 0; }
   }
 
   @include media($medium-screen-up) {
-    p, ol, ul { font-size: $base-font-size * 1.4; }
+    p, ol, ul { font-size: $base-font-size * 1.1; }
   }
 
   @include media($large-screen-up) {
-    p, ol, ul { font-size: $base-font-size * 1.6; }
+    p, ol, ul { font-size: $base-font-size * 1.2; }
   }
 }
 
 .container {
-  @include outer-container;
+  @include display(flex);
+  @include justify-content(center);
+  margin: 0 auto;
+  max-width: 1000px;
   padding: 0 $small-spacing;
 
   @include media($large-screen-up) { padding: 0; }

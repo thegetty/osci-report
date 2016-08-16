@@ -22,5 +22,22 @@ module Book
       return false unless current_page.is_a? Book::Chapter
       current_page.next_chapter
     end
+
+    def define_term(word)
+      term = data.definitions.find { |entry| entry.id == word }
+      if term
+        # term is singular
+        definition = term.definition_short || term.definition
+      else
+        term = data.definitions.find { |entry| entry.plural == word }
+        unless term.nil?
+          definition = "Plural of the word <em>#{term.id}</em>: "
+          definition += term.definition_short || term.definition
+        end
+      end
+
+      definition unless definition.nil?
+    end
+
   end
 end

@@ -21,3 +21,5 @@ group :test do
   gem "capybara-webkit"
   gem "selenium-webdriver"
 end
+
+gem "middleman-minify-html"

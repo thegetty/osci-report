@@ -1,0 +1,185 @@
+.grid-background {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-trigger { display: block; }
+.grid--hidden { display: none; }
+
+.grid-cover {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+
+  background-position: center center;
+  background-size: cover;
+
+  height: 280px;
+  margin-top: $navbar-height;
+  padding: $small-spacing;
+
+  // @include media($medium-screen-up) { height: 250px; }
+  // @include media($large-screen-up) { height: 250px; }
+
+  .page-title {
+    color: $dark-blue;
+  }
+
+}
+
+.trigger-borders {
+  #trigger-1, #trigger-2,
+  #trigger-4, #trigger-5,
+  #trigger-7, #trigger-8 {
+    border-right: 1px solid #7ac7cb;
+  }
+
+  #trigger-1, #trigger-2, #trigger-3,
+  #trigger-4, #trigger-5, #trigger-6 {
+    border-bottom: 1px solid #7ac7cb;
+  }
+}
+
+.grid-trigger {
+  width: calc(33% - 6px);
+  height: 40vh;
+  margin-right: 1px;
+  margin-left: 1px;
+  margin-bottom: 1px;
+
+  background-position: center center;
+  float: left;
+  padding: ($small-spacing * 2) $small-spacing;
+  h3, h4 {
+    color: $dark-blue;
+  }
+  h4 {
+    font-family: "Titillium Web";
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: $small-spacing * .25;
+  }
+  h3 {
+    margin-top: 0;
+    font-family: "Titillium Web";
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    .diminutive {
+      text-transform: none;
+      font-size: 1rem;
+      font-weight: 400;
+      display: block;
+    }
+    .diminutive:before {
+      content: '— '
+    }
+    .diminutive:after {
+      content: ' —'
+    }
+    .underline {
+      display: inline-block;
+      position: relative;
+    }
+    .underline:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      height: 1em;
+      width: 100%;
+      border-bottom: 2px solid;
+      margin-top: .35em;
+    }
+  }
+}
+
+.image-trigger {
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+  position: relative;
+  width: calc(33% - 1.35rem);
+  height: 45vh;
+  margin-right: $small-spacing * .5;
+  margin-left: $small-spacing * .5;
+  margin-bottom: $small-spacing;
+  border-right: 0px solid #fff;
+  border-bottom: 0px solid #fff;
+  z-index: 0;
+  h2 {
+    color: #fff;
+    text-align: center;
+    // margin-top: $small-spacing * .25;
+    font-weight: 300;
+    font-size: 2.7em;
+    margin: 0;
+  }
+}
+
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $dark-gray;
+  opacity: .2;
+  content: "";
+  z-index: -1;
+}
+
+.grid-trigger:hover {
+  background-color: $light-blue;
+  h3 {
+    font-weight: 400;
+    .diminutive {
+      font-weight: 400;
+    }
+  }
+  .grid-overlay {
+    opacity: .1;
+  }
+}
+
+.grid-closer {
+  float: right;
+  color: $medium-gray;
+  font-size: $base-font-size * 1.75;
+  margin-left: $base-spacing;
+  font-family: "Titillium Web";
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.grid-content {
+  margin-top: $small-spacing * .5;
+  margin-bottom: $base-spacing * 2;
+  background-color: #fff;
+  border-radius: $base-border-radius;
+  padding: 0 ($base-spacing * 2.5);
+}
+
+.grid-content {
+   p.cover-image {
+    float: left;
+    width: 40%;
+    margin-right: $base-spacing;
+    margin-bottom: $small-spacing;
+  }
+  h3 {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: $small-spacing * .25;
+  }
+  h4 a {
+    font-weight: 700;
+  }
+}
+
+.grid-content h2:first-of-type {
+  margin-top: 0;
+}
