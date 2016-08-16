@@ -20,7 +20,7 @@ html { min-height: 100vh; }
 // -----------------------------------------------------------------------------
 .body-copy {
 
-  p, ol, ul {font-size: $base-font-size * 1.25;}
+  p, ol, ul {font-size: $base-font-size;}
   ol { @extend %default-ol; }
   ul { @extend %default-ul; }
 
@@ -30,11 +30,11 @@ html { min-height: 100vh; }
   }
 
   @include media($medium-screen-up) {
-    p, ol, ul { font-size: $base-font-size * 1.4; }
+    p, ol, ul { font-size: $base-font-size * 1.1; }
   }
 
   @include media($large-screen-up) {
-    p, ol, ul { font-size: $base-font-size * 1.6; }
+    p, ol, ul { font-size: $base-font-size * 1.2; }
   }
 }
 
@@ -42,7 +42,7 @@ html { min-height: 100vh; }
   @include display(flex);
   @include justify-content(center);
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1000px;
   padding: 0 $small-spacing;
 
   @include media($large-screen-up) { padding: 0; }
