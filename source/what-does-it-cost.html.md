@@ -1,5 +1,5 @@
 ---
-title: What does it cost?
+title: What Does It Cost?
 sort_order: 5
 layout: page
 cover: banners/aic_monet.png
