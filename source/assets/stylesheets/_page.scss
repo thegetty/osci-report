@@ -9,28 +9,27 @@ $navbar-height: 60px;
   @include flex-direction(column);
   @include justify-content(center);
 
-  background-color: tint($light-gray, 30%);
-  background-position: center center;
-  background-size: cover;
-  height: 200px;
-  margin-bottom: $base-spacing;
+  height: 280px;
   margin-top: $navbar-height;
   padding: $small-spacing;
 
-  @include media($medium-screen-up) { height: 300px; }
-  @include media($large-screen-up) { height: 350px; }
+  // @include media($medium-screen-up) { height: 300px; }
+  // @include media($large-screen-up) { height: 300px; }
 
 }
 
 .page-title,
 .page-author {
   text-align: center;
-  color: #fff;
+  color: $dark-blue;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-title {
-  font-size: 3.5em;
-  font-weight: 700;
+  font-size: 4.5em;
+  font-weight: 200;
   margin-bottom: 0;
 }
 
@@ -42,15 +41,17 @@ $navbar-height: 60px;
 
 // Page Content
 // -----------------------------------------------------------------------------
-.page-content {
-  @extend .container;
+.page-main-column {
+  padding: $small-spacing ($base-spacing * 2.5);
 }
 
-.page-main-column {
+.page-content {
+  @extend .container;
+  margin-bottom: 8em;
+}
+
+.page-content {
   @extend .body-copy;
-  @include media($medium-screen-up) {
-    padding-right: $base-spacing;
-  }
 }
 
 .section-nav {
@@ -70,54 +71,56 @@ $navbar-height: 60px;
   }
 }
 
-.page-main-column h3 {
+.page-content h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: $dark-blue;
+}
+
+.page-content h3 {
   margin-top: $small-spacing;
 }
 
-.page-main-column .attribution {
+.page-content .attribution {
   font-size: $base-font-size * 1.25;
   text-align: right;
   margin-right: $base-spacing;
   margin-top: $small-spacing * .5;
 }
 
-.page-main-column ul.features {
+.page-content ul.features {
   list-style-type: circle;
   font-size: $base-font-size * 1.2;
   line-height: 1.4em;
-  font-family: Karla;
+  font-family: $heading-font-family;
   padding-left: $base-spacing * 2;
   padding-right: $base-spacing;
 }
 
-.catalogue-grid {
-   p.cover-image {
-    float: left;
-    width: 40%;
-    margin-right: $base-spacing;
-    margin-bottom: $small-spacing;
-  }
-  .grid-content h3 {
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: $small-spacing * .25;
-  }
-  .grid-trigger:hover h3 {
-    -webkit-animation-duration: 0;
-    animation-duration: 0;
-    -webkit-animation-name: none;
-    animation-name: none;
-  }
-  h4 a {
-    font-weight: 700;
-  }
-}
-
-.grid-content h2:first-of-type {
+.page-content .sidebar {
+  float: right;
+  width: 37%;
+  text-align: center;
+  font-family: $heading-font-family;
+  border-top: 1px solid $orange;
+  border-bottom: 1px solid $orange;
   margin-top: 0;
+  padding-top: $small-spacing * .25;
+  h3 {
+    margin-top: $small-spacing * .25;
+    margin-bottom: $small-spacing * .25;
+    color: $orange;
+  }
+  ul.features {
+    list-style-type: none;
+    padding: 0;
+    li {
+      margin-bottom: $small-spacing * .25;
+    }
+  }
 }
 
-.page-main-column .video-quote {
+.page-content .video-quote {
   font-weight: 400;
   padding: $base-spacing;
   border-radius: $base-border-radius *2;
@@ -215,7 +218,8 @@ figcaption {
   font-family: Karla;
   color: $dark-orange;
   clear: both;
-  padding-top: $small-spacing * .5;
+  padding-top: $small-spacing * .25;
+  line-height: 1.45em;
 }
 
 figcaption.float {
@@ -239,4 +243,12 @@ figcaption.float {
 }
 
 .figure-gallery {
+}
+
+.float-figure {
+  width: 37%;
+  float: right;
+  margin-left: 3%;
+  margin-bottom: $small-spacing;
+  background-color: $light-blue;
 }

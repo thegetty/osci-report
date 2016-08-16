@@ -1,10 +1,11 @@
 = wrap_layout :application do
   - if current_page.data.cover
     - image_url = image_path(current_page.data.cover)
-  %header.grid-cover
-    %h1.page-title= current_page.data.title
-    - if current_page.data.author
-      %h3.page-author= current_page.data.author
-  %article.page-content
-    %main.page-main-column
-      = yield
+  .grid-background
+    %header.grid-cover
+      %h1.page-title= current_page.data.title
+      - if current_page.data.author
+        %h3.page-author= current_page.data.author
+    %article.page-content
+      %main.grid-main-column
+        = yield

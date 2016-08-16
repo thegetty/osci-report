@@ -7,7 +7,7 @@ layout: grid
 
 {::options parse_block_html="true" /}
 
-<div class="catalogue-grid">
+<div class="grid">
 <div class="grid-content" id="trigger-1-content">
 
 <div class="grid-closer ion-grid"></div>
@@ -191,47 +191,55 @@ The Walker Art Center’s Living Collections Catalogue was conceived as a series
 The Living Collections Catalogue design adopts a visual aesthetic for navigation and page layouts that blends the best qualities of the book, magazine, and online forms. Essays and archival nodes within a volume are editioned, while links out to the collections database provide artwork details that are updated dynamically. The project deepens and expands the online publishing platform built for the Walker’s website as a whole, including an authoring tool with sufficient options to handle a variety of text and media compositions.
 
 </div>
-
+</div>
 
 <div class="grid-nav">
-<div class="grid-trigger" id="trigger-1" style="background-image: url('../assets/images/projects/aic_visual.jpg')">
+<div class="grid-trigger image-trigger" id="trigger-1" style="background-image: url('../assets/images/projects/aic_visual.jpg')">
+<div class="grid-overlay"></div>
 
-### Art Institute of Chicago
-
-</div>
-<div class="grid-trigger" id="trigger-2" style="background-image: url('../assets/images/projects/freersackler_visual.jpg')">
-
-### Freer and Sackler Galleries
+## Art Institute of Chicago
 
 </div>
-<div class="grid-trigger" id="trigger-3" style="background-image: url('../assets/images/projects/lacma_visual.jpg')">
+<div class="grid-trigger image-trigger" id="trigger-2" style="background-image: url('../assets/images/projects/freersackler_visual.jpg')">
+<div class="grid-overlay"></div>
 
-### Los Angeles County Museum of Art
-
-</div>
-<div class="grid-trigger" id="trigger-4" style="background-image: url('../assets/images/projects/nga_visual.jpg')">
-
-### National Gallery of Art
+## Freer and Sackler Galleries
 
 </div>
-<div class="grid-trigger" id="trigger-5" style="background-image: url('../assets/images/projects/sfmoma_visual.jpg')">
+<div class="grid-trigger image-trigger" id="trigger-3" style="background-image: url('../assets/images/projects/lacma_visual.jpg')">
+<div class="grid-overlay"></div>
 
-### San Francisco Museum of Modern Art
-
-</div>
-<div class="grid-trigger" id="trigger-6" style="background-image: url('../assets/images/projects/seattle_visual.jpg')">
-
-### Seattle Art Museum
+## Los Angeles County Museum of Art
 
 </div>
-<div class="grid-trigger" id="trigger-7" style="background-image: url('../assets/images/projects/tate_visual.jpg')">
+<div class="grid-trigger image-trigger" id="trigger-4" style="background-image: url('../assets/images/projects/nga_visual.jpg')">
+<div class="grid-overlay"></div>
 
-### Tate
+## National Gallery of Art
 
 </div>
-<div class="grid-trigger" id="trigger-8" style="background-image: url('../assets/images/projects/walker_visual.jpg')">
+<div class="grid-trigger image-trigger" id="trigger-5" style="background-image: url('../assets/images/projects/sfmoma_visual.jpg')">
+<div class="grid-overlay"></div>
 
-### Walker Art Center
+## San Francisco Museum of Modern Art
+
+</div>
+<div class="grid-trigger image-trigger" id="trigger-6" style="background-image: url('../assets/images/projects/seattle_visual.jpg')">
+<div class="grid-overlay"></div>
+
+## Seattle Art Museum
+
+</div>
+<div class="grid-trigger image-trigger" id="trigger-7" style="background-image: url('../assets/images/projects/tate_visual.jpg')">
+<div class="grid-overlay"></div>
+
+## Tate
+
+</div>
+<div class="grid-trigger image-trigger" id="trigger-8" style="background-image: url('../assets/images/projects/walker_visual.jpg')">
+<div class="grid-overlay"></div>
+
+## Walker Art Center
 
 </div>
 </div>
