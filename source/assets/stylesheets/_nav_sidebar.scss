@@ -15,6 +15,7 @@ $sliding-panel-fade-screen-bg: #000;
   @include transform(translateX(-100%));
   @include transition(all 0.1s ease-in-out);
   @include link-color($sliding-panel-color);
+  font-size: 1.25em;
 
   background-color: $sliding-panel-background;
   color: $sliding-panel-color;
@@ -71,10 +72,15 @@ $sliding-panel-fade-screen-bg: #000;
 .nav-sidebar-title {
   font-size: 1.25rem;
   margin-right: 3rem;
+  font-weight: 700;
 
   @include media($medium-screen-up) {
     font-size: 1.5rem;
   }
+}
+
+.nav-sidebar-title a {
+  font-weight: 700;
 }
 
 .nav-sidebar-author {
