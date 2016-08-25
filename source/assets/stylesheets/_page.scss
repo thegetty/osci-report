@@ -103,7 +103,6 @@ $navbar-height: 60px;
 
 .page-content .attribution {
   font-size: 1em;
-  font-weight: 400;
   text-align: right;
   width: 65%;
   margin-left: 30%;
@@ -217,7 +216,7 @@ $navbar-height: 60px;
 
 .award:before {
   margin-left: -$base-spacing * .5;
-  margin-right: $small-spacing * .25;
+  margin-right: $base-spacing * .25;
   color: #FFDD00;
   font-size: 2em;
   height: 0;

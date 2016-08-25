@@ -17,16 +17,16 @@ layout: grid
   <img alt="AIC" src="/assets/images/projects/aic_th_square.jpg"/></a>
 </p>
 
-#### Art Institute of Chicago
+##### Art Institute of Chicago
 
-### [Monet: Paintings and Drawings from the Art Institute of Chicago](https://publications.artic.edu/monet/reader/paintingsanddrawings)
+### [Monet Paintings and&#160;Drawings](https://publications.artic.edu/monet/reader/paintingsanddrawings)
 
-### [Renoir: Paintings and Drawings from the Art Institute of Chicago](https://publications.artic.edu/renoir/reader/paintingsanddrawings)
+### [Renoir Paintings<br /> and&#160;Drawings](https://publications.artic.edu/renoir/reader/paintingsanddrawings)
 
 The Art Institute of Chicago’s OSCI publications focus on the museum's renowned collection of Impressionist masterpieces by Claude Monet (1840–1926) and Auguste Renoir (1841–1919). Organized as two separate catalogues, the volumes foreground conservation documentation using innovative functionality such as sliding, interactive image filters that reveal new research on how the artists changed their compositions over time. Another key feature is a customized citation tool for researchers to encourage scholarly use of the catalogues.
 
 AAM Bronze MUSE Award, Interactive Kiosks (2014) for Renoir’s True Colors which utilized components of the Renoir OSCI catalogue
-{:.award}
+{:.award .ion-ribbon-b}
 
 </div>
 <div class="grid-content" id="trigger-2-content">
@@ -38,14 +38,14 @@ AAM Bronze MUSE Award, Interactive Kiosks (2014) for Renoir’s True Colors whic
   <img alt="Freer Sackler" src="/assets/images/projects/freersackler_th_square.jpg"/></a>
 </p>
 
-#### Freer Gallery of Art and Arthur M. Sackler Gallery
+##### Freer Gallery of Art and Arthur M. Sackler Gallery
 
 ### [The World of the Japanese Illustrated Book](http://pulverer.si.edu/)
 
 The Freer/Sackler catalogue builds on the recently acquired Gerhard Pulverer Collection of Japanese illustrated books, one of the most important collections of these distinctive hand-made works of art. The publication focuses on artist Katsushika Hokusai (1760–1849), whose unique style had a marked influence on European and American modern artists. The catalogue’s special features include a “digital study room” that allows readers to save their annotations, notes, searches, and favorites in their own password protected part of the site. Users can search the catalogue contents in either Roman or Kanji script, and a clickable timeline lets readers see at a glance how many books in the collection were published in any given year.
 
 Bronze “Telly” Award (2015) for the catalogue’s Ukiyo-e technique video
-{:.award}
+{:.award .ion-ribbon-b}
 
 </div>
 <div class="grid-content" id="trigger-3-content">
@@ -57,7 +57,7 @@ Bronze “Telly” Award (2015) for the catalogue’s Ukiyo-e technique video
   <img alt="LACMA" src="/assets/images/projects/lacma_th_square.jpg"/></a>
 </p>
 
-#### Los Angeles County Museum of Art
+##### Los Angeles County Museum&#160;of&#160;Art
 
 ### [Southeast Asian Art at LACMA](http://seasian.catalog.lacma.org/)
 
@@ -73,14 +73,14 @@ Detailed object entries and new interpretive essays form the centerpiece of LACM
   <img alt="NGA" src="/assets/images/projects/nga_th_square.jpg"/></a>
 </p>
 
-#### National Gallery of Art
+##### National Gallery of Art
 
 ### [Dutch Paintings of the Seventeenth Century](http://www.nga.gov/content/ngaweb/research/online-editions/17th-century-dutch-paintings.html/)
 
 The National Gallery of Art’s (NGA) OSCI publication is an updated and expanded digital version of a Arthur Wheelock Jr.’s key reference work. Among the volumes special features are a sophisticated image comparison tool, a customized reading environment, and new multimedia content, including a series of video tours of the NGA’s Dutch paintings galleries led by Wheelock. The OSCI publication is the first release for NGA Online Editions, an ongoing effort that provides access to the most current in-depth information on the Gallery’s collections along with smart tools for citing, comparing, sharing, exporting, viewing, printing, and storing texts and images.
 
 ARLIS’ George Wittenborn Award (2015) for excellence in art publishing
-{:.award}
+{:.award .ion-ribbon-b}
 
 </div>
 <div class="grid-content" id="trigger-5-content">
@@ -92,14 +92,14 @@ ARLIS’ George Wittenborn Award (2015) for excellence in art publishing
   <img alt="SFMOMA" src="/assets/images/projects/sfmoma_th_square.jpg"/></a>
 </p>
 
-#### San Francisco Museum of Modern Art
+##### San Francisco Museum of Modern&#160;Art
 
 ### [The Rauschenberg Research Project](http://www.sfmoma.org/explore/collection/project/rauschenberg_research_project)
 
 SFMOMA’s completed OSCI publication, *The Rauschenberg Research Project*, provides access to the equivalent of 600+ print pages of new research, vibrant illustrations, and multimedia content about the celebrated American artist Robert Rauschenberg. Users can watch video clips of the artist talking about how artworks were created, view annotated images that show how Rauschenberg altered some of his most famous pieces after they were initially exhibited, and read curatorial documents that were previously difficult to access, such as detailed correspondence revealing the artist's secret “recipe” for tinting collaged fabric.
 
 AAMC Awards for Excellence, Honorable Mention in Exhibition Catalogues category (2013)
-{:.award}
+{:.award .ion-ribbon-b}
 
 </div>
 <div class="grid-content" id="trigger-6-content">
@@ -111,14 +111,14 @@ AAMC Awards for Excellence, Honorable Mention in Exhibition Catalogues category 
   <img alt="Seattle" src="/assets/images/projects/seattle_th_square.jpg"/></a>
 </p>
 
-#### Seattle Art Museum
+##### Seattle Art Museum
 
 ### [Chinese Painting & Caligraphy](http://chinesepainting.seattleartmuseum.org/OSCI/)
 
 Seattle Art Museum (SAM) houses one of the premier collections of Chinese art in North America, but prior to OSCI the material had not been studied in depth and was largely unpublished. SAM’s online catalogue contains a detailed assessment of each object, new photography, in-depth comparative research, and essays from experts. The works’ inscriptions and seals—both of which are of critical historic and artistic significance—were also fully translated, a feature that is rarely available in traditional print catalogues. The zoom function shows images in great detail, and users can also create their own collections of favorite works, as well as add comments in a discussion thread. Since many of these scrolls are not regularly opened and on public view, the online catalogue is provides unprecedented access to these fragile works.
 
 AAM Gold MUSE Award, Online Presence (2014)
-{:.award}
+{:.award .ion-ribbon-b}
 
 </div>
 <div class="grid-content" id="trigger-7-content">
@@ -130,7 +130,7 @@ AAM Gold MUSE Award, Online Presence (2014)
   <img alt="Tate" src="/assets/images/projects/tate_th_square.jpg"/></a>
 </p>
 
-#### Tate
+##### Tate
 
 ### [The Camden Town Group in Context](http://www.tate.org.uk/art/research-publications/camden-town-group)
 
@@ -146,14 +146,14 @@ Tate’s OSCI publication is on the British Post-Impressionist circle known as t
   <img alt="Walker" src="/assets/images/projects/walker_th_square.jpg"/></a>
 </p>
 
-#### Walker Art Center
+##### Walker Art Center
 
 ### [Living Collections Catalogue: Volume I](http://www.walkerart.org/collections/publications/performativity)
 
 The Walker’s *Living Collections Catalogue* is a series of thematic publications devoted to the museum’s multidisciplinary collections. The two volumes supported through OSCI are *On Performativity* and *Art Expanded, 1958–1978*. Both editions feature new essays by leading scholars that integrate video, audio, still images, and archival material into a crisp, responsive-design environment that adapts to your viewing device. Essays are versioned and citable with the assurances of a permanent address to the information referenced, while links out to entries in the collections database provide information about individual artworks that is updated dynamically.
 
 Museums and the Web, Best of the Web Award for Research/Collections Online (2015)
-{:.award}
+{:.award .ion-ribbon-b}
 
 </div>
 </div>

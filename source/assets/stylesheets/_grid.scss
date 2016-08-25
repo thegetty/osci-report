@@ -173,10 +173,16 @@
   h3 {
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: $small-spacing * .25;
+    margin-bottom: $small-spacing * .15;
   }
   h4 a {
     font-weight: 700;
+  }
+  h5 {
+    color: $medium-gray;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: $small-spacing * .15;
   }
 }
 
