@@ -125,6 +125,34 @@ function gridExpander() {
 }
 
 
+function videoExpander() {
+  $(".video").click(function() {
+    $(this).parent().animate({
+      "width": "100%",
+      "margin-right": 0,
+    }, 800);
+    $("img", this).fadeOut(800);
+    // $(this).parent().find(".video-closer").show(800);
+    $(this).parent().find(".video-closer").animate({
+      "opacity": "1",
+    }, 800);
+    var originalSource = $("iframe", this).attr("src");
+    $("iframe", this).attr("src", originalSource + "&autoplay=1");
+  });
+  $(".video-closer").click(function() {
+    $(this).parent().animate({
+      "width": "37%",
+      "margin-right": "1.35em",
+    }, 800);
+    $(this).parent().find("img").fadeIn(800);
+    $(this).animate({
+      "opacity": "0",
+    }, 800);
+    var originalSource = $(this).parent().find("iframe").attr("src").replace("&autoplay=1","");
+    $(this).parent().find("iframe").attr("src", originalSource);
+  });
+}
+
 // function searchSetup() {
 //   var $searchButton = $("#navbar-search");
 //   var $searchCloseButton = $("#search-close");
@@ -270,6 +298,7 @@ function uiSetup() {
   offCanvasNav();
   popupSetup();
   gridExpander();
+  videoExpander();
   lightBoxSetup();
   footnoteScroll();
   anchorScroll(window.location.hash);

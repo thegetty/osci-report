@@ -132,6 +132,7 @@ $navbar-height: 60px;
   float: right;
   width: 37%;
   text-align: center;
+  position: relative;
   font-family: $heading-font-family;
   border-top: 1px solid $orange;
   border-bottom: 1px solid $orange;
@@ -155,49 +156,43 @@ $navbar-height: 60px;
     text-align: center;
     line-height: inherit;
     width: 100%;
-    margin: ($small-spacing * 1) 0 ($small-spacing * .5);
+    margin: ($small-spacing * .5) 0 ($small-spacing * .5);
   }
   .attribution:before {
     content: "";
   }
-}
-
-.page-content .video-quote {
-  font-weight: 400;
-  padding: $base-spacing;
-  border-radius: $base-border-radius *2;
-  background-color: $dark-gray;
-  font-family: $heading-font-family;
-  color: #fff;
-  line-height: $base-line-height * 1.1;
-}
-
-.video {
-	width: 50%;
-	padding-bottom: 28.125%;
-	position: relative;
-  float: right;
-  margin-left: $small-spacing;
-  margin-bottom: $base-spacing;
-  -webkit-transition: width 2s ease, padding-bottom 2s ease;
-  -moz-transition: width 2s ease, padding-bottom 2s ease;
-  -o-transition: width 2s ease, padding-bottom 2s ease;
-  transition: width 2s ease, padding-bottom 2s ease;
-}
-
-.video-quote:hover {
-	 color: $medium-gray;
   .video {
-  	width: 100%;
-  	padding-bottom: 56.25%;
+    width: 90%;
+    padding-bottom: 50.625%;
+  	position: relative;
+    margin: ($small-spacing * .5) auto 0;
+    background-color: $medium-gray;
   }
-}
+  .video-closer {
+    width: 8%;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    font-size: 1.5em;
+    line-height: 1.8em;
+    color: $dark-orange;
+    opacity: 0;
+  }
+  .video > iframe {
+  	position: absolute;
+  	top: 0; bottom: 0; left: 0; right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
 
-.video > iframe {
-	position: absolute;
-	top: 0; bottom: 0; left: 0; right: 0;
-  width: 100%;
-  height: 100%;
+  .video > img {
+  	position: absolute;
+  	top: 0; bottom: 0; left: 0; right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 }
 
 .download {
