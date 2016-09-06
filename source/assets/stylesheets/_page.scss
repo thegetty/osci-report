@@ -55,7 +55,7 @@ $navbar-height: 60px;
 }
 
 .page-content {
-  blockquote:first-of-type,
+  // blockquote:first-of-type,
   h3:first-of-type {
     margin-top: 0px;
   }
@@ -128,26 +128,37 @@ $navbar-height: 60px;
   // padding-right: $base-spacing;
 }
 
-.page-content .sidebar {
+.page-content .pull-quote {
   float: right;
   width: 37%;
   text-align: center;
   font-family: $heading-font-family;
   border-top: 1px solid $orange;
   border-bottom: 1px solid $orange;
-  margin-top: 0;
+  margin-top: $small-spacing * .5;
   padding-top: $small-spacing * .25;
   h3 {
     margin-top: $small-spacing * .25;
     margin-bottom: $small-spacing * .25;
     color: $orange;
+    line-height: 1.5em;
   }
   ul.features {
+    color: $dark-gray;
     list-style-type: none;
     padding: 0;
     li {
-      margin-bottom: $small-spacing * .25;
+      margin-bottom: $small-spacing * .5;
     }
+  }
+  .attribution {
+    text-align: center;
+    line-height: inherit;
+    width: 100%;
+    margin: ($small-spacing * 1) 0 ($small-spacing * .5);
+  }
+  .attribution:before {
+    content: "";
   }
 }
 
@@ -157,7 +168,7 @@ $navbar-height: 60px;
   border-radius: $base-border-radius *2;
   background-color: $dark-gray;
   font-family: $heading-font-family;
-  color: $light-blue;
+  color: #fff;
   line-height: $base-line-height * 1.1;
 }
 
@@ -191,18 +202,20 @@ $navbar-height: 60px;
 
 .download {
   float: right;
-  margin: 0 0 0 $small-spacing;
+  margin: 0 $small-spacing;
+  min-width: 37%;
   padding: $small-spacing * .75;
   border: 2px solid $orange;
   border-radius: $base-border-radius * 2;
   font-family: $heading-font-family;
   font-weight: 600;
+  text-align: center;
   a {
-    color: $dark-orange;
+    color: $orange;
     font-weight: 600;
   }
   a:hover {
-    color: $orange;
+    color: $dark-orange;
   }
   ::before {
     margin-right: $small-spacing * .25;
@@ -286,5 +299,4 @@ figcaption.float {
   float: right;
   margin-left: 3%;
   margin-bottom: $small-spacing;
-  background-color: $light-blue;
 }
