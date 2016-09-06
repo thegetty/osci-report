@@ -33,12 +33,12 @@
   #trigger-1, #trigger-2,
   #trigger-4, #trigger-5,
   #trigger-7, #trigger-8 {
-    border-right: 1px solid #7ac7cb;
+    border-right: 1px solid $blue;
   }
 
   #trigger-1, #trigger-2, #trigger-3,
   #trigger-4, #trigger-5, #trigger-6 {
-    border-bottom: 1px solid #7ac7cb;
+    border-bottom: 1px solid $blue;
   }
 }
 
@@ -133,7 +133,7 @@
 }
 
 .grid-trigger:hover {
-  background-color: $light-blue;
+  background-color: $light-beige;
   h3 {
     font-weight: 400;
     .diminutive {
@@ -144,6 +144,20 @@
     opacity: .1;
   }
 }
+
+.grid-trigger:hover {
+  background-color: $light-beige;
+  h3 {
+    font-weight: 400;
+    .diminutive {
+      font-weight: 400;
+    }
+  }
+  .grid-overlay {
+    opacity: .1;
+  }
+}
+
 
 .grid-closer {
   float: right;

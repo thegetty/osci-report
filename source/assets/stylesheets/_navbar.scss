@@ -1,6 +1,5 @@
-$navbar-bg-color: tint($blue, 5%);
+$navbar-bg-color: $blue;
 $navbar-text-color: #fff;
-$navbar-border: solid 1px tint($navbar-bg-color, 15%);
 $navbar-height: 60px;
 $navbar-icon-size: 24px;
 $navbar-z-index: 9999;

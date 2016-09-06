@@ -16,8 +16,8 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   @include flex-direction(column);
   @include flex-wrap(nowrap);
   @include justify-content(flex-end);
-  background-color: #7ac7cb;
-  background: linear-gradient(#7ac7cb, #7ac7cb, #ffa454);
+  background-color: $blue;
+  background: linear-gradient($blue, $blue, $light-orange);
   height: 100vh;
   z-index: $base-z-index;
 }
@@ -143,9 +143,9 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 .cover-colophon {
   font-family: $heading-font-family;
   font-weight: 400;
-  color: #cbb283;
+  color: $beige;
   a {
-    color: #cbb283;
+    color: $beige;
     text-decoration: underline;
   }
   padding-bottom: 1.5em;

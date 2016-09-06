@@ -63,7 +63,7 @@ $navbar-height: 60px;
 
 
 .section-nav {
-  background-color: tint($light-gray, 80%);
+  background-color: $light-gray;
   border-left: solid 2px $action-color;
   font-size: 0.85em;
   margin-top: $small-spacing / 2;
