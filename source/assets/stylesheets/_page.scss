@@ -199,22 +199,11 @@ $navbar-height: 60px;
   float: right;
   margin: 0 $small-spacing;
   min-width: 37%;
-  padding: $small-spacing * .75;
-  border: 2px solid $orange;
-  border-radius: $base-border-radius * 2;
-  font-family: $heading-font-family;
-  font-weight: 600;
   text-align: center;
-  a {
-    color: $orange;
-    font-weight: 600;
-  }
-  a:hover {
-    color: $dark-orange;
-  }
-  ::before {
-    margin-right: $small-spacing * .25;
-  }
+}
+
+.download::before {
+  margin-right: $small-spacing * .25;
 }
 
 .award {

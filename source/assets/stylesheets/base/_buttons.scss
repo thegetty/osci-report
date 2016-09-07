@@ -1,18 +1,19 @@
 #{$all-buttons},
 .button {
   appearance: none;
-  background-color: $action-color;
+  background-color: $orange;
   border: 0;
-  border-radius: $base-border-radius;
+  border-radius: $base-border-radius * 2;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
+  font-family: $heading-font-family;
+  font-weight: 600;
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: $small-spacing;
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;
@@ -21,7 +22,7 @@
 
   &:hover,
   &:focus {
-    background-color: shade($action-color, 20%);
+    background-color: $dark-orange;
     color: #fff;
   }
 
@@ -30,7 +31,7 @@
     opacity: 0.5;
 
     &:hover {
-      background-color: $action-color;
+      background-color: $orange;
     }
   }
 }
