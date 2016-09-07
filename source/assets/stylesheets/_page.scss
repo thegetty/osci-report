@@ -101,6 +101,14 @@ $navbar-height: 60px;
 //   @include justify-content(center);
 // }
 
+.page-content blockquote {
+  background-color: tint($blue, 90%);
+  border-radius: $base-border-radius * 2;
+  margin-left: 0;
+  margin-right: 0;
+  padding: $small-spacing;
+}
+
 .page-content .attribution {
   font-size: 1em;
   text-align: right;
@@ -129,6 +137,11 @@ $navbar-height: 60px;
 }
 
 .page-content .pull-quote {
+  margin-left: $small-spacing;
+  background-color: inherit;
+  border-radius: 0px;
+  padding: 0;
+
   float: right;
   width: 37%;
   text-align: center;
@@ -201,6 +214,8 @@ $navbar-height: 60px;
   min-width: 37%;
   text-align: center;
 }
+
+
 
 .download::before {
   margin-right: $small-spacing * .25;
