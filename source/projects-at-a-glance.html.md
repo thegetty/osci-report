@@ -2,6 +2,7 @@
 title: Projects at a Glance
 sort_order: 2
 layout: grid
+type: grid
 ---
 
 
@@ -10,7 +11,7 @@ layout: grid
 <div class="grid">
 <div class="grid-content" id="trigger-1-content">
 
-<div class="grid-closer ion-grid"></div>
+<div class="grid-reset ion-grid"></div>
 
 <figure class="cover-image" markdown="0">
   <a href="http://www.artic.edu/collections/books/online-scholarly-catalogues" target="blank">
@@ -32,7 +33,7 @@ AAM Bronze MUSE Award, Interactive Kiosks (2014) for Renoir’s True Colors whic
 </div>
 <div class="grid-content" id="trigger-2-content">
 
-<div class="grid-closer ion-grid"></div>
+<div class="grid-reset ion-grid"></div>
 
 <figure class="cover-image" markdown="0">
   <a href="http://pulverer.si.edu/" target="blank">
@@ -52,7 +53,7 @@ Bronze “Telly” Award (2015) for the catalogue’s Ukiyo-e technique video
 </div>
 <div class="grid-content" id="trigger-3-content">
 
-<div class="grid-closer ion-grid"></div>
+<div class="grid-reset ion-grid"></div>
 
 <figure class="cover-image" markdown="0">
   <a href="http://seasian.catalog.lacma.org/" target="blank">
@@ -69,7 +70,7 @@ Detailed object entries and new interpretive essays form the centerpiece of LACM
 </div>
 <div class="grid-content" id="trigger-4-content">
 
-<div class="grid-closer ion-grid"></div>
+<div class="grid-reset ion-grid"></div>
 
 <figure class="cover-image" markdown="0">
   <a href="http://www.nga.gov/content/ngaweb/research/online-editions/17th-century-dutch-paintings.html/" target="blank">
@@ -89,7 +90,7 @@ ARLIS’ George Wittenborn Award (2015) for excellence in art publishing
 </div>
 <div class="grid-content" id="trigger-5-content">
 
-<div class="grid-closer ion-grid"></div>
+<div class="grid-reset ion-grid"></div>
 
 <figure class="cover-image" markdown="0">
   <a href="http://www.sfmoma.org/explore/collection/project/rauschenberg_research_project" target="blank">
@@ -109,7 +110,7 @@ AAMC Awards for Excellence, Honorable Mention in Exhibition Catalogues category 
 </div>
 <div class="grid-content" id="trigger-6-content">
 
-<div class="grid-closer ion-grid"></div>
+<div class="grid-reset ion-grid"></div>
 
 <figure class="cover-image" markdown="0">
   <a href="http://chinesepainting.seattleartmuseum.org/OSCI/" target="blank">
@@ -129,7 +130,7 @@ AAM Gold MUSE Award, Online Presence (2014)
 </div>
 <div class="grid-content" id="trigger-7-content">
 
-<div class="grid-closer ion-grid"></div>
+<div class="grid-reset ion-grid"></div>
 
 <figure class="cover-image" markdown="0">
   <a href="http://www.tate.org.uk/art/research-publications/camden-town-group" target="blank">
@@ -146,7 +147,7 @@ Tate’s OSCI publication is on the British Post-Impressionist circle known as t
 </div>
 <div class="grid-content" id="trigger-8-content">
 
-<div class="grid-closer ion-grid"></div>
+<div class="grid-reset ion-grid"></div>
 
 <figure class="cover-image" markdown="0">
   <a href="http://www.walkerart.org/collections/publications/performativity" target="blank">

@@ -15,9 +15,15 @@
         <%= link_to data.book.title.short, "/index.html", { :class => "navbar-site-title"} %>
         <% unless current_page.data.sort_order == 0 %>
           <i class="navbar-breadcrumb"></i>
-          <span class="navbar-page-title">
-            <%= current_page.data.title %>
-          </span>
+          <% if current_page.data.type == "grid" %>
+            <span class="navbar-page-title grid-reset">
+              <%= current_page.data.title %>
+            </span>
+          <% else %>
+            <span class="navbar-page-title page-reset">
+              <%= current_page.data.title %>
+            </span>
+          <% end %>
         <% end %>
       </div>
       <% if next_chapter_path %>

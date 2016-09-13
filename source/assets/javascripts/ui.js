@@ -98,7 +98,6 @@ function offCanvasNav() {
 function gridExpander() {
   var $gridContent  = $(".grid-content");
   var $gridTriggers = $(".grid-trigger");
-  var $gridClosers = $(".grid-closer");
 
   $($gridContent).addClass("grid--hidden");
 
@@ -115,15 +114,26 @@ function gridExpander() {
     });
     $("html, body").animate({ scrollTop: 0 }, 600);
   });
-
-  $gridClosers.on("click", function() {
-    var $target = $(this).parent();
-    $target.slideToggle(600, function() {
-      $target.toggleClass("grid--hidden");
-    });
-  });
 }
 
+function resetPage() {
+  $(".grid-reset").on("click", function () {
+    var $openItems = $(".grid-content:not(.grid--hidden)");
+    var $closedItems = $(".grid--hidden");
+    if ( $openItems.length == 0 ) {
+      $closedItems.slideToggle(600, function() {
+        $closedItems.toggleClass("grid--hidden");
+      });
+    }
+    $openItems.slideToggle(600, function() {
+      $openItems.toggleClass("grid--hidden");
+    });
+    $("html, body").animate({scrollTop : 0},600);
+  });
+  $(".page-reset").on("click", function () {
+    $("html, body").animate({scrollTop : 0},600);
+  });
+}
 
 function videoExpander() {
   $(".video").click(function() {
@@ -299,6 +309,7 @@ function uiSetup() {
   popupSetup();
   gridExpander();
   videoExpander();
+  resetPage();
   lightBoxSetup();
   footnoteScroll();
   anchorScroll(window.location.hash);

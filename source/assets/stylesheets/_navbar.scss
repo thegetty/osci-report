@@ -29,6 +29,12 @@ $navbar-z-index: 9999;
     opacity: 0.5;
   }
 
+  .page-reset:hover,
+  .grid-reset:hover {
+    color: transparentize($navbar-text-color, 0.65);
+    cursor: pointer;
+  }
+
 }
 
 // Top-level units
