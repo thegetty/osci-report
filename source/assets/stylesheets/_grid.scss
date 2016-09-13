@@ -166,7 +166,6 @@
   margin-left: $base-spacing;
   font-family: "Titillium Web";
   font-weight: 700;
-  font-size: 1.4em;
 }
 
 .grid-content {
@@ -178,11 +177,17 @@
 }
 
 .grid-content {
-   p.cover-image {
+  .cover-image {
     float: left;
     width: 40%;
     margin-right: $base-spacing;
-    margin-bottom: $small-spacing;
+    figcaption {
+      padding-top: 0;
+    }
+    figcaption .icon {
+      margin-left: 4px;
+      font-family: $ionicons-font-family;
+    }
   }
   h3 {
     font-weight: 400;
