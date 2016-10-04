@@ -267,6 +267,10 @@ figcaption {
   font-weight: 400;
 }
 
+figcaption ~ img {
+  margin-top: $small-spacing * .5;
+}
+
 figcaption.float {
   clear: none;
 }
