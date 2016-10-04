@@ -135,6 +135,13 @@ function resetPage() {
   });
 }
 
+function gifPlayer() {
+  $(".animate-on-hover").mouseover(function() {
+    var gifSource = $(this).attr("data-alt");
+    $(this).attr("src",gifSource);
+  });
+}
+
 function videoExpander() {
   $(".video").click(function() {
     $(this).parent().animate({
@@ -308,6 +315,7 @@ function uiSetup() {
   offCanvasNav();
   popupSetup();
   gridExpander();
+  gifPlayer();
   videoExpander();
   resetPage();
   lightBoxSetup();
