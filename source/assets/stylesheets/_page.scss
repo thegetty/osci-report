@@ -101,6 +101,13 @@ $navbar-height: 60px;
 //   @include justify-content(center);
 // }
 
+.page-content .big-list {
+  padding-left: $small-spacing;
+  li {
+   margin-bottom: $small-spacing;
+  }
+}
+
 .page-content blockquote {
   background-color: tint($blue, 90%);
   border-radius: $base-border-radius * 2;
@@ -215,6 +222,11 @@ $navbar-height: 60px;
   text-align: center;
 }
 
+.page-content .pull-quote.full-width {
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
 
 
 .download::before {
