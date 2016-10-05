@@ -3,7 +3,7 @@ $sliding-panel-width: 20rem;
 $sliding-panel-z-index: 99999;
 $sliding-panel-border-color: $dark-gray;
 // $sliding-panel-background: shade($action-color, 10%);
-$sliding-panel-background: $dark-blue;
+$sliding-panel-background: $blue;
 $sliding-panel-color: #fff;
 $sliding-panel-border: 1px solid $sliding-panel-border-color;
 $sliding-panel-color-hover: #fff;
@@ -16,6 +16,8 @@ $sliding-panel-fade-screen-bg: #000;
   @include transform(translateX(-100%));
   @include transition(all 0.1s ease-in-out);
 
+  font-weight: 400;
+  
   a {
     color: #fff;
   }
@@ -123,6 +125,10 @@ $sliding-panel-fade-screen-bg: #000;
 .nav-sidebar-footer {
   border-top: solid 1px transparentize($sliding-panel-color, 0.75);
   padding-top: $small-spacing;
+  font-size: 0.9em;
+  color: transparentize($sliding-panel-color, 0.1);
+  margin-top: $small-spacing;
+  line-height: 1.6em;
 }
 
 .nav-sidebar-downloads,
@@ -136,9 +142,9 @@ $sliding-panel-fade-screen-bg: #000;
 
 .nav-cite,
 .nav-downloads {
-  background-color: transparentize($sliding-panel-color, 0.75);
-  font-size: 0.85em;
-  padding: $small-spacing;
+  // background-color: transparentize($sliding-panel-color, 0.75);
+  font-size: 0.9em;
+  padding-left: $small-spacing;
   border-radius: $base-border-radius;
   margin-right: $base-spacing;
   ul {
@@ -155,11 +161,6 @@ $sliding-panel-fade-screen-bg: #000;
 
 .nav-sidebar .ion-social-github:before {
   margin-right: 4px;
-}
-
-.nav-sidebar-footer {
-  font-size: 0.8125em;
-  margin-top: $small-spacing;
 }
 
 .nav-logo {
