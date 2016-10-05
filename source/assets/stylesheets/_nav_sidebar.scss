@@ -147,13 +147,14 @@ $sliding-panel-fade-screen-bg: #000;
   ul:last-of-type {
     margin-bottom: 0;
   }
-  // .edition-downloads {
-  //   font-weight: 700;
-  // }
 }
 
 .nav-sidebar-downloads {
   margin-top: $small-spacing;
+}
+
+.nav-sidebar .ion-social-github:before {
+  margin-right: 4px;
 }
 
 .nav-sidebar-footer {
