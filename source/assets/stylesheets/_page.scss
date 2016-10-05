@@ -265,6 +265,12 @@ figcaption {
   padding-top: $small-spacing * .25;
   line-height: 1.5em;
   font-weight: 400;
+  a {
+    color: #c2542e;
+  }
+  a:active, a:focus, a:hover {
+    color: $dark-orange;
+  }
 }
 
 figcaption ~ img {
