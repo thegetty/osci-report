@@ -27,6 +27,18 @@
     color: $dark-blue;
   }
 
+  .header-reset {
+    text-align: center;
+    margin: 0 auto;
+    font-family: $heading-font-family;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $medium-gray;
+    span {
+      margin-left: 2px;
+    }
+  }
+
 }
 
 .trigger-borders {

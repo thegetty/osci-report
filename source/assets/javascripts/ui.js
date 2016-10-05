@@ -124,6 +124,9 @@ function resetPage() {
         $closedItems.toggleClass("grid--hidden");
       });
     }
+    $(".header-reset").html(function(i, html){
+      return html === "Expand all <span class=\"ion-arrow-expand\"></span>" ? "Collapse grid <span class=\"ion-grid\"></span>" : "Expand all <span class=\"ion-arrow-expand\"></span>";
+    });
     $openItems.slideToggle(600, function() {
       $openItems.toggleClass("grid--hidden");
     });
