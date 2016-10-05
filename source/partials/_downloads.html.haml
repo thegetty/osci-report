@@ -2,6 +2,13 @@
   %a{ :href => "javascript:void(0);", :class => "expander-trigger" }
     %h5.ion-android-download Resources
   .expander-content.nav-downloads
+    %ul.edition-downloads
+      - data.book.editions.each do |edition|
+        - if edition.name != "Online"
+          - if edition.link != nil
+            %li= link_to "#{edition.name} (#{edition.file_type} #{edition.file_size})", edition.link, :target => "blank", :class => "no-smoothState"
+          - else
+            %li= "#{edition.name} <em>— December 2016</em>"
     %ul
       - data.book.downloads.each do |download|
         %li= link_to "#{download.name} (#{download.file_type} #{download.file_size})", download.link, :target => "blank", :class => "no-smoothState"

@@ -141,6 +141,15 @@ $sliding-panel-fade-screen-bg: #000;
   padding: $small-spacing;
   border-radius: $base-border-radius;
   margin-right: $base-spacing;
+  ul {
+    margin-bottom: $small-spacing * .5;
+  }
+  ul:last-of-type {
+    margin-bottom: 0;
+  }
+  // .edition-downloads {
+  //   font-weight: 700;
+  // }
 }
 
 .nav-sidebar-downloads {

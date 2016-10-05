@@ -16,6 +16,20 @@ imprint: Getty Foundation
 rights: © 2016 J. Paul Getty Trust
 description_main:
 description_short:
+editions:
+  - name: Online
+    type: InteractiveResource
+    format: text/html
+    isbn:
+    link:
+    additional_description:
+  - name: Summary Report
+    type: Text
+    format: application/pdf
+    isbn:
+    file_size_mb:
+    link:
+    additional_description:
 downloads:
   - name: Functional Requirements
     link: ../assets/downloads/osci_functionalrequirements.pdf
@@ -33,3 +47,8 @@ downloads:
     link: ../assets/downloads/osci_userstudy_franklygreenandwebb.pdf
     file_type: PDF
     file_size: 1.7MB
+  - name: Glossary
+    link: ../assets/downloads/osci_glossary.pdf
+    file_type: PDF
+    file_size: 18KB
+repository_url: https://www.github.com/gettypubs/osci-report
