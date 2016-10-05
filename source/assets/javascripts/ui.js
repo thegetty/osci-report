@@ -94,7 +94,6 @@ function offCanvasNav() {
   });
 }
 
-
 function gridExpander() {
   var $gridContent  = $(".grid-content");
   var $gridTriggers = $(".grid-trigger");
@@ -236,6 +235,20 @@ function sidebarSetup() {
   }
 }
 
+function sidebarExpander() {
+  var $expanderContent  = $(".expander-content");
+  var $expanderTriggers = $(".expander-trigger");
+
+  $($expanderContent).addClass("expander--hidden");
+
+  $expanderTriggers.on("click", function() {
+    var $target = $(this).parent().find(".expander-content");
+    $target.slideToggle("fast", function() {
+      $target.toggleClass("expander--hidden");
+    });
+  });
+}
+
 function popupSetup() {
   var $popups = $(".popup");
   $popups.each(function(index) {
@@ -313,6 +326,7 @@ function uiSetup() {
   sidebarSetup();
   keyboardNav();
   offCanvasNav();
+  sidebarExpander();
   popupSetup();
   gridExpander();
   gifPlayer();

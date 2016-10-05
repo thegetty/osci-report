@@ -95,3 +95,10 @@ html { min-height: 100vh; }
   word-break: break-word;
   word-wrap: break-word;
 }
+
+.expander {
+  @include transition($base-duration);
+  .expander-trigger { display: block; }
+  .expander-content { margin-bottom: $base-spacing; }
+  .expander--hidden { display: none;}
+}

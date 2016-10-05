@@ -1,0 +1,7 @@
+.expander
+  %a{ :href => "javascript:void(0);", :class => "expander-trigger" }
+    %h5.ion-android-download Resources
+  .expander-content.nav-downloads
+    %ul
+      - data.book.downloads.each do |download|
+        %li= link_to "#{download.name} (#{download.file_type} #{download.file_size})", download.link, :target => "blank", :class => "no-smoothState"

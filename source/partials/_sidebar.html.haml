@@ -8,3 +8,23 @@
         - chapters.each do |chapter|
           - if chapter.data.sidebar != false
             %li= link_to chapter.title, chapter
+  .nav-sidebar-downloads
+    = partial "partials/downloads"
+  %footer.nav-sidebar-footer
+    %p
+      #{data.book.title.subtitle}
+    %p
+      Published by the #{data.book.imprint},
+      %br
+      #{data.book.publisher_location}
+      %br
+      #{data.book.rights}
+    %p
+      = link_to "About", "/about.html"
+      %span &#124;
+      = link_to "Privacy", "http://www.getty.edu/legal/privacy.html", { target: "_blank" }
+      %span &#124;
+      = link_to "Terms of Use", "http://www.getty.edu/legal/copyright.html", { target: "_blank" }
+      .nav-logo
+        %a{:href => "http://www.getty.edu/", :target => "_blank", :title => "The Getty" }
+          = tag :img, src: image_path("getty_logo.svg"), class: "nav-logo", alt: "Getty Logo"
