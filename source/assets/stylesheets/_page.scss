@@ -286,6 +286,17 @@ figcaption {
   }
 }
 
+.grid-content figcaption {
+  a {
+    color: $action-color;
+    font-weight: 400;
+  }
+  a:active, a:focus, a:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
+
 figcaption ~ img {
   margin-top: $small-spacing * .5;
 }
