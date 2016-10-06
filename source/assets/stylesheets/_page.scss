@@ -131,13 +131,21 @@ $navbar-height: 60px;
 }
 
 .page-content ul.features {
-  list-style-type: circle;
   font-size: 1.3em;
   line-height: 1.4em;
   font-family: $heading-font-family;
   margin-bottom: $small-spacing;
+  list-style: none;
+  margin-left: .4em;
+  padding-left: 1em;
+  text-indent: -1em;
   li {
-    margin-bottom: 6px;
+    margin-bottom: .4em;
+  }
+  li:before {
+    content: "●";
+    color: $medium-gray;
+    margin-right: .4em;
   }
   // padding-left: $base-spacing * 2;
   // padding-right: $base-spacing;
