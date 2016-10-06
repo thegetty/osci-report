@@ -116,6 +116,11 @@ function gridExpander() {
 }
 
 function resetPage() {
+  function incrementButtonText() {
+    $(".header-reset").html(function(i, html){
+      return html === "Expand all <span class=\"ion-arrow-expand\"></span>" ? "Collapse to grid <span class=\"ion-grid\"></span>" : "Expand all <span class=\"ion-arrow-expand\"></span>";
+    });
+  }
   $(".grid-reset").on("click", function () {
     var $openItems = $(".grid-content:not(.grid--hidden)");
     var $closedItems = $(".grid--hidden");
@@ -123,13 +128,27 @@ function resetPage() {
       $closedItems.slideToggle(600, function() {
         $closedItems.toggleClass("grid--hidden");
       });
+      incrementButtonText();
     }
-    $(".header-reset").html(function(i, html){
-      return html === "Expand all <span class=\"ion-arrow-expand\"></span>" ? "Collapse grid <span class=\"ion-grid\"></span>" : "Expand all <span class=\"ion-arrow-expand\"></span>";
-    });
-    $openItems.slideToggle(600, function() {
-      $openItems.toggleClass("grid--hidden");
-    });
+    if ( $closedItems.length == 0 ) {
+      $openItems.slideToggle(600, function() {
+        $openItems.toggleClass("grid--hidden");
+      });
+      incrementButtonText();
+    }
+    if (( $openItems.length == 1 ) && ( !$(this).hasClass("header-reset") )) {
+      console.log("this isn't the header-reset");
+      $openItems.slideToggle(600, function() {
+        $openItems.toggleClass("grid--hidden");
+      });
+    }
+    if (( $openItems.length == 1 ) && ( $(this).hasClass("header-reset") )) {
+      var $stillClosed = $(".grid--hidden");
+      $stillClosed.slideToggle(600, function() {
+        $stillClosed.removeClass("grid--hidden");
+      });
+      incrementButtonText();
+    }
     $("html, body").animate({scrollTop : 0},600);
   });
   $(".page-reset").on("click", function () {

@@ -28,17 +28,21 @@
   }
 
   .header-reset {
+    cursor: pointer;
+    display: inline-block;
     text-align: center;
     margin: 0 auto;
     font-family: $heading-font-family;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     color: $medium-gray;
     span {
       margin-left: 2px;
     }
   }
-
+  .header-reset:hover {
+    color: $dark-gray;
+  }
 }
 
 .trigger-borders {
