@@ -342,3 +342,18 @@ figcaption.float {
   margin-bottom: $small-spacing;
   clear: both;
 }
+
+.ref-number {
+  background-color: $orange;
+  color: #fff;
+  border-radius: .6em;
+  width: 1.2em;
+  height: 1.2em;
+  display: inline-block;
+  line-height: .6em;
+  // font-weight: 600;
+  text-align: center;
+  font-size: 90%;
+  padding: .25em;
+  vertical-align: super;
+}
