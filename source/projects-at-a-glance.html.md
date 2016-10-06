@@ -25,9 +25,9 @@ type: grid
 
 ### [Renoir Paintings<br /> and&#160;Drawings](https://publications.artic.edu/renoir/reader/paintingsanddrawings){:target="blank"}
 
-The Art Institute of Chicago’s OSCI publications focus on the museum's renowned collection of Impressionist masterpieces by Claude Monet (1840–1926) and Auguste Renoir (1841–1919). Organized as two separate catalogues, the volumes foreground conservation documentation using innovative functionality such as sliding, interactive image filters that reveal new research on how the artists changed their compositions over time. Another key feature is a customized citation tool for researchers to encourage scholarly use of the catalogues.
+The Art Institute of Chicago’s OSCI publications focus on the museum’s renowned collection of Impressionist masterpieces by Claude Monet (1840–1926) and Auguste Renoir (1841–1919). Organized as two separate catalogues, the volumes foreground conservation documentation using innovative functionality such as sliding, interactive image filters that reveal new research on how the artists changed their compositions over time. Another key feature is a customized citation tool for researchers to encourage scholarly use of the catalogues.
 
-AAM Bronze MUSE Award, Interactive Kiosks (2014) for Renoir’s True Colors which utilized components of the Renoir OSCI catalogue
+AAM Bronze MUSE Award, Interactive Kiosks (2014) for Renoir’s True Colors, which utilized components of the Renoir OSCI catalogue
 {:.award .ion-ribbon-b}
 
 </div>
@@ -82,7 +82,7 @@ Detailed object entries and new interpretive essays form the centerpiece of LACM
 
 ### [Dutch Paintings of the Seventeenth Century](http://www.nga.gov/content/ngaweb/research/online-editions/17th-century-dutch-paintings.html/){:target="blank"}
 
-The National Gallery of Art’s (NGA) OSCI publication is an updated and expanded digital version of a Arthur Wheelock Jr.’s key reference work. Among the volumes special features are a sophisticated image comparison tool, a customized reading environment, and new multimedia content, including a series of video tours of the NGA’s Dutch paintings galleries led by Wheelock. The OSCI publication is the first release for NGA Online Editions, an ongoing effort that provides access to the most current in-depth information on the Gallery’s collections along with smart tools for citing, comparing, sharing, exporting, viewing, printing, and storing texts and images.
+The National Gallery of Art’s (NGA) OSCI publication is an updated and expanded digital version of Arthur Wheelock Jr.’s key reference work. Among the volumes special features are a sophisticated image comparison tool, a customized reading environment, and new multimedia content, including a series of video tours of the NGA’s Dutch paintings galleries led by Wheelock. The OSCI publication is the first release for NGA Online Editions, an ongoing effort that provides access to the most current in-depth information on the Gallery’s collections along with smart tools for citing, comparing, sharing, exporting, viewing, printing, and storing texts and images.
 
 ARLIS’ George Wittenborn Award (2015) for excellence in art publishing
 {:.award .ion-ribbon-b}
@@ -102,7 +102,7 @@ ARLIS’ George Wittenborn Award (2015) for excellence in art publishing
 
 ### [The Rauschenberg Research Project](http://www.sfmoma.org/explore/collection/project/rauschenberg_research_project){:target="blank"}
 
-SFMOMA’s completed OSCI publication, *The Rauschenberg Research Project*, provides access to the equivalent of 600+ print pages of new research, vibrant illustrations, and multimedia content about the celebrated American artist Robert Rauschenberg. Users can watch video clips of the artist talking about how artworks were created, view annotated images that show how Rauschenberg altered some of his most famous pieces after they were initially exhibited, and read curatorial documents that were previously difficult to access, such as detailed correspondence revealing the artist's secret “recipe” for tinting collaged fabric.
+SFMOMA’s completed OSCI publication, *The Rauschenberg Research Project*, provides access to the equivalent of 600+ print pages of new research, vibrant illustrations, and multimedia content about the celebrated American artist Robert Rauschenberg. Users can watch video clips of the artist talking about how artworks were created, view annotated images that show how Rauschenberg altered some of his most famous pieces after they were initially exhibited, and read curatorial documents that were previously difficult to access, such as detailed correspondence revealing the artist’s secret “recipe” for tinting collaged fabric.
 
 AAMC Awards for Excellence, Honorable Mention in Exhibition Catalogues category (2013)
 {:.award .ion-ribbon-b}
@@ -122,7 +122,7 @@ AAMC Awards for Excellence, Honorable Mention in Exhibition Catalogues category 
 
 ### [Chinese Painting & Caligraphy](http://chinesepainting.seattleartmuseum.org/OSCI/){:target="blank"}
 
-Seattle Art Museum (SAM) houses one of the premier collections of Chinese art in North America, but prior to OSCI the material had not been studied in depth and was largely unpublished. SAM’s online catalogue contains a detailed assessment of each object, new photography, in-depth comparative research, and essays from experts. The works’ inscriptions and seals—both of which are of critical historic and artistic significance—were also fully translated, a feature that is rarely available in traditional print catalogues. The zoom function shows images in great detail, and users can also create their own collections of favorite works, as well as add comments in a discussion thread. Since many of these scrolls are not regularly opened and on public view, the online catalogue is provides unprecedented access to these fragile works.
+Seattle Art Museum (SAM) houses one of the premier collections of Chinese art in North America, but prior to OSCI the material had not been studied in depth and was largely unpublished. SAM’s online catalogue contains a detailed assessment of each object, new photography, in-depth comparative research, and essays from experts. The works’ inscriptions and seals—both of which are of critical historic and artistic significance—were also fully translated, a feature that is rarely available in traditional print catalogues. The zoom function shows images in great detail, and users can also create their own collections of favorite works, as well as add comments in a discussion thread. Since many of these scrolls are not regularly opened and on public view, the online catalogue provides unprecedented access to these fragile works.
 
 AAM Gold MUSE Award, Online Presence (2014)
 {:.award .ion-ribbon-b}
@@ -142,7 +142,7 @@ AAM Gold MUSE Award, Online Presence (2014)
 
 ### [The Camden Town Group in Context](http://www.tate.org.uk/art/research-publications/camden-town-group){:target="blank"}
 
-Tate’s OSCI publication is on the British Post-Impressionist circle known as the Camden Town Group, which included artists Spencer Gore, Harold Gilman, and Walter Sickert. In addition to detailed entries for individual works in their collection, Tate’s catalogue includes a wide-ranging selection of research material that elucidates the artists' relationship to their social and cultural context, as well their individual working methods. Highlights include correspondence, sketches, and two other features that would not be possible in print: historical film clips from the period and audio files of popular music hall songs related to depictions by the Camden Town Group artists.  
+Tate’s OSCI publication is on the British Post-Impressionist circle known as the Camden Town Group, which included artists Spencer Gore, Harold Gilman, and Walter Sickert. In addition to detailed entries for individual works in their collection, Tate’s catalogue includes a wide-ranging selection of research material that elucidates the artists’ relationship to their social and cultural context, as well their individual working methods. Highlights include correspondence, sketches, and two other features that would not be possible in print: historical film clips from the period and audio files of popular music hall songs related to depictions by the Camden Town Group artists.  
 
 </div>
 <div class="grid-content" id="trigger-8-content">

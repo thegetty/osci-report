@@ -1,5 +1,5 @@
 ---
-title: What's Next?
+title: What’s Next?
 sort_order: 8
 layout: page
 ---
