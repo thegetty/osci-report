@@ -20,6 +20,5 @@ All of the OSCI partners are already working on new catalogues, some of which pr
 - SFMOMA received a grant from the Andrew W. Mellon Foundation to investigate and publish five areas of the collection, working in conjunction with the artists themselves: photography in the 1970s, Bay Area high-tech design, and the work of artists Ellsworth Kelly, Vija Celmins, and Julia Scher. These investigations will be published using the tools developed during the OSCI project.
 - SAM plans to produce an online catalogue for its collection of Japanese paintings.
 - The Walker Art Center is developing content on interdisciplinary artists to add to its Living Collections Catalogue, and also plans to add new volumes for upcoming collections-based exhibitions.
-{:.big-list}
 
 While it remains to be seen how many other museums will take up one of the OSCI approaches, momentum is building for the publication of permanent collection catalogues online. In addition to the museums participating in OSCI, the Indianapolis Museum of Art and the Dallas Museum of Art have used the [OSCI Toolkit](http://www.oscitoolkit.org) to publish scholarly presentations of their collections to the Web, and other museums are examining options for online publication.

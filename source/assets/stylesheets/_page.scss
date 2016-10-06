@@ -101,13 +101,6 @@ $navbar-height: 60px;
 //   @include justify-content(center);
 // }
 
-.page-content .big-list {
-  padding-left: $small-spacing;
-  li {
-   margin-bottom: $small-spacing;
-  }
-}
-
 .page-content blockquote {
   background-color: tint($blue, 90%);
   border-radius: $base-border-radius * 2;
@@ -130,25 +123,24 @@ $navbar-height: 60px;
   content: "— ";
 }
 
-.page-content ul.features {
-  font-size: 1.3em;
-  line-height: 1.4em;
-  font-family: $heading-font-family;
-  margin-bottom: $small-spacing;
-  list-style: none;
+.page-content ul {
+  list-style-type: none;
   margin-left: .4em;
   padding-left: 1em;
   text-indent: -1em;
   li {
-    margin-bottom: .4em;
+    margin-bottom: $small-spacing * .1;
   }
   li:before {
     content: "●";
     color: $medium-gray;
     margin-right: .4em;
   }
-  // padding-left: $base-spacing * 2;
-  // padding-right: $base-spacing;
+}
+
+.page-content h4 {
+  margin-bottom: 1em;
+  color: $medium-gray;
 }
 
 .page-content .pull-quote {
@@ -172,12 +164,22 @@ $navbar-height: 60px;
     color: $orange;
     line-height: 1.5em;
   }
-  ul.features {
+  ul {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    font-family: $heading-font-family;
+    margin-bottom: $small-spacing;
+    margin-left: 0;
+    text-indent: 0;
     color: $dark-gray;
     list-style-type: none;
     padding: 0;
     li {
       margin-bottom: $small-spacing * .5;
+    }
+    li:before {
+      content: "";
+      margin-right: 0;
     }
   }
   .attribution {
