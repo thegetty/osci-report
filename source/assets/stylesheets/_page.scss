@@ -357,3 +357,21 @@ figcaption.float {
   padding: .25em;
   vertical-align: super;
 }
+
+.user-stat {
+  width: 27%;
+  float: left;
+  margin: 0 3%;
+  text-align: center;
+  color: $dark-orange;
+  h4 {
+    font-size: 5em;
+    color: $dark-orange;
+  }
+  p {
+    text-transform: uppercase;
+    font-family: $heading-font-family;
+    font-weight: 400;
+    line-height: 1.3em;
+  }
+}

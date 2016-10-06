@@ -8,6 +8,21 @@ In the past, museums could gauge the scholarly value of collection catalogues th
 
 With printed scholarly collection catalogues, publishers knew how many catalogues were sold, but there were few methods to determine how they were being used or by whom. Electronic publication offers the opportunity to better understand the audiences for scholarly art historical publications online. Analysis of Web statistics, such as number of visitors, number of pages viewed, length of time spent on the site, entry points, and the geographic distribution of the users, helps museum staff to understand the impact of their work.
 
+<div class="user-stat" markdown="0">
+  <h4>55%</h4>
+  <p>Of readers are from outside the U.S.</p>
+</div>
+
+<div class="user-stat" markdown="0">
+  <h4>15%</h4>
+  <p>Visit more than 9 times</p>
+</div>
+
+<div class="user-stat" markdown="0">
+  <h4>75%</h4>
+  <p>Don’t enter through the homepage</p>
+</div>
+
 Tate tracked over 28,000 visits to the Camden Town Group OSCI catalogue in its first year after launch. The team also received specific feedback from academic users, who have integrated the catalogue into their own research and teaching. Visit data for SFMOMA’s OSCI catalogue collected over an eleven-month period revealed that the top two pages of artwork on its entire site are both contained in the Rauschenberg Research Project. The same data also confirmed that less than five percent of their catalogue’s users visited the publication’s home page.
 
 The Art Institute of Chicago decided to track usage of its OSCI catalogues by user type. By segmenting out their users into three categories, using the domain of their Web browser—general, academic, and in-house—they were able to see that the average session visit nearly tripled when narrowing their audience from general down to identified academic users visiting from an *.edu* Web domain.
