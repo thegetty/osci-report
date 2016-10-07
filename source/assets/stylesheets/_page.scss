@@ -224,11 +224,8 @@ $navbar-height: 60px;
   }
 }
 
-.download {
-  float: right;
-  margin: 0 $small-spacing;
-  min-width: 37%;
-  text-align: center;
+.cover-copy .pull-quote {
+  border-bottom: none;
 }
 
 .cover-copy .pull-quote.full-width,
@@ -238,6 +235,12 @@ $navbar-height: 60px;
   margin-right: 3%;
 }
 
+.download {
+  float: right;
+  margin: 0 $small-spacing;
+  min-width: 37%;
+  text-align: center;
+}
 
 .download::before {
   margin-right: $small-spacing * .25;
