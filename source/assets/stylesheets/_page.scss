@@ -102,25 +102,21 @@ $navbar-height: 60px;
 // }
 
 .page-content blockquote {
-  background-color: tint($blue, 90%);
-  border-radius: $base-border-radius * 2;
+  color: shade($action-color, 10%);
   margin-left: 0;
   margin-right: 0;
-  padding: $small-spacing;
 }
 
 .page-content .attribution {
+  font-family: $heading-font-family;
+  line-height: 1.5em;
   font-size: 1em;
   text-align: right;
   width: 65%;
   margin-left: 30%;
   margin-right: 5%;
-  margin-top: 0;
+  margin-top: .2em;
   min-width: 140px;
-}
-
-.page-content .attribution:before {
-  content: "— ";
 }
 
 .page-content ul {
@@ -144,6 +140,7 @@ $navbar-height: 60px;
 }
 
 .page-content .pull-quote {
+  color: $dark-gray;
   margin-left: $small-spacing;
   background-color: inherit;
   border-radius: 0px;
