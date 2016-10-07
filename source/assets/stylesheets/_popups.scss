@@ -12,9 +12,7 @@
 
 .popup-content {
   @include transition($base-transition);
-  background-color: $light-beige;
-  // border: 1px solid $light-gray;
-  border-bottom: 2.5px solid $action-color;
+  border-bottom: 1.5px solid $action-color;
   border-radius: $base-border-radius;
   display: inline-block;
   float: left;
@@ -32,7 +30,6 @@
 
   &.visible {
     margin-bottom: $small-spacing;
-    margin-top: $small-spacing;
     padding: $small-spacing;
     opacity: 1;
     pointer-events: auto;
@@ -43,6 +40,10 @@
   .popup-content {
     &.visible {
       max-height: 20em;
+    }
+    .definition-icon {
+      color: $action-color;
+      margin-right: .5em;
     }
   }
 }

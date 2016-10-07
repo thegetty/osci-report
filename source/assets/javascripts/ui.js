@@ -281,7 +281,10 @@ function popupSetup() {
     // ------------------------------------------------------------------------
     if ($popup.data("definition")) {
       var $el = $("<div>", {class: "popup-content"});
-      $el.html($popup.data("definition"));
+      $el.html(
+        "<span class='definition-icon ion-wand'></span>" +
+        $popup.data("definition")
+      );
       $popup.append($el);
       $popup.on("click", function() {
         $popup.find(".popup-content").toggleClass("visible");
