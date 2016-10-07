@@ -110,7 +110,6 @@ $navbar-height: 60px;
 .page-content .attribution {
   font-family: $heading-font-family;
   line-height: 1.5em;
-  font-size: 1em;
   text-align: right;
   width: 65%;
   margin-left: 30%;
@@ -139,6 +138,7 @@ $navbar-height: 60px;
   color: $medium-gray;
 }
 
+.cover-copy .pull-quote,
 .page-content .pull-quote {
   color: $dark-gray;
   margin-left: $small-spacing;
@@ -180,6 +180,7 @@ $navbar-height: 60px;
     }
   }
   .attribution {
+    font-size: 1em;
     text-align: center;
     line-height: inherit;
     width: 100%;
@@ -230,6 +231,7 @@ $navbar-height: 60px;
   text-align: center;
 }
 
+.cover-copy .pull-quote.full-width,
 .page-content .pull-quote.full-width {
   width: 94%;
   margin-left: 3%;
@@ -367,6 +369,7 @@ figcaption.float {
   h4 {
     font-size: 5em;
     color: $dark-orange;
+    margin-bottom: 0;
   }
   p {
     text-transform: uppercase;
