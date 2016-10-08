@@ -262,19 +262,62 @@ $navbar-height: 60px;
 
 #skim-swim-dive {
   position: relative;
+  max-width: 600px;
+  margin: 0 auto;
   #submarine {
     position: absolute;
     width: 30%;
-    top: 1%;
-    transition: top 4s ease;
+    top: 10%;
     display: block;
-    margin-left: 50%;
+    margin-left: 60%;
+  }
+  #spotlight {
+    position: absolute;
+    width: 21%;
+    top: 10%;
+    opacity: 0;
+    display: block;
+    margin-left: 40%;
+  }
+  .depth-headings {
+    position: absolute;
+    color: #fff;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 5%;
+    h2 {
+      margin: 0;
+      color: #fff;
+      line-height: 1;
+      text-transform: none;
+      font-weight: 700;
+      font-size: 3em;
+    }
+    p {
+      font-size: $base-font-size * 1.4;
+      font-family: $heading-font-family;
+      line-height: 1.3em;
+      font-weight: 400;
+    }
+  }
+  #skim {
+    position: absolute;
+    top: 25%;
+  }
+  #swim {
+    position: absolute;
+    top: 50%;
+  }
+  #dive {
+    position: absolute;
+    top: 75%;
   }
 }
-#skim-swim-dive:hover {
-  #submarine {
-    top: 60%;
-  }
+
+#skim-swim-dive+figcaption {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 figure {

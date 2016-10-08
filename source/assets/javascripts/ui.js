@@ -163,6 +163,26 @@ function gifPlayer() {
   });
 }
 
+function submarineTracker() {
+  $("#skim-swim-dive").mousemove(function() {
+    var mousePosition = event.pageY;
+    var elementPosition = $("#skim-swim-dive").position();
+    var subHeight = $("#submarine").height();
+    var subPosition = mousePosition - elementPosition.top - subHeight/2;
+    if ( subPosition >= $("#water").height() * .5  ) {
+      var spotlightOpacity = subPosition / $("#water").height();
+    } else {
+      var spotlightOpacity = 0;
+    }
+    // var spotlightOpacity = subPosition / $("#water").height();
+    console.log( mousePosition, elementPosition.top, subPosition, subHeight, $("#water").height() );
+    if (( subPosition < $("#water").height() - subHeight ) && ( subPosition >= $("#water").height() * .1 )) {
+      $("#submarine").css( { "top": subPosition, "transition": "top 1.5s ease-in-out"} );
+      $("#spotlight").css( { "top": subPosition, "transition": "top 1.5s ease-in-out, opacity 1.5s ease-in-out", "opacity": spotlightOpacity } );
+    }
+  });
+}
+
 function videoExpander() {
   $(".video").click(function() {
     $(this).parent().animate({
@@ -355,6 +375,7 @@ function uiSetup() {
   popupSetup();
   gridExpander();
   gifPlayer();
+  submarineTracker();
   videoExpander();
   resetPage();
   lightBoxSetup();
