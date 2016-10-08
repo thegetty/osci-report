@@ -45,24 +45,18 @@
   }
 }
 
-.trigger-borders {
-  #trigger-1, #trigger-2,
-  #trigger-4, #trigger-5,
-  #trigger-7, #trigger-8 {
-    border-right: 1px solid $blue;
-  }
-
-  #trigger-1, #trigger-2, #trigger-3,
-  #trigger-4, #trigger-5, #trigger-6 {
-    border-bottom: 1px solid $blue;
-  }
+.grid-nav {
+  height: 120vh;
+  background-color: $action-color;
 }
 
+
 .grid-trigger {
-  width: calc(33% - 6px);
+  cursor: pointer;
+  background-color: #fff;
+  width: 33.26%;
   height: 40vh;
-  margin-right: 1px;
-  margin-left: 1px;
+  margin-right: .11%;
   margin-bottom: 1px;
 
   background-position: center center;
@@ -113,7 +107,26 @@
   }
 }
 
+#trigger-3, #trigger-6, #trigger-9 {
+  margin-right: 0px;
+  float: right;
+}
+
+.trigger-effect {
+  color: $action-color;
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid-trigger:hover {
+  .trigger-effect {
+    display: block;
+  }
+}
+
 .image-trigger {
+  cursor: pointer;
   @include display(flex);
   @include flex-direction(column);
   @include justify-content(center);
@@ -149,20 +162,6 @@
 }
 
 .grid-trigger:hover {
-  background-color: $light-beige;
-  h3 {
-    font-weight: 400;
-    .diminutive {
-      font-weight: 400;
-    }
-  }
-  .grid-overlay {
-    opacity: .1;
-  }
-}
-
-.grid-trigger:hover {
-  background-color: $light-beige;
   h3 {
     font-weight: 400;
     .diminutive {
