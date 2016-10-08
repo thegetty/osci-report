@@ -48,8 +48,11 @@
 .grid-nav {
   height: 120vh;
   background-color: $action-color;
+  #trigger-3, #trigger-6, #trigger-9 {
+    margin-right: 0px;
+    float: right;
+  }
 }
-
 
 .grid-trigger {
   cursor: pointer;
@@ -59,7 +62,7 @@
   margin-right: .11%;
   margin-bottom: 1px;
 
-  background-position: center center;
+  background-position: center top;
   float: left;
   padding: ($small-spacing * 2) $small-spacing;
   h3, h4 {
@@ -107,10 +110,7 @@
   }
 }
 
-#trigger-3, #trigger-6, #trigger-9 {
-  margin-right: 0px;
-  float: right;
-}
+
 
 .trigger-effect {
   color: $action-color;
@@ -131,11 +131,11 @@
   @include flex-direction(column);
   @include justify-content(center);
   position: relative;
-  width: calc(33% - 1.35rem);
+  width: calc(33% - 1em);
   height: 45vh;
-  margin-right: $small-spacing * .5;
-  margin-left: $small-spacing * .5;
-  margin-bottom: $small-spacing;
+  margin-right: .5em;
+  margin-left: .5em;
+  margin-bottom: 1em;
   border-right: 0px solid #fff;
   border-bottom: 0px solid #fff;
   z-index: 0;
@@ -169,7 +169,7 @@
     }
   }
   .grid-overlay {
-    opacity: .1;
+    opacity: .3;
   }
 }
 

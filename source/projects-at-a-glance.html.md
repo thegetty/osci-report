@@ -167,7 +167,7 @@ Museums and the Web, Best of the Web Award for Research/Collections Online (2015
 </div>
 </div>
 
-<div class="grid-nav">
+<div class="grid-nav-images">
 <div class="grid-trigger image-trigger" id="trigger-1" style="background-image: url('../assets/images/projects/aic_visual.jpg')">
 <div class="grid-overlay"></div>
 
