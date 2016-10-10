@@ -1,21 +1,18 @@
+var NAVHEIGHT = 60;
+
 // Use this to wrap selectors that contain : characters
 function jq(myid) { return myid.replace( /(:|\.|\[|\]|,)/g, "\\$1" );}
 
 function anchorScroll(href) {
-  href = typeof(href) == "string" ? href : $(this).attr("href");
-  var fromTop = 60;
+  $anchorLinks = $("a[href*='#']")
+  $anchorLinks.click(function(e) {
+    var target = $(this).attr("href");
+    var distance = $(jq(target)).offset().top;
 
-  if(href.indexOf("#") == 0) {
-    var $target = $(href);
-
-    if($target.length) {
-      $("html, body").animate({ scrollTop: $target.offset().top - fromTop });
-      if (history && "pushState" in history) {
-        history.pushState({}, document.title, window.location.pathname + href);
-        return false;
-      }
-    }
-  }
+    $("html, body").animate({
+      scrollTop: distance - NAVHEIGHT
+    }, 250);
+  })
 }
 
 // Get today's current date, using Moment JS
@@ -117,7 +114,7 @@ function gridExpander() {
     }
     if ( $openItems.length > 1 ) {
       var targetPosition = $target.position();
-      $("html, body").animate({ scrollTop: targetPosition.top }, 600);
+      $("html, body").animate({ scrollTop: targetPosition.top - NAVHEIGHT }, 600);
     }
   });
 }
@@ -131,21 +128,22 @@ function resetPage() {
   $(".grid-reset").on("click", function () {
     var $openItems = $(".grid-content:not(.grid--hidden)");
     var $closedItems = $(".grid--hidden");
+    console.log( $openItems.length, $closedItems.length );
     if ( $openItems.length == 0 ) {
       $closedItems.slideToggle(600, function() {
-        $closedItems.toggleClass("grid--hidden");
+        $closedItems.removeClass("grid--hidden");
       });
       incrementButtonText();
     }
     if ( $closedItems.length == 0 ) {
       $openItems.slideToggle(600, function() {
-        $openItems.toggleClass("grid--hidden");
+        $openItems.addClass("grid--hidden");
       });
       incrementButtonText();
     }
     if (( $openItems.length == 1 ) && ( !$(this).hasClass("header-reset") )) {
       $openItems.slideToggle(600, function() {
-        $openItems.toggleClass("grid--hidden");
+        $openItems.addClass("grid--hidden");
       });
     }
     if (( $openItems.length == 1 ) && ( $(this).hasClass("header-reset") )) {
@@ -386,7 +384,7 @@ function uiSetup() {
   resetPage();
   lightBoxSetup();
   footnoteScroll();
-  anchorScroll(window.location.hash);
+  anchorScroll();
   citationDate();
   stickySetup();
 }
