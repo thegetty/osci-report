@@ -101,17 +101,24 @@ function gridExpander() {
   $($gridContent).addClass("grid--hidden");
 
   $gridTriggers.on("click", function() {
+    var $openItems = $(".grid-content:not(.grid--hidden)");
     var $selector = $(this).attr('id');
     var $targetId = "#" + $selector + "-content";
     var $target = $($targetId);
-    $target.slideToggle(800, function() {
-      $target.toggleClass("grid--hidden");
-    });
-    var $previousTarget = $(".grid-content[style='display: block;']");
-    $previousTarget.slideToggle(600, function() {
-      $previousTarget.toggleClass("grid--hidden");
-    });
-    $("html, body").animate({ scrollTop: 0 }, 600);
+    if ( $openItems.length <= 1 ) {
+      $target.slideToggle(800, function() {
+        $target.toggleClass("grid--hidden");
+      });
+      var $previousTarget = $(".grid-content[style='display: block;']");
+      $previousTarget.slideToggle(600, function() {
+        $previousTarget.toggleClass("grid--hidden");
+      });
+      $("html, body").animate({ scrollTop: 0 }, 600);
+    }
+    if ( $openItems.length > 1 ) {
+      var targetPosition = $target.position();
+      $("html, body").animate({ scrollTop: targetPosition.top }, 600);
+    }
   });
 }
 
@@ -137,7 +144,6 @@ function resetPage() {
       incrementButtonText();
     }
     if (( $openItems.length == 1 ) && ( !$(this).hasClass("header-reset") )) {
-      console.log("this isn't the header-reset");
       $openItems.slideToggle(600, function() {
         $openItems.toggleClass("grid--hidden");
       });
