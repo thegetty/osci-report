@@ -383,6 +383,10 @@ figcaption.float {
   }
 }
 
+.figure-push {
+  margin-top: $small-spacing;
+}
+
 .float-figure {
   width: 37%;
   float: right;
