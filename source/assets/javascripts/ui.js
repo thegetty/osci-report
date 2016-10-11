@@ -1,22 +1,20 @@
+var NAVHEIGHT = 60;
+
 // Use this to wrap selectors that contain : characters
 function jq(myid) { return myid.replace( /(:|\.|\[|\]|,)/g, "\\$1" );}
 
 function anchorScroll(href) {
-  href = typeof(href) == "string" ? href : $(this).attr("href");
-  var fromTop = 60;
+  $anchorLinks = $("a[href*='#']:not(.grid-trigger-link, .grid-trigger)")
+  $anchorLinks.click(function(e) {
+    var target = $(this).attr("href");
+    var distance = $(jq(target)).offset().top;
 
-  if(href.indexOf("#") == 0) {
-    var $target = $(href);
-
-    if($target.length) {
-      $("html, body").animate({ scrollTop: $target.offset().top - fromTop });
-      if (history && "pushState" in history) {
-        history.pushState({}, document.title, window.location.pathname + href);
-        return false;
-      }
-    }
-  }
+    $("html, body").animate({
+      scrollTop: distance - NAVHEIGHT
+    }, 250);
+  })
 }
+
 
 // Get today's current date, using Moment JS
 function citationDate() {
@@ -97,33 +95,137 @@ function offCanvasNav() {
 
 function gridExpander() {
   var $gridContent  = $(".grid-content");
-  var $gridTriggers = $(".grid-trigger");
-  var $gridClosers = $(".grid-closer");
-
+  var $gridTriggers = $(".grid-trigger, .grid-trigger-link");
   $($gridContent).addClass("grid--hidden");
 
-  $gridTriggers.on("click", function() {
-    var $selector = $(this).attr('id');
-    var $targetId = "#" + $selector + "-content";
+  // open the proper gird-content if URL has hash
+  if ( location.hash ) {
+    console.log( location.hash );
+    var anchor = location.hash
+    var $targetId = anchor + "-content";
     var $target = $($targetId);
-    $target.slideToggle(800, function() {
-      $target.toggleClass("grid--hidden");
-    });
-    var $previousTarget = $(".grid-content[style='display: block;']");
-    $previousTarget.slideToggle(600, function() {
-      $previousTarget.toggleClass("grid--hidden");
-    });
-    $("html, body").animate({ scrollTop: 0 }, 600);
-  });
+    console.log( $targetId );
+    $target.toggleClass("grid--hidden");
+    $("html, body").animate({ scrollTop: 0 }, 10);
+  }
 
-  $gridClosers.on("click", function() {
-    var $target = $(this).parent();
-    $target.slideToggle(600, function() {
-      $target.toggleClass("grid--hidden");
-    });
+  $gridTriggers.on("click", function() {
+    var $openItems = $(".grid-content:not(.grid--hidden)");
+    var $selector = $(this).attr('href');
+    var $targetId = $selector + "-content";
+    var $target = $($targetId);
+    if ( $openItems.length <= 1 ) {
+      $target.slideToggle(800, function() {
+        $target.toggleClass("grid--hidden");
+      });
+      var $previousTarget = $(".grid-content[style='display: block;']");
+      $previousTarget.slideToggle(600, function() {
+        $previousTarget.toggleClass("grid--hidden");
+      });
+      $("html, body").animate({ scrollTop: 0 }, 600);
+    }
+    if ( $openItems.length > 1 ) {
+      var targetPosition = $target.position();
+      $("html, body").animate({ scrollTop: targetPosition.top - NAVHEIGHT }, 600);
+    }
   });
 }
 
+
+function resetPage() {
+  function incrementButtonText() {
+    $(".header-reset").html(function(i, html){
+      return html === "Expand all <span class=\"ion-arrow-expand\"></span>" ? "Collapse to grid <span class=\"ion-grid\"></span>" : "Expand all <span class=\"ion-arrow-expand\"></span>";
+    });
+  }
+  $(".grid-reset").on("click", function () {
+    var $openItems = $(".grid-content:not(.grid--hidden)");
+    var $closedItems = $(".grid--hidden");
+    if ( $openItems.length == 0 ) {
+      $closedItems.slideToggle(600, function() {
+        $closedItems.removeClass("grid--hidden");
+      });
+      incrementButtonText();
+    }
+    if ( $closedItems.length == 0 ) {
+      $openItems.slideToggle(600, function() {
+        $openItems.addClass("grid--hidden");
+      });
+      incrementButtonText();
+    }
+    if (( $openItems.length == 1 ) && ( !$(this).hasClass("header-reset") )) {
+      $openItems.slideToggle(600, function() {
+        $openItems.addClass("grid--hidden");
+      });
+    }
+    if (( $openItems.length == 1 ) && ( $(this).hasClass("header-reset") )) {
+      var $stillClosed = $(".grid--hidden");
+      $stillClosed.slideToggle(600, function() {
+        $stillClosed.removeClass("grid--hidden");
+      });
+      incrementButtonText();
+    }
+    $("html, body").animate({scrollTop : 0},600);
+  });
+  $(".page-reset").on("click", function () {
+    $("html, body").animate({scrollTop : 0},600);
+  });
+}
+
+function gifPlayer() {
+  $(".animate-on-hover").mouseover(function() {
+    var gifSource = $(this).attr("data-alt");
+    $(this).attr("src",gifSource);
+  });
+}
+
+function submarineTracker() {
+  $("#skim-swim-dive").mousemove(function() {
+    var mousePosition = event.pageY;
+    var elementPosition = $("#skim-swim-dive").position();
+    var subHeight = $("#submarine").height();
+    var subPosition = mousePosition - elementPosition.top - subHeight/2;
+    if ( subPosition >= $("#water").height() * .5  ) {
+      var spotlightOpacity = subPosition / $("#water").height();
+    } else {
+      var spotlightOpacity = 0;
+    }
+    // var spotlightOpacity = subPosition / $("#water").height();
+    console.log( mousePosition, elementPosition.top, subPosition, subHeight, $("#water").height() );
+    if (( subPosition < $("#water").height() - subHeight ) && ( subPosition >= $("#water").height() * .1 )) {
+      $("#submarine").css( { "top": subPosition, "transition": "top 1.5s ease-in-out"} );
+      $("#spotlight").css( { "top": subPosition, "transition": "top 1.5s ease-in-out, opacity 1.5s ease-in-out", "opacity": spotlightOpacity } );
+    }
+  });
+}
+
+function videoExpander() {
+  $(".video").click(function() {
+    $(this).parent().animate({
+      "width": "100%",
+      "margin-right": 0,
+    }, 800);
+    $("img", this).fadeOut(800);
+    // $(this).parent().find(".video-closer").show(800);
+    $(this).parent().find(".video-closer").animate({
+      "opacity": "1",
+    }, 800);
+    var originalSource = $("iframe", this).attr("src");
+    $("iframe", this).attr("src", originalSource + "&autoplay=1");
+  });
+  $(".video-closer").click(function() {
+    $(this).parent().animate({
+      "width": "37%",
+      "margin-right": "1.35em",
+    }, 800);
+    $(this).parent().find("img").fadeIn(800);
+    $(this).animate({
+      "opacity": "0",
+    }, 800);
+    var originalSource = $(this).parent().find("iframe").attr("src").replace("&autoplay=1","");
+    $(this).parent().find("iframe").attr("src", originalSource);
+  });
+}
 
 // function searchSetup() {
 //   var $searchButton = $("#navbar-search");
@@ -191,6 +293,20 @@ function sidebarSetup() {
   }
 }
 
+function sidebarExpander() {
+  var $expanderContent  = $(".expander-content");
+  var $expanderTriggers = $(".expander-trigger");
+
+  $($expanderContent).addClass("expander--hidden");
+
+  $expanderTriggers.on("click", function() {
+    var $target = $(this).parent().find(".expander-content");
+    $target.slideToggle("fast", function() {
+      $target.toggleClass("expander--hidden");
+    });
+  });
+}
+
 function popupSetup() {
   var $popups = $(".popup");
   $popups.each(function(index) {
@@ -201,7 +317,10 @@ function popupSetup() {
     // ------------------------------------------------------------------------
     if ($popup.data("definition")) {
       var $el = $("<div>", {class: "popup-content"});
-      $el.html($popup.data("definition"));
+      $el.html(
+        "<span class='definition-icon ion-wand'></span>" +
+        $popup.data("definition")
+      );
       $popup.append($el);
       $popup.on("click", function() {
         $popup.find(".popup-content").toggleClass("visible");
@@ -268,11 +387,16 @@ function uiSetup() {
   sidebarSetup();
   keyboardNav();
   offCanvasNav();
+  sidebarExpander();
   popupSetup();
   gridExpander();
+  gifPlayer();
+  submarineTracker();
+  videoExpander();
+  resetPage();
   lightBoxSetup();
   footnoteScroll();
-  anchorScroll(window.location.hash);
+  anchorScroll();
   citationDate();
   stickySetup();
 }

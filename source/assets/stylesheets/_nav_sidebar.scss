@@ -2,7 +2,8 @@ $sliding-panel-position: "left";        // "left" or "right"
 $sliding-panel-width: 20rem;
 $sliding-panel-z-index: 99999;
 $sliding-panel-border-color: $dark-gray;
-$sliding-panel-background: shade($blue, 25%);
+// $sliding-panel-background: shade($action-color, 10%);
+$sliding-panel-background: $blue;
 $sliding-panel-color: #fff;
 $sliding-panel-border: 1px solid $sliding-panel-border-color;
 $sliding-panel-color-hover: #fff;
@@ -14,8 +15,12 @@ $sliding-panel-fade-screen-bg: #000;
   @include size(100% 100%);
   @include transform(translateX(-100%));
   @include transition(all 0.1s ease-in-out);
-  @include link-color($sliding-panel-color);
-  font-size: 1.25em;
+
+  font-weight: 400;
+  
+  a {
+    color: #fff;
+  }
 
   background-color: $sliding-panel-background;
   color: $sliding-panel-color;
@@ -43,6 +48,19 @@ $sliding-panel-fade-screen-bg: #000;
     @include transform(translateX(0));
   }
 }
+
+.nav-sidebar a:hover {
+  color:  transparentize($sliding-panel-color, 0.75);
+}
+
+.nav-sidebar a.expander-trigger:hover {
+  color: transparentize($sliding-panel-color, 0.5);
+}
+
+.nav-sidebar-downloads h5:before {
+  margin-right: 8px;
+}
+
 
 .nav-sidebar-close {
   font-size: 1.5em;
@@ -72,15 +90,17 @@ $sliding-panel-fade-screen-bg: #000;
 .nav-sidebar-title {
   font-size: 1.25rem;
   margin-right: 3rem;
-  font-weight: 700;
+  margin-top: 4rem;
 
   @include media($medium-screen-up) {
     font-size: 1.5rem;
   }
 }
 
-.nav-sidebar-title a {
-  font-weight: 700;
+.nav-sidebar-subtitle {
+  font-size: 1rem;
+  margin-right: 3rem;
+  font-style: italic;
 }
 
 .nav-sidebar-author {
@@ -93,7 +113,7 @@ $sliding-panel-fade-screen-bg: #000;
 }
 
 .nav-sidebar-toc {
-  margin: $base-spacing 0;
+  margin: $small-spacing 0;
 
   li { margin-bottom: 0.5rem; }
 }
@@ -102,26 +122,50 @@ $sliding-panel-fade-screen-bg: #000;
   border-bottom: solid 1px transparentize($sliding-panel-color, 0.75);
 }
 
+.nav-sidebar-footer {
+  border-top: solid 1px transparentize($sliding-panel-color, 0.75);
+  padding-top: $small-spacing;
+  font-size: 0.9em;
+  color: transparentize($sliding-panel-color, 0.1);
+  margin-top: $small-spacing;
+  line-height: 1.6em;
+}
+
 .nav-sidebar-downloads,
 .nav-sidebar-cite {
-  h4 {
+  h5 {
     font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: $small-spacing;
   }
 }
 
 .nav-cite,
 .nav-downloads {
-  background-color: $dark-gray;
-  font-size: 0.85em;
-  padding: $small-spacing;
+  // background-color: transparentize($sliding-panel-color, 0.75);
+  font-size: 0.9em;
+  padding-left: $small-spacing;
+  border-radius: $base-border-radius;
+  margin-right: $base-spacing;
+  ul {
+    margin-bottom: $small-spacing * .5;
+  }
+  ul:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
-.nav-sidebar-footer {
-  font-size: 0.8125em;
+.nav-sidebar-downloads {
+  margin-top: $small-spacing;
+}
+
+.nav-sidebar .ion-social-github:before {
+  margin-right: 4px;
 }
 
 .nav-logo {
-  margin: 1rem auto;
+  // margin: 1rem auto;
+  margin-top: $small-spacing;
   width: 2.5rem;
 
   @include media($medium-screen-up) {

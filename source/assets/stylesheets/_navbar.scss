@@ -1,6 +1,5 @@
-$navbar-bg-color: tint($blue, 5%);
+$navbar-bg-color: $blue;
 $navbar-text-color: #fff;
-$navbar-border: solid 1px tint($navbar-bg-color, 15%);
 $navbar-height: 60px;
 $navbar-icon-size: 24px;
 $navbar-z-index: 9999;
@@ -28,6 +27,12 @@ $navbar-z-index: 9999;
     margin: $navbar-height * .25;
     height: $navbar-height * .5;
     opacity: 0.5;
+  }
+
+  .page-reset:hover,
+  .grid-reset:hover {
+    color: transparentize($navbar-text-color, 0.65);
+    cursor: pointer;
   }
 
 }

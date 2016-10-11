@@ -6,6 +6,7 @@
       %h1.page-title= current_page.data.title
       - if current_page.data.author
         %h3.page-author= current_page.data.author
+      %span.grid-reset.header-reset= "Expand all <span class='ion-arrow-expand'></span>"
     %article.page-content
       %main.grid-main-column
         = yield
