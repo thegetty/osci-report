@@ -4,7 +4,7 @@ var NAVHEIGHT = 60;
 function jq(myid) { return myid.replace( /(:|\.|\[|\]|,)/g, "\\$1" );}
 
 function anchorScroll(href) {
-  $anchorLinks = $("a[href*='#']")
+  $anchorLinks = $("a[href*='#']:not(.grid-trigger-link, .grid-trigger)")
   $anchorLinks.click(function(e) {
     var target = $(this).attr("href");
     var distance = $(jq(target)).offset().top;
@@ -14,6 +14,7 @@ function anchorScroll(href) {
     }, 250);
   })
 }
+
 
 // Get today's current date, using Moment JS
 function citationDate() {
@@ -91,16 +92,27 @@ function offCanvasNav() {
   });
 }
 
+
 function gridExpander() {
   var $gridContent  = $(".grid-content");
-  var $gridTriggers = $(".grid-trigger");
-
+  var $gridTriggers = $(".grid-trigger, .grid-trigger-link");
   $($gridContent).addClass("grid--hidden");
+
+  // open the proper gird-content if URL has hash
+  if ( location.hash ) {
+    console.log( location.hash );
+    var anchor = location.hash
+    var $targetId = anchor + "-content";
+    var $target = $($targetId);
+    console.log( $targetId );
+    $target.toggleClass("grid--hidden");
+    $("html, body").animate({ scrollTop: 0 }, 10);
+  }
 
   $gridTriggers.on("click", function() {
     var $openItems = $(".grid-content:not(.grid--hidden)");
-    var $selector = $(this).attr('id');
-    var $targetId = "#" + $selector + "-content";
+    var $selector = $(this).attr('href');
+    var $targetId = $selector + "-content";
     var $target = $($targetId);
     if ( $openItems.length <= 1 ) {
       $target.slideToggle(800, function() {
@@ -119,6 +131,7 @@ function gridExpander() {
   });
 }
 
+
 function resetPage() {
   function incrementButtonText() {
     $(".header-reset").html(function(i, html){
@@ -128,7 +141,6 @@ function resetPage() {
   $(".grid-reset").on("click", function () {
     var $openItems = $(".grid-content:not(.grid--hidden)");
     var $closedItems = $(".grid--hidden");
-    console.log( $openItems.length, $closedItems.length );
     if ( $openItems.length == 0 ) {
       $closedItems.slideToggle(600, function() {
         $closedItems.removeClass("grid--hidden");
