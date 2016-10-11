@@ -9,7 +9,7 @@ type: grid
 {::options parse_block_html="true" /}
 
 <div class="grid">
-<div class="grid-content" id="trigger-1-content">
+<div class="grid-content" id="aic-content">
 
 <div class="grid-reset ion-grid"></div>
 
@@ -31,7 +31,7 @@ AAM Bronze MUSE Award, Interactive Kiosks (2014) for Renoir’s True Colors, whi
 {:.award .ion-ribbon-b}
 
 </div>
-<div class="grid-content" id="trigger-2-content">
+<div class="grid-content" id="freersackler-content">
 
 <div class="grid-reset ion-grid"></div>
 
@@ -51,7 +51,7 @@ Bronze “Telly” Award (2015) for the catalogue’s Ukiyo-e technique video
 {:.award .ion-ribbon-b}
 
 </div>
-<div class="grid-content" id="trigger-3-content">
+<div class="grid-content" id="lacma-content">
 
 <div class="grid-reset ion-grid"></div>
 
@@ -68,7 +68,7 @@ Bronze “Telly” Award (2015) for the catalogue’s Ukiyo-e technique video
 Detailed object entries and new interpretive essays form the centerpiece of LACMA’S catalogue focused on highlights from its fine collection of Southeast Asian bronze and metal sculpture. The publication features high-resolution, zoomable images, conservation documentation, videos, maps, and photographs that visually connect the museum’s objects to their place of origin. Select objects can be studied in the round with a user-controlled 360-degree image viewer. An online citation tool makes it easy to reference the catalogue for scholarly purposes, while social media plug-ins allow general sharing on a variety of platforms.
 
 </div>
-<div class="grid-content" id="trigger-4-content">
+<div class="grid-content" id="nga-content">
 
 <div class="grid-reset ion-grid"></div>
 
@@ -88,7 +88,7 @@ ARLIS’ George Wittenborn Award (2015) for excellence in art publishing
 {:.award .ion-ribbon-b}
 
 </div>
-<div class="grid-content" id="trigger-5-content">
+<div class="grid-content" id="sfmoma-content">
 
 <div class="grid-reset ion-grid"></div>
 
@@ -108,7 +108,7 @@ AAMC Awards for Excellence, Honorable Mention in Exhibition Catalogues category 
 {:.award .ion-ribbon-b}
 
 </div>
-<div class="grid-content" id="trigger-6-content">
+<div class="grid-content" id="seattle-content">
 
 <div class="grid-reset ion-grid"></div>
 
@@ -128,7 +128,7 @@ AAM Gold MUSE Award, Online Presence (2014)
 {:.award .ion-ribbon-b}
 
 </div>
-<div class="grid-content" id="trigger-7-content">
+<div class="grid-content" id="tate-content">
 
 <div class="grid-reset ion-grid"></div>
 
@@ -142,10 +142,10 @@ AAM Gold MUSE Award, Online Presence (2014)
 
 ### [The Camden Town Group in Context](http://www.tate.org.uk/art/research-publications/camden-town-group){:target="blank"}
 
-Tate’s OSCI publication is on the British Post-Impressionist circle known as the Camden Town Group, which included artists Spencer Gore, Harold Gilman, and Walter Sickert. In addition to detailed entries for individual works in their collection, Tate’s catalogue includes a wide-ranging selection of research material that elucidates the artists’ relationship to their social and cultural context, as well their individual working methods. Highlights include correspondence, sketches, and two other features that would not be possible in print: historical film clips from the period and audio files of popular music hall songs related to depictions by the Camden Town Group artists.  
+Tate’s OSCI publication is on the British Post-Impressionist circle known as the Camden Town Group, which included artists Spencer Gore, Harold Gilman, and Walter Sickert. In addition to detailed entries for individual works in their collection, Tate’s catalogue includes a wide-ranging selection of research material that elucidates the artists’ relationship to their social and cultural context, as well their individual working methods. Highlights include correspondence, sketches, and two other features that would not be possible in print: historical film clips from the period and audio files of popular music hall songs related to depictions by the Camden Town Group artists.
 
 </div>
-<div class="grid-content" id="trigger-8-content">
+<div class="grid-content" id="walker-content">
 
 <div class="grid-reset ion-grid"></div>
 
@@ -167,53 +167,38 @@ Museums and the Web, Best of the Web Award for Research/Collections Online (2015
 </div>
 </div>
 
-<div class="grid-nav-images">
-<div class="grid-trigger image-trigger" id="trigger-1" style="background-image: url('../assets/images/projects/aic_visual.jpg')">
-<div class="grid-overlay"></div>
+<div class="grid-nav-images" markdown="0">
 
-## Art Institute of Chicago
-
-</div>
-<div class="grid-trigger image-trigger" id="trigger-2" style="background-image: url('../assets/images/projects/freersackler_visual.jpg')">
-<div class="grid-overlay"></div>
-
-## Freer and Sackler Galleries
-
-</div>
-<div class="grid-trigger image-trigger" id="trigger-3" style="background-image: url('../assets/images/projects/lacma_visual.jpg')">
-<div class="grid-overlay"></div>
-
-## Los Angeles County Museum of Art
-
-</div>
-<div class="grid-trigger image-trigger" id="trigger-4" style="background-image: url('../assets/images/projects/nga_visual.jpg')">
-<div class="grid-overlay"></div>
-
-## National Gallery of Art
-
-</div>
-<div class="grid-trigger image-trigger" id="trigger-5" style="background-image: url('../assets/images/projects/sfmoma_visual.jpg')">
-<div class="grid-overlay"></div>
-
-## San Francisco Museum of Modern Art
-
-</div>
-<div class="grid-trigger image-trigger" id="trigger-6" style="background-image: url('../assets/images/projects/seattle_visual.jpg')">
-<div class="grid-overlay"></div>
-
-## Seattle Art Museum
-
-</div>
-<div class="grid-trigger image-trigger" id="trigger-7" style="background-image: url('../assets/images/projects/tate_visual.jpg')">
-<div class="grid-overlay"></div>
-
-## Tate
-
-</div>
-<div class="grid-trigger image-trigger" id="trigger-8" style="background-image: url('../assets/images/projects/walker_visual.jpg')">
-<div class="grid-overlay"></div>
-
-## Walker Art Center
-
-</div>
+  <a href="#aic" id="trigger-aic" class="grid-trigger image-trigger" style="background-image: url('../assets/images/projects/aic_visual.jpg')">
+    <div class="grid-overlay"></div>
+    <h2>Art Institute of Chicago</h2>
+  </a>
+  <a href="#freersackler" id="trigger-freersackler" class="grid-trigger image-trigger" style="background-image: url('../assets/images/projects/freersackler_visual.jpg')">
+    <div class="grid-overlay"></div>
+    <h2>Freer and Sackler Galleries</h2>
+  </a>
+  <a href="#lacma" id="trigger-lacma" class="grid-trigger image-trigger" style="background-image: url('../assets/images/projects/lacma_visual.jpg')">
+    <div class="grid-overlay"></div>
+    <h2>Los Angeles County Museum of Art</h2>
+  </a>
+  <a href="#nga" id="trigger-nga" class="grid-trigger image-trigger" style="background-image: url('../assets/images/projects/nga_visual.jpg')">
+    <div class="grid-overlay"></div>
+    <h2>National Gallery of Art</h2>
+  </a>
+  <a href="#sfmoma" id="trigger-sfmoma" class="grid-trigger image-trigger" style="background-image: url('../assets/images/projects/sfmoma_visual.jpg')">
+    <div class="grid-overlay"></div>
+    <h2>San Francisco Museum of Modern Art</h2>
+  </a>
+  <a href="#seattle" id="trigger-seattle" class="grid-trigger image-trigger" style="background-image: url('../assets/images/projects/seattle_visual.jpg')">
+    <div class="grid-overlay"></div>
+    <h2>Seattle Art Museum</h2>
+  </a>
+  <a href="#tate" id="trigger-tate" class="grid-trigger image-trigger" style="background-image: url('../assets/images/projects/tate_visual.jpg')">
+    <div class="grid-overlay"></div>
+    <h2>Tate</h2>
+  </a>
+  <a href="#walker" id="trigger-walker" class="grid-trigger image-trigger" style="background-image: url('../assets/images/projects/walker_visual.jpg')">
+    <div class="grid-overlay"></div>
+    <h2>Walker Art Center</h2>
+  </a>
 </div>
