@@ -12,10 +12,7 @@ $navbar-height: 60px;
   height: 280px;
   margin-top: $navbar-height;
   padding: $small-spacing;
-
-  // @include media($medium-screen-up) { height: 300px; }
-  // @include media($large-screen-up) { height: 300px; }
-
+  
 }
 
 .page-title,
