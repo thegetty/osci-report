@@ -6,7 +6,7 @@ layout: page
 One of the most frequently asked questions about an online scholarly catalogue is “What does it cost?”. It is a difficult question to answer. The OSCI projects were diverse by design, and the costs to produce them varied widely depending on the size and content of the collection, the ambition of the project, and the systems already in place. Some of the participating partners needed additional staffing, others had sufficient in-house capacity. Some OSCI projects required large technology investments, others did not. In short, there is no clear-cut answer.
 
 <figure class="inline-figure" markdown="0">
-  <img src="/assets/images/costchart.png" alt="costs" />
+  <img src="/assets/images/static_costchart.png" alt="costs" />
   <figcaption>While the combinded planning and implementation costs exceeded $500,000 on average, early indications are that subsequent online catalogue costs could be reduced by 50% or more.</figcaption>
 </figure>
 
