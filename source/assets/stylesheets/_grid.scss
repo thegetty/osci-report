@@ -46,11 +46,18 @@
 }
 
 .grid-nav {
-  height: 120vh;
+  height: 99vh;
   background-color: $action-color;
   #trigger-3, #trigger-6, #trigger-9 {
     margin-right: 0px;
     float: right;
+  }
+  @include media($large-screen-up) {
+    height: 135vh;
+  }
+  @include media($small-screen) {
+    background-color: transparent;
+    height: auto;
   }
 }
 
@@ -59,10 +66,19 @@
   cursor: pointer;
   background-color: #fff;
   width: 33.26%;
-  height: 40vh;
+  height: 33vh;
   margin-right: .11%;
   margin-bottom: 1px;
-
+  @include media($large-screen-up) {
+    height: 45vh;
+  }
+  @include media($small-screen) {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    height: auto;
+    border-bottom: 1px solid $action-color;
+  }
   background-position: center top;
   float: left;
   padding: ($small-spacing * 2) $small-spacing;
@@ -132,21 +148,39 @@
   @include flex-direction(column);
   @include justify-content(center);
   position: relative;
-  width: calc(33% - 1em);
-  height: 45vh;
-  margin-right: .5em;
-  margin-left: .5em;
-  margin-bottom: 1em;
+  width: calc(33% - .5em);
+  height: 35vh;
+  margin-right: .25em;
+  margin-left: .25em;
+  margin-bottom: .5em;
+  @include media($large-screen-up) {
+    width: calc(33% - 1em);
+    height: 45vh;
+    margin-right: .5em;
+    margin-left: .5em;
+    margin-bottom: 1em;
+    h2 {
+      font-size: 2.7em;
+    }
+  }
+  @include media($small-screen) {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    height: auto;
+  }
   border-right: 0px solid #fff;
   border-bottom: 0px solid #fff;
   z-index: 0;
   h2 {
     color: #fff;
     text-align: center;
-    // margin-top: $small-spacing * .25;
     font-weight: 300;
-    font-size: 2.7em;
+    font-size: 2.3em;
     margin: 0;
+    @include media($large-screen-up) {
+      font-size: 2.7em;
+    }
   }
 }
 
