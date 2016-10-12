@@ -53,6 +53,9 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   text-transform: uppercase;
   line-height: 1.1em;
   font-size: 4em;
+  @include media($small-screen) {
+    font-size: 3.3em;
+  }
   font-weight: 200;
   letter-spacing: 1%;
   margin-bottom: $small-spacing * .25;

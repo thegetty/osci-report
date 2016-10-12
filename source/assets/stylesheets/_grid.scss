@@ -39,10 +39,14 @@
     span {
       margin-left: 2px;
     }
+    @include media($small-screen) {
+      margin-top: .5em;
+    }
   }
   .header-reset:hover {
     color: $dark-gray;
   }
+
 }
 
 .grid-nav {
