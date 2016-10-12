@@ -73,6 +73,10 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
     content: ' —'
   }
 
+  @include media($portrait) {
+    margin-top: 9rem;
+  }
+
   @include media($medium-screen-up) {
     font-size: 5em;
     .diminutive {
@@ -132,11 +136,12 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 }
 
 .cover-copy-inner {
-  @include media($medium-screen-up) {
-    @include span-columns(10);
-    // @include shift(1);
-
-    p + p { text-indent: 0; }
+  padding: 0 $base-spacing;
+  @include media($large-screen-up) {
+    padding: 0 ($base-spacing * 2.5);
+  }
+  @include media($small-screen) {
+    padding: 0;
   }
 }
 
@@ -154,25 +159,33 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 
 .cover-colophon-inner {
   height: $navbar-height * 1.5;
+  margin-bottom: $base-spacing;
 }
 
 .colophon-text {
-  @include media($large-screen-up) {
-    float: left;
-    margin-left: $base-spacing;
-  }
-
+  float: left;
+  margin-left: $base-spacing;
   p { margin-bottom: 0; }
+  max-width: 460px;
+  @include media($small-screen) {
+    float: none;
+    text-align: center;
+    margin-left: $small-spacing;
+    margin-right: $small-spacing;
+    line-height: 1.7em;
+  }
 }
 
 .colophon-logo {
   padding-top: $base-spacing;
   width: $navbar-height;
   opacity: .7;
-
-  @include media($large-screen-up) {
-    float: right;
-    margin-right: $base-spacing;
-    padding-top: 0;
+  float: right;
+  margin: .5em $base-spacing 0;
+  padding-top: 0;
+  @include media($small-screen) {
+    float: none;
+    text-align: center;
+    margin: $small-spacing auto $base-spacing;
   }
 }

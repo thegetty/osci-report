@@ -42,7 +42,13 @@ $navbar-height: 60px;
 // Page Content
 // -----------------------------------------------------------------------------
 .page-main-column {
-  padding: 0 ($base-spacing * 2.5);
+  padding: 0 $base-spacing;
+  @include media($large-screen-up) {
+    padding: 0 ($base-spacing * 2.5);
+  }
+  @include media($small-screen) {
+    padding: 0;
+  }
 }
 
 .page-content {

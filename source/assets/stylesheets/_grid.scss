@@ -175,11 +175,17 @@
 }
 
 .grid-content {
+  padding: 0 $base-spacing;
+  @include media($large-screen-up) {
+    padding: 0 ($base-spacing * 2.5);
+  }
+  @include media($small-screen) {
+    padding: 0;
+  }
   margin-top: $small-spacing * .5;
   margin-bottom: $base-spacing * 2;
   background-color: #fff;
   border-radius: $base-border-radius;
-  padding: 0 ($base-spacing * 2.5);
   .grid-reset {
     cursor: pointer;
     float: right;
