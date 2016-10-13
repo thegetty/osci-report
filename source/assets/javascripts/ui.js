@@ -4,7 +4,7 @@ var NAVHEIGHT = 60;
 function jq(myid) { return myid.replace( /(:|\.|\[|\]|,)/g, "\\$1" );}
 
 function anchorScroll(href) {
-  $anchorLinks = $("a[href*='#']:not(.grid-trigger-link, .grid-trigger)")
+  $anchorLinks = $("a[href*='#']:not(.grid-trigger-link, .grid-trigger)");
   $anchorLinks.click(function(e) {
     var target = $(this).attr("href");
     var distance = $(jq(target)).offset().top;
@@ -12,7 +12,7 @@ function anchorScroll(href) {
     $("html, body").animate({
       scrollTop: distance - NAVHEIGHT
     }, 250);
-  })
+  });
 }
 
 
@@ -101,7 +101,7 @@ function gridExpander() {
   // open the proper gird-content if URL has hash
   if ( location.hash ) {
     console.log( location.hash );
-    var anchor = location.hash
+    var anchor = location.hash;
     var $targetId = anchor + "-content";
     var $target = $($targetId);
     console.log( $targetId );
@@ -185,11 +185,14 @@ function submarineTracker() {
     var elementPosition = $("#skim-swim-dive").position();
     var subHeight = $("#submarine").height();
     var subPosition = mousePosition - elementPosition.top - subHeight/2;
+      var spotlightOpacity;
+
     if ( subPosition >= $("#water").height() * .5  ) {
-      var spotlightOpacity = subPosition / $("#water").height();
+      spotlightOpacity = subPosition / $("#water").height();
     } else {
-      var spotlightOpacity = 0;
+      spotlightOpacity = 0;
     }
+
     // var spotlightOpacity = subPosition / $("#water").height();
     console.log( mousePosition, elementPosition.top, subPosition, subHeight, $("#water").height() );
     if (( subPosition < $("#water").height() - subHeight ) && ( subPosition >= $("#water").height() * .1 )) {
@@ -203,12 +206,12 @@ function videoExpander() {
   $(".video").click(function() {
     $(this).parent().animate({
       "width": "100%",
-      "margin-right": 0,
+      "margin-right": 0
     }, 800);
     $("img", this).fadeOut(800);
     // $(this).parent().find(".video-closer").show(800);
     $(this).parent().find(".video-closer").animate({
-      "opacity": "1",
+      "opacity": "1"
     }, 800);
     var originalSource = $("iframe", this).attr("src");
     $("iframe", this).attr("src", originalSource + "&autoplay=1");
@@ -216,11 +219,11 @@ function videoExpander() {
   $(".video-closer").click(function() {
     $(this).parent().animate({
       "width": "37%",
-      "margin-right": "1.35em",
+      "margin-right": "1.35em"
     }, 800);
     $(this).parent().find("img").fadeIn(800);
     $(this).animate({
-      "opacity": "0",
+      "opacity": "0"
     }, 800);
     var originalSource = $(this).parent().find("iframe").attr("src").replace("&autoplay=1","");
     $(this).parent().find("iframe").attr("src", originalSource);
@@ -381,6 +384,25 @@ function popupSetup() {
   });
 }
 
+function hammerSetup() {
+  var main = document.getElementById("main")
+  var prev = document.getElementById("prev-link");
+  var next = document.getElementById("next-link");
+  var hammertime = new Hammer(main);
+
+  hammertime.on("swiperight", function(){
+    if (prev) {
+      prev.click();
+    }
+  });
+
+  hammertime.on("swipeleft", function(){
+    if (next) {
+      next.click();
+    }
+  });
+}
+
 // Use this function as "export"
 // Calls all other functions defined here inside of this one
 function uiSetup() {
@@ -399,4 +421,5 @@ function uiSetup() {
   anchorScroll();
   citationDate();
   stickySetup();
+  hammerSetup();
 }
