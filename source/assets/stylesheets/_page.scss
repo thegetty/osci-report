@@ -12,7 +12,7 @@ $navbar-height: 60px;
   height: 280px;
   margin-top: $navbar-height;
   padding: $small-spacing;
-  
+
 }
 
 .page-title,
@@ -120,6 +120,10 @@ $navbar-height: 60px;
   text-align: right;
   width: 65%;
   margin-left: 30%;
+  @include media($phone-screen) {
+    width: 85%;
+    margin-left: 10%;
+  }
   margin-right: 5%;
   margin-top: .2em;
   min-width: 140px;
@@ -155,6 +159,12 @@ $navbar-height: 60px;
 
   float: right;
   width: 37%;
+  @include media($phone-screen) {
+    width: 94%;
+    float: none;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
   text-align: center;
   position: relative;
   font-family: $heading-font-family;
@@ -247,6 +257,13 @@ $navbar-height: 60px;
   margin: 0 $small-spacing;
   min-width: 37%;
   text-align: center;
+  @include media($phone-screen) {
+    width: 94%;
+    float: none;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin: $small-spacing;
+  }
 }
 
 .download::before {
@@ -400,6 +417,12 @@ figcaption.float {
   margin-left: 3%;
   margin-bottom: $small-spacing;
   clear: both;
+  @include media($phone-screen) {
+    width: 94%;
+    float: none;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
 }
 
 .ref-number {
