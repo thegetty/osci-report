@@ -4,15 +4,18 @@
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %meta{name: "apple-mobile-web-app-capable", content: "yes"}
+    %meta{name: "apple-mobile-web-app-status-bar-style", content: "black"}
     %title= current_page.data.title || "The Middleman"
     = stylesheet_link_tag "application"
     %link{href: "https://fonts.googleapis.com/css?family=Merriweather:300,300i,400, 400i|Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i", rel: "stylesheet"}
 
   %body{class: page_classes}
     %main#main
-      = partial "partials/nav"
-      = yield
-      = partial "partials/photoswipe"
-      .sliding-panel-fade-screen
+      #hammer-container
+        = partial "partials/nav"
+        = yield
+        = partial "partials/photoswipe"
+        .sliding-panel-fade-screen
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "application"
