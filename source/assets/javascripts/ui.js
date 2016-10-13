@@ -385,10 +385,10 @@ function popupSetup() {
 }
 
 function hammerSetup() {
-  var main = document.getElementById("main")
+  var container = document.getElementById("hammer-container")
   var prev = document.getElementById("prev-link");
   var next = document.getElementById("next-link");
-  var hammertime = new Hammer(main);
+  var hammertime = new Hammer(container);
 
   hammertime.on("swiperight", function(){
     if (prev) {
