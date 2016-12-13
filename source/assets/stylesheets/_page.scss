@@ -273,6 +273,9 @@ $navbar-height: 60px;
 .award {
   font-style: italic;
   margin-left: $base-spacing;
+  em {
+    font-style: normal;
+  }
 }
 
 .award:before {
