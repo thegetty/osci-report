@@ -137,15 +137,15 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 }
 
 .cover-colophon-inner {
-  height: $navbar-height * 1.5;
+  height: $navbar-height * 2;
   margin-bottom: $base-spacing;
 }
 
 .colophon-text {
   float: left;
   margin-left: $base-spacing;
-  p { margin-bottom: 0; }
-  max-width: 460px;
+  p { margin-bottom: $small-spacing * .5; }
+  max-width: 520px;
   @include media($small-screen) {
     float: none;
     text-align: center;

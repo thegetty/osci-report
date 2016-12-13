@@ -14,17 +14,16 @@
     %p
       #{data.book.title.subtitle}
     %p
-      Published by the #{data.book.imprint},
-      %br
-      #{data.book.publisher_location}
-      %br
-      #{data.book.rights}
+      :markdown
+        Published by the Getty Foundation and licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){:rel="license"}, except where otherwise noted.
     %p
-      = link_to "Source Code", "#{data.book.repository_url}", { target: "_blank" }, { class: "ion-social-github" }
-      %span &#124;
-      = link_to "Privacy", "http://www.getty.edu/legal/privacy.html", { target: "_blank" }
-      %span &#124;
-      = link_to "Terms of Use", "http://www.getty.edu/legal/copyright.html", { target: "_blank" }
+      #{data.book.rights}
+      %br
+        = link_to "Source Code", "#{data.book.repository_url}", { target: "_blank" }, { class: "ion-social-github" }
+        %span &#124;
+        = link_to "Privacy", "http://www.getty.edu/legal/privacy.html", { target: "_blank" }
+        %span &#124;
+        = link_to "Terms of Use", "http://www.getty.edu/legal/copyright.html", { target: "_blank" }
       .nav-logo
         %a{:href => "http://www.getty.edu/", :target => "_blank", :title => "The Getty" }
           = tag :img, src: image_path("getty_logo_ffffff.svg"), class: "nav-logo", alt: "Getty Logo"

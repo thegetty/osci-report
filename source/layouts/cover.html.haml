@@ -23,10 +23,15 @@
     .cover-colophon-inner
       .colophon-text
         :markdown
-          Grant report published by the Getty Foundation and licensed under a <br />[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){:rel="license"}, except where otherwise noted.
-        = link_to "Privacy Policy", "http://www.getty.edu/legal/privacy.html", :target => "blank"
-        %span &#124;
-        = link_to "Terms of Use", "http://www.getty.edu/legal/copyright.html", :target => "blank"
+          Published by the Getty Foundation and licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){:rel="license"}, except where otherwise noted.
+        %p
+          #{data.book.rights}
+          %br
+            = link_to "Source Code", "#{data.book.repository_url}", { target: "_blank" }, { class: "ion-social-github" }
+            %span &#124;
+            = link_to "Privacy", "http://www.getty.edu/legal/privacy.html", { target: "_blank" }
+            %span &#124;
+            = link_to "Terms of Use", "http://www.getty.edu/legal/copyright.html", { target: "_blank" }
       .colophon-logo
         %a{:href => "http://www.getty.edu/foundation", :target => "_blank", :title => "The Getty" }
           = tag :img, :src => image_path("getty_logo_cbb283.svg"), :alt => "Getty Logo"
