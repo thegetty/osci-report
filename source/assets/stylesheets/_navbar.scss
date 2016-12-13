@@ -1,7 +1,7 @@
 $navbar-bg-color: $blue;
 $navbar-text-color: #fff;
 $navbar-height: 60px;
-$navbar-icon-size: 24px;
+$navbar-icon-size: 28px;
 $navbar-z-index: 9999;
 
 .navbar {
@@ -44,8 +44,11 @@ $navbar-z-index: 9999;
 }
 
 .navbar-right {
-  padding-right: $small-spacing;
   text-align: right;
+}
+
+.navbar-left {
+  padding-left: $navbar-height * .25;
 }
 
 .navbar-center {

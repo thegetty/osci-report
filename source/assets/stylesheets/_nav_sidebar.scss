@@ -63,14 +63,10 @@ $sliding-panel-fade-screen-bg: #000;
 
 
 .nav-sidebar-close {
-  font-size: 1.5em;
+  font-size: 32px;
   position: absolute;
-  top: 0.9rem;
-  right: 1.6rem;
-
-  @include media($medium-screen-up) {
-    display: none;
-  }
+  top: 0;
+  left: $navbar-height * .25;
 }
 
 .nav-sidebar-inner {
