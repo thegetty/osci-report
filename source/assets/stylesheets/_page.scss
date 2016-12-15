@@ -144,6 +144,15 @@ $navbar-height: 60px;
   }
 }
 
+.page-content .link-list {
+  color: $action-color;
+  li:active,
+  li:focus,
+  li:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
 .page-content h4 {
   margin-bottom: 1em;
   color: $medium-gray;
