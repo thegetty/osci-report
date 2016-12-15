@@ -22,3 +22,18 @@ All of the OSCI partners are already working on new catalogues, some of which pr
 - The Walker Art Center is developing content on interdisciplinary artists to add to its Living Collections Catalogue, and also plans to add new volumes for upcoming collections-based exhibitions.
 
 While it remains to be seen how many other museums will take up one of the OSCI approaches, momentum is building for the publication of permanent collection catalogues online. In addition to the museums participating in OSCI, the Indianapolis Museum of Art and the Dallas Museum of Art have used the OSCI Toolkit to publish scholarly presentations of their collections to the Web, and other museums are examining options for online publication.
+
+<div class="figure-gallery" markdown="0">
+  <figure>
+    <img src="/assets/images/projects/aic_gauguin.jpg" alt="Other publications from the Art Institute of Chicago" />
+  </figure>
+  <figure>
+    <img src="/assets/images/projects/tate_jmwturner.jpg" alt="Other publications from the Waler Art Center" />
+  </figure>
+  <figure>
+    <img src="/assets/images/projects/nga_americanpaintings.jpg" alt="Other publications from the Tate Gallery" />
+  </figure>
+  <figcaption>
+    Museums have continued publishing online catalogues using their OSCI systems and workflows, inlcuding these from the Art Institue of Chicago, Tate, and the National Gallery of Art.
+  </figcaption>
+</div>
