@@ -47,12 +47,6 @@
 @include font-face("Karla", "../fonts/karla-italic", 400, italic);
 @include font-face("Karla", "../fonts/karla-bolditalic", 700, italic);
 
-// Clear Sans (alternate header font)
-@include font-face("Clear Sans", "../fonts/ClearSans-Regular", 400);
-@include font-face("Clear Sans", "../fonts/ClearSans-Italic", 400, italic);
-@include font-face("Clear Sans", "../fonts/ClearSans-Bold", 700);
-@include font-face("Clear Sans", "../fonts/ClearSans-BoldItalic", 700, italic);
-
 // Overpass (header/general sans font)
 @include font-face("Overpass", "../fonts/Overpass-ExtraLight", 300);
 @include font-face("Overpass", "../fonts/Overpass-ExtraLightItalic", 300, italic);
