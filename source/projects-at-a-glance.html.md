@@ -25,7 +25,7 @@ type: grid
 
 ### [Renoir Paintings<br /> and&#160;Drawings](https://publications.artic.edu/renoir/reader/paintingsanddrawings){:target="blank"}
 
-The Art Institute of Chicago’s OSCI publications focus on the museum’s renowned collection of Impressionist masterpieces by Claude Monet (1840–1926) and Auguste Renoir (1841–1919). Organized as two separate catalogues, the volumes foreground conservation documentation using innovative functionality such as sliding, interactive image filters that reveal new research on how the artists changed their compositions over time. Another key feature is a customized citation tool for researchers to encourage scholarly use of the catalogues.
+The Art Institute of Chicago’s OSCI publications focus on the museum’s renowned collection of Impressionist masterpieces by Claude Monet (1840–1926) and Auguste Renoir (1841–1919). Organized as two separate catalogues, the volumes foreground conservation documentation using innovative functionality such as interactive image filters that reveal new research on how the artists changed their compositions over time. Another key feature is a customized citation tool for researchers to encourage scholarly use of the catalogues.
 
 AAM Bronze MUSE Award, Interactive Kiosks (2014) for Renoir’s <em>True Colors</em>, which utilized components of the Renoir OSCI catalogue
 {:.award .ion-ribbon-b}
