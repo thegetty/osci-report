@@ -4,3 +4,16 @@
 @include font-face("Merriweather", "../fonts/merriweather-regular", 400);
 @include font-face("Merriweather", "../fonts/merriweather-lightitalic", 300, italic);
 @include font-face("Merriweather", "../fonts/merriweather-italic", 400, italic);
+
+
+// Titillium Web
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-ExtraLight", 200);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-ExtraLightItalic", 200, italic);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-Light", 300);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-LightItalic", 300, italic);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-Regular", 400);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-Italic", 400, italic);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-SemiBold", 600);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-SemiBoldItalic", 600, italic);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-Bold", 700);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-BoldItalic", 700, italic);
