@@ -46,13 +46,3 @@
 @include font-face("Karla", "../fonts/karla-bold", 700);
 @include font-face("Karla", "../fonts/karla-italic", 400, italic);
 @include font-face("Karla", "../fonts/karla-bolditalic", 700, italic);
-
-// Overpass (header/general sans font)
-@include font-face("Overpass", "../fonts/Overpass-ExtraLight", 300);
-@include font-face("Overpass", "../fonts/Overpass-ExtraLightItalic", 300, italic);
-@include font-face("Overpass", "../fonts/Overpass-Light", 400);
-@include font-face("Overpass", "../fonts/Overpass-LightItalic", 400, italic);
-@include font-face("Overpass", "../fonts/Overpass-Regular", 600);
-@include font-face("Overpass", "../fonts/Overpass-Italic", 600, italic);
-@include font-face("Overpass", "../fonts/Overpass-Bold", 700);
-@include font-face("Overpass", "../fonts/Overpass-BoldItalic", 700, italic);
