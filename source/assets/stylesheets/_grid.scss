@@ -47,7 +47,7 @@
 }
 
 .grid-nav {
-  height: 99vh;
+  height: 120vh;
   background-color: $action-color;
   #trigger-3, #trigger-6, #trigger-9 {
     margin-right: 0px;
@@ -67,7 +67,7 @@
   cursor: pointer;
   background-color: #fff;
   width: 33.26%;
-  height: 33vh;
+  height: 40vh;
   margin-right: .11%;
   margin-bottom: 1px;
   @include media($large-screen-up) {
@@ -82,7 +82,7 @@
   }
   background-position: center top;
   float: left;
-  padding: ($small-spacing * 2) $small-spacing;
+  padding: ($small-spacing * 2) ($small-spacing * .5);
   h3, h4 {
     color: $dark-blue;
   }
@@ -97,11 +97,14 @@
     font-family: "Titillium Web";
     font-weight: 300;
     font-size: 2em;
+    @include media($large-screen-up) {
+      font-size: 2.5em;
+    }
     text-transform: uppercase;
     text-align: center;
     .diminutive {
       text-transform: none;
-      font-size: 1rem;
+      font-size: .7em;
       font-weight: 400;
       display: block;
     }
@@ -137,11 +140,11 @@
   text-align: center;
 }
 
-.grid-trigger:hover {
-  .trigger-effect {
-    display: block;
-  }
-}
+// .grid-trigger:hover {
+//   .trigger-effect {
+//     display: block;
+//   }
+// }
 
 .image-trigger {
   cursor: pointer;
@@ -150,7 +153,7 @@
   @include justify-content(center);
   position: relative;
   width: calc(33% - .5em);
-  height: 35vh;
+  height: 40vh;
   margin-right: .25em;
   margin-left: .25em;
   margin-bottom: .5em;
@@ -161,7 +164,7 @@
     margin-left: .5em;
     margin-bottom: 1em;
     h2 {
-      font-size: 2.7em;
+      font-size: 2.5em;
     }
   }
   @include media($small-screen) {
@@ -201,7 +204,7 @@
   h3 {
     font-weight: 400;
     .diminutive {
-      font-weight: 400;
+      font-weight: 600;
     }
   }
   .grid-overlay {
@@ -210,10 +213,8 @@
 }
 
 .grid-content {
-  padding: 0 $base-spacing;
-  @include media($large-screen-up) {
-    padding: 0 ($base-spacing * 2.5);
-  }
+  width: 100%;
+  padding: 0 calc( (100% - 800px) * .5 );
   @include media($small-screen) {
     padding: 0;
   }

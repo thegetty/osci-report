@@ -43,10 +43,8 @@ $navbar-height: 60px;
 // Page Content
 // -----------------------------------------------------------------------------
 .page-main-column {
-  padding: 0 $base-spacing;
-  @include media($large-screen-up) {
-    padding: 0 ($base-spacing * 2.5);
-  }
+  width: 100%;
+  padding: 0 calc( (100% - 800px) * .5 );
   @include media($small-screen) {
     padding: 0;
   }
@@ -359,7 +357,6 @@ $navbar-height: 60px;
 figure {
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 figcaption {
@@ -404,7 +401,7 @@ figcaption.float {
   margin-left: 3%;
   margin-right: 3%;
   margin-bottom: $small-spacing * 1.5;
-  overflow: auto;
+  display: inline-block;
 }
 
 .figure-gallery img {
