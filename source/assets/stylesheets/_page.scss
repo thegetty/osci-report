@@ -28,9 +28,9 @@ $navbar-height: 60px;
   font-size: 4.5em;
   font-weight: 200;
   margin-bottom: 0;
+  line-height: 1.1em;
   @include media($small-screen) {
     font-size: 3.3em;
-    line-height: 1.1em;
   }
 }
 
