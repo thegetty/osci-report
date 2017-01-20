@@ -9,6 +9,21 @@ type: grid
 {::options parse_block_html="true" /}
 
 <div class="grid">
+
+<div class="grid-toc">
+
+- [Art Institute of Chicago](#aic){: .grid-trigger-link}
+- [Freer Gallery of Art and Arthur&#160;M.&#160;Sackler Gallery](#freersackler){: .grid-trigger-link}
+- [Los Angeles County Museum of&#160;Art](#lacma){: .grid-trigger-link}
+- [National Gallery of Art, Washington&#160;D.C.](#nga){: .grid-trigger-link}
+- [San Francisco Museum of Modern&#160;Art](#sfmoma){: .grid-trigger-link}
+- [Seattle Art Museum](#seattle){: .grid-trigger-link}
+- [Tate](#tate){: .grid-trigger-link}
+- [Walker Art Center](#walker){: .grid-trigger-link}
+
+</div>
+
+
 <div class="grid-content" id="aic-content">
 
 <div class="grid-reset ion-grid"></div>
