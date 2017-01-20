@@ -49,6 +49,11 @@ $light-gray: transparentize($print-text-color, 0.5);
     font-size: $page-number-size;
     font-weight: 400;
   }
+
+}
+
+h2, h3, h4, h5, h6 {
+  prince-bookmark-level: none;
 }
 
 @page grid:first {
@@ -144,6 +149,18 @@ $light-gray: transparentize($print-text-color, 0.5);
   .projects-at-a-glance,
   .lessons-learned {
     page: grid;
+  }
+
+  .lessons-learned h2 {
+    prince-bookmark-level: 2;
+  }
+
+  #skim-swim-dive .depth-headings h2 {
+    prince-bookmark-level: none;
+  }
+
+  .projects-at-a-glance h5 {
+    prince-bookmark-level: 2;
   }
 
   .grid-cover {
