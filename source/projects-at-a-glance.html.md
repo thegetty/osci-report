@@ -12,14 +12,14 @@ type: grid
 
 <div class="grid-toc">
 
-- [Art Institute of Chicago](#aic){: .grid-trigger-link}
-- [Freer Gallery of Art and Arthur&#160;M.&#160;Sackler Gallery](#freersackler){: .grid-trigger-link}
-- [Los Angeles County Museum of&#160;Art](#lacma){: .grid-trigger-link}
-- [National Gallery of Art, Washington&#160;D.C.](#nga){: .grid-trigger-link}
-- [San Francisco Museum of Modern&#160;Art](#sfmoma){: .grid-trigger-link}
-- [Seattle Art Museum](#seattle){: .grid-trigger-link}
-- [Tate](#tate){: .grid-trigger-link}
-- [Walker Art Center](#walker){: .grid-trigger-link}
+- [Art Institute of Chicago](#aic-content){: .grid-trigger-link}
+- [Freer Gallery of Art and Arthur&#160;M.&#160;Sackler Gallery](#freersackler-content){: .grid-trigger-link}
+- [Los Angeles County Museum of&#160;Art](#lacma-content){: .grid-trigger-link}
+- [National Gallery of Art, Washington&#160;D.C.](#nga-content){: .grid-trigger-link}
+- [San Francisco Museum of Modern&#160;Art](#sfmoma-content){: .grid-trigger-link}
+- [Seattle Art Museum](#seattle-content){: .grid-trigger-link}
+- [Tate](#tate-content){: .grid-trigger-link}
+- [Walker Art Center](#walker-content){: .grid-trigger-link}
 
 </div>
 
