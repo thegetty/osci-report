@@ -261,9 +261,10 @@ $navbar-height: 60px;
 
 .download {
   float: right;
-  margin: 0 $small-spacing;
+  margin: 0 $small-spacing $small-spacing;
   min-width: 37%;
   text-align: center;
+  font-size: 1.2em;
   @include media($phone-screen) {
     width: 94%;
     float: none;
