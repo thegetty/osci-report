@@ -172,13 +172,6 @@ function resetPage() {
   });
 }
 
-function gifPlayer() {
-  $(".animate-on-hover").mouseover(function() {
-    var gifSource = $(this).attr("data-alt");
-    $(this).attr("src",gifSource);
-  });
-}
-
 function submarineTracker() {
   $("#skim-swim-dive").mousemove(function() {
     var mousePosition = event.pageY;
@@ -390,7 +383,6 @@ function uiSetup() {
   sidebarExpander();
   popupSetup();
   gridExpander();
-  gifPlayer();
   submarineTracker();
   videoExpander();
   resetPage();
