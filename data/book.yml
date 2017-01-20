@@ -23,12 +23,12 @@ editions:
     isbn:
     link:
     additional_description:
-  - name: Summary Report
+  - name: Complete Report
     type: Text
     format: application/pdf
     isbn:
-    file_size_mb:
-    link:
+    file_size: 1.1MB
+    link: ../assets/downloads/osci-report.pdf
     additional_description:
 downloads:
   - name: Functional Requirements
