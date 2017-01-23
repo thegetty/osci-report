@@ -328,25 +328,31 @@ $navbar-height: 60px;
       text-transform: none;
       font-weight: 700;
       font-size: 3em;
+      @include media($phone-screen) {
+        font-size: 1.7em;
+      }
     }
     p {
       font-size: $base-font-size * 1.4;
       font-family: $heading-font-family;
-      line-height: 1.3em;
+      line-height: 1.1em;
       font-weight: 400;
+      @include media($phone-screen) {
+        font-size: $base-font-size * .8;
+      }
     }
   }
   #skim {
     position: absolute;
-    top: 25%;
+    top: 20%;
   }
   #swim {
     position: absolute;
-    top: 50%;
+    top: 45%;
   }
   #dive {
     position: absolute;
-    top: 75%;
+    top: 70%;
   }
 }
 
