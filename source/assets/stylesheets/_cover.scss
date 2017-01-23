@@ -127,11 +127,17 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 
 .cover-colophon {
   font-family: $heading-font-family;
-  font-weight: 400;
+  font-weight: 600;
   color: $beige;
   a {
+    font-weight: 600;
     color: $beige;
     text-decoration: underline;
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($beige, 10%);
+    }
   }
   padding-bottom: 1.5em;
   padding-top: 1.5em;
@@ -167,5 +173,16 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
     float: none;
     text-align: center;
     margin: $small-spacing auto $base-spacing;
+  }
+  svg path {
+    transition: fill .25s ease-in-out;
+    fill: $beige;
+  }
+  &:active,
+  &:focus,
+  &:hover {
+    svg path {
+      fill: darken($beige, 10%);
+    }
   }
 }
