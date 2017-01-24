@@ -525,3 +525,16 @@ figcaption.float {
 .print-fallback {
   display: none;
 }
+
+.caption-direction {
+  @include media($phone-screen) {
+    display: none;
+  }
+}
+
+.caption-direction-phone {
+  display: none;
+  @include media($phone-screen) {
+    display: inline;
+  }
+}
