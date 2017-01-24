@@ -266,11 +266,10 @@ $navbar-height: 60px;
   text-align: center;
   font-size: 1.2em;
   @include media($phone-screen) {
-    width: 94%;
+    width: 100%;
+    overflow: hidden;
     float: none;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin: $small-spacing;
+    margin: 0 0 $small-spacing;
   }
 }
 
@@ -476,6 +475,11 @@ figcaption.float {
   margin: 0 3%;
   text-align: center;
   color: $dark-orange;
+  @include media($phone-screen) {
+    width: 100%;
+    float: none;
+    margin: 0 0;
+  }
   h4 {
     font-size: 5em;
     color: $dark-orange;
