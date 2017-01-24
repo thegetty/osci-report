@@ -1,12 +1,18 @@
 !!!
-%html
+%html{lang: "en"}
   %head
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-    %title= current_page.data.title || "The Middleman"
+    %title= current_page.data.title
+    / Apple App Support
+    %link{rel: "apple-touch-icon", href: "assets/images/apple-touch-icon.png"}
+    %meta{name: "apple-mobile-web-app-title", content: "#{data.book.title.short}"}
+    %meta{name: "apple-mobile-web-app-capable", content: "yes"}
+    %meta{name: "apple-mobile-web-app-status-bar-style", content: "translucent"}
+    = partial "partials/metadata"
+    / Stylesheets
     = stylesheet_link_tag "application"
-
   %body{class: page_classes}
     %main#main
       = partial "partials/nav"
