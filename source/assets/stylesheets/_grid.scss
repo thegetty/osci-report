@@ -219,19 +219,12 @@
 
 .grid-main-column {
   width: 100%;
-  padding: 0 calc( (100% - 800px) * .5 );
-  @include media($small-screen) {
-    padding: 0;
-  }
+  max-width: 1080px;
 }
 
 .grid-content {
-  // width: 100%;
-  // padding: 0 calc( (100% - 800px) * .5 );
-  // @include media($small-screen) {
-  //   width: 100vw;
-  //   padding: 0 calc( (100vw - 800px) * .5 );
-  // }
+  width: 100%;
+  padding: 0 calc( (100% - 800px) * .5 );
   margin-top: $small-spacing * .5;
   margin-bottom: $base-spacing * 2;
   background-color: #fff;
