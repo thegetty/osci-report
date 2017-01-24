@@ -145,7 +145,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 
 .cover-colophon-inner {
   height: $navbar-height * 2;
-  margin-bottom: $base-spacing;
+  margin-bottom: $small-spacing;
 }
 
 .colophon-text {
@@ -164,7 +164,12 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 
 .colophon-logo {
   padding-top: $base-spacing;
-  width: $navbar-height;
+  svg, svg img {
+    width: $navbar-height;
+    height: $navbar-height;
+    transition: fill .25s ease-in-out;
+    fill: $beige;
+  }
   opacity: .7;
   float: right;
   margin: .5em $base-spacing 0;
@@ -174,14 +179,10 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
     text-align: center;
     margin: $small-spacing auto $base-spacing;
   }
-  svg path {
-    transition: fill .25s ease-in-out;
-    fill: $beige;
-  }
   &:active,
   &:focus,
   &:hover {
-    svg path {
+    svg {
       fill: darken($beige, 10%);
     }
   }

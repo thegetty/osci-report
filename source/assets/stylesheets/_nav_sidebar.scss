@@ -161,19 +161,25 @@ $sliding-panel-fade-screen-bg: #000;
 
 .nav-logo {
   transition: opacity .25s ease-in-out;
-  path {
-    fill: #fff;
-  }
   &:active,
   &:focus,
   &:hover {
-    opacity: 0.7;
+    svg {
+      opacity: 0.7;
+    }
   }
   margin-top: $small-spacing;
-  width: 2.5rem;
-
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: #fff;
+    transition: opacity .25s ease-in-out;
+  }
   @include media($medium-screen-up) {
-    width: 4.5rem;
+    svg {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
   }
 }
 
