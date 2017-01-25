@@ -6,10 +6,9 @@
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     %title= current_page.data.title
     / Apple App Support
-    %link{rel: "apple-touch-icon", href: "assets/images/apple-touch-icon.png"}
+    %link{rel: "apple-touch-icon", href: "#{data.book.permanent_url}/assets/images/apple-touch-icon.png"}
     %meta{name: "apple-mobile-web-app-title", content: "#{data.book.title.short}"}
     %meta{name: "apple-mobile-web-app-capable", content: "yes"}
-    %meta{name: "apple-mobile-web-app-status-bar-style", content: "translucent"}
     = partial "partials/metadata"
     / Stylesheets
     = stylesheet_link_tag "application"

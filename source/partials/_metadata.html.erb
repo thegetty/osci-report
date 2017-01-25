@@ -24,13 +24,13 @@ keywords_list.concat data.book.categories unless data.book.categories.nil?
 <meta property="og:title" content="<%= data.book.title.main %>" />
 <meta property="og:type" content="book" />
 <meta property="og:url" content="<%= data.book.permanent_url %>" />
-<meta property="og:image" content="assets/images/cover.jpg" />
+<meta property="og:image" content="<%= data.book.permanent_url %>assets/images/cover.jpg" />
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="<%= data.book.publisher.twitter %>" />
 <meta name="twitter:title" content="<%= data.book.title.main %>" />
 <meta name="twitter:description" content="<%= data.book.title.subtitle %>" />
-<meta name="twitter:image" content="assets/images/cover_sq.jpg" />
+<meta name="twitter:image" content="<%= data.book.permanent_url %>assets/images/cover_sq.jpg" />
 <!-- Core Metadata -->
 <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
 <meta name="dcterms.title" content="<%= data.book.title.main %> (<%= data.book.title.short %>)">
