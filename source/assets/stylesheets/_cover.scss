@@ -156,9 +156,10 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   @include media($small-screen) {
     float: none;
     text-align: center;
-    margin-left: $small-spacing;
-    margin-right: $small-spacing;
     line-height: 1.7em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
