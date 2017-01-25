@@ -538,3 +538,11 @@ figcaption.float {
     display: inline;
   }
 }
+
+#emuseum {
+  hyphens: manual;
+}
+
+.long-url {
+  word-break: break-word;
+}
