@@ -9,26 +9,26 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 // linear gradient compatible with Firefox, so this has to be done manually.
 // In addition, the image_path function follows a ruby naming convention since
 // it comes from Sprockets; ignore the name rule for this case.
+
 // scss-lint:disable VendorPrefix
 // scss-lint:disable NameFormat
 .cover {
   @include display(flex);
   @include flex-direction(column);
   @include flex-wrap(nowrap);
-  @include justify-content(flex-end);
-  background-color: $blue;
+  @include justify-content(center);
   background: linear-gradient($blue, $blue, $light-orange);
+  background-color: $blue;
   height: 100vh;
   z-index: $base-z-index;
 }
 
 .cover-inner {
-  color: #fff;
-  padding: 2em 0.5em;
   background-position: center 45%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  color: $white;
+  padding: 2em 0.5em;
   text-align: center;
   width: 100%;
   h2 {
@@ -103,15 +103,17 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   @extend .container;
   margin-bottom: 5em;
   margin-top: 3em;
+
   h3 {
+    margin-bottom: $small-spacing * 0.25;
     text-align: center;
-    margin-bottom: $small-spacing * .25;
   }
+
   ul {
-    text-align: center;
     list-style-type: none;
-    padding: 0;
     margin-top: 0;
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -126,6 +128,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 }
 
 .cover-colophon {
+  color: $beige;
   font-family: $heading-font-family;
   font-weight: 600;
   color: $beige;
@@ -139,8 +142,6 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
       color: darken($beige, 10%);
     }
   }
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
 }
 
 .cover-colophon-inner {
@@ -164,6 +165,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 }
 
 .colophon-logo {
+  opacity: 0.7;
   padding-top: $base-spacing;
   svg, svg img {
     width: $navbar-height;
