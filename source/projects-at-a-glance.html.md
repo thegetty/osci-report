@@ -15,7 +15,7 @@ type: grid
 - [Art Institute of Chicago](#aic-content){: .grid-trigger-link}
 - [Freer Gallery of Art and Arthur&#160;M.&#160;Sackler Gallery](#freersackler-content){: .grid-trigger-link}
 - [Los Angeles County Museum of&#160;Art](#lacma-content){: .grid-trigger-link}
-- [National Gallery of Art, Washington&#160;D.C.](#nga-content){: .grid-trigger-link}
+- [National Gallery of Art](#nga-content){: .grid-trigger-link}
 - [San Francisco Museum of Modern&#160;Art](#sfmoma-content){: .grid-trigger-link}
 - [Seattle Art Museum](#seattle-content){: .grid-trigger-link}
 - [Tate](#tate-content){: .grid-trigger-link}
@@ -36,13 +36,13 @@ type: grid
 
 ##### Art Institute of Chicago
 
-### [Monet Paintings and&#160;Drawings](https://publications.artic.edu/monet/reader/paintingsanddrawings){:target="blank"}
+### [Monet Paintings and Drawings](https://publications.artic.edu/monet/reader/paintingsanddrawings){:target="blank"}
 
-### [Renoir Paintings<br /> and&#160;Drawings](https://publications.artic.edu/renoir/reader/paintingsanddrawings){:target="blank"}
+### [Renoir Paintings and Drawings](https://publications.artic.edu/renoir/reader/paintingsanddrawings){:target="blank"}
 
 The Art Institute of Chicago’s OSCI publications focus on the museum’s renowned collection of Impressionist masterpieces by Claude Monet (1840–1926) and Auguste Renoir (1841–1919). Organized as two separate catalogues, the volumes foreground conservation documentation using innovative functionality such as interactive image filters that reveal new research on how the artists changed their compositions over time. Another key feature is a customized citation tool for researchers to encourage scholarly use of the catalogues.
 
-AAM Bronze MUSE Award, Interactive Kiosks (2014) for Renoir’s <em>True Colors</em>, which utilized components of the Renoir OSCI catalogue
+AAM Bronze MUSE Award, Interactive Kiosks (2014) for <em>Renoir’s True Colors</em>, which utilized components of the Renoir OSCI catalogue
 {:.award .ion-ribbon-b}
 
 </div>
@@ -99,7 +99,7 @@ Detailed object entries and new interpretive essays form the centerpiece of LACM
 
 The OSCI publication of the National Gallery of Art (NGA) is an updated and expanded digital version of Arthur Wheelock Jr.’s key reference work. Among the volume’s special features are a sophisticated image comparison tool, a customized reading environment, and new multimedia content, including a series of video tours of the NGA’s Dutch paintings galleries led by Wheelock. The OSCI publication was the first release for NGA Online Editions, an ongoing effort that provides access to the most current in-depth information on the Gallery’s collections along with smart tools for citing, comparing, sharing, exporting, viewing, printing, and storing texts and images.
 
-ARLIS’ George Wittenborn Award (2015) for excellence in art publishing
+ARLIS’s George Wittenborn Award (2015) for excellence in art publishing
 {:.award .ion-ribbon-b}
 
 </div>
