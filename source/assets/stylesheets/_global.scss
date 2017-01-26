@@ -93,3 +93,9 @@ html { min-height: 100vh; }
   .expander-content { margin-bottom: $base-spacing; }
   .expander--hidden { display: none;}
 }
+
+.page-cover,
+.page-content,
+.grid-content {
+  user-select: auto;
+}
