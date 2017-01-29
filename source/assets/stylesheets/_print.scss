@@ -98,10 +98,17 @@ h2, h3, h4, h5, h6 {
     display: block;
   }
   .cover-title {
-    margin-top: 2in;
+    margin-top: 1.5in;
+    font-size: 80pt;
+    line-height: 1.15;
   }
   .cover-title .diminutive {
-    font-size: .33em;
+    font-size: 28pt;
+    margin-top: 12pt;
+    margin-bottom: -54pt;
+  }
+  .cover-subtitle {
+    font-size: 30pt;
   }
   .cover-copy {
     font-size: $print-base-font-size;
@@ -116,14 +123,28 @@ h2, h3, h4, h5, h6 {
 
   }
   .colophon-text {
+    color: #999;
     padding-top: 1.35em;
-    border-top: .5pt solid #c6a68e;
+    border-top: .5pt solid #999;
     margin-bottom: 1em;
     margin-left: 0;
+    a {
+      color: #999;
+    }
   }
   .colophon-logo {
     float: none;
     margin-left: 0;
+    clear: both;
+    svg {
+      display: none;
+    }
+  }
+
+  .print-logo {
+    display: block;
+    width: $navbar-height;
+    height: $navbar-height;
   }
 
   .page-content {
