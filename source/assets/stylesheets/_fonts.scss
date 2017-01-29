@@ -1,64 +1,19 @@
-//
-//@license
-// MyFonts Webfont Build ID 3135824, 2015-12-03T13:30:57-0500
-//
-// The fonts listed in this notice are subject to the End User License
-// Agreement(s) entered into by the website owner. All other parties are
-// explicitly restricted from using the Licensed Webfonts(s).
-//
-// You may obtain a valid license at the URLs below.
-//
-// Webfont: FreightTextProBold-Regular by GarageFonts
-// URL: http://www.myfonts.com/fonts/garagefonts/freight-text-pro/bold/
-//
-// Webfont: FreightTextProBook-Italic by GarageFonts
-// URL: http://www.myfonts.com/fonts/garagefonts/freight-text-pro/book-italic/
-//
-// Webfont: FreightTextProBook-Regular by GarageFonts
-// URL: http://www.myfonts.com/fonts/garagefonts/freight-text-pro/book/
-//
-// Webfont: FreightTextProBold-Italic by GarageFonts
-// URL: http://www.myfonts.com/fonts/garagefonts/freight-text-pro/bold-italic/
-//
-//
-// License: http://www.myfonts.com/viewlicense?type=web&buildid=3135824
-// Licensed pageviews: 10,000
-// Webfonts copyright: Copyright &#x00A9; 2004-2009, Joshua Darden &amp; Phil's Fonts,
-// Inc. All rights reserved. Published by Garagefonts USA 301-879-9222
-// www.garagefonts.com
-//
-// © 2015 MyFonts Inc
-//
 
-//-------------------------------------------------------------------
+// Merriweather
+@include font-face("Merriweather", "../fonts/merriweather-light", 300);
+@include font-face("Merriweather", "../fonts/merriweather-regular", 400);
+@include font-face("Merriweather", "../fonts/merriweather-lightitalic", 300, italic);
+@include font-face("Merriweather", "../fonts/merriweather-italic", 400, italic);
 
-// Freight Text Pro
-@include font-face("Freight Text Pro", "../fonts/freight-text-pro-book", 400);
-@include font-face("Freight Text Pro", "../fonts/freight-text-pro-book-italic", 400, italic);
-@include font-face("Freight Text Pro", "../fonts/freight-text-pro-bold", 700);
-@include font-face("Freight Text Pro", "../fonts/freight-text-pro-bold-italic", 700, italic);
 
-// Freight Text smallcaps (flattened for non-opentype browsers)
-@include font-face("Freight Text Pro SC", "../fonts/freight-text-pro-book-smallcaps", 400);
-
-// Karla
-@include font-face("Karla", "../fonts/karla-regular", 400);
-@include font-face("Karla", "../fonts/karla-bold", 700);
-@include font-face("Karla", "../fonts/karla-italic", 400, italic);
-@include font-face("Karla", "../fonts/karla-bolditalic", 700, italic);
-
-// Clear Sans (alternate header font)
-@include font-face("Clear Sans", "../fonts/ClearSans-Regular", 400);
-@include font-face("Clear Sans", "../fonts/ClearSans-Italic", 400, italic);
-@include font-face("Clear Sans", "../fonts/ClearSans-Bold", 700);
-@include font-face("Clear Sans", "../fonts/ClearSans-BoldItalic", 700, italic);
-
-// Overpass (header/general sans font)
-@include font-face("Overpass", "../fonts/Overpass-ExtraLight", 300);
-@include font-face("Overpass", "../fonts/Overpass-ExtraLightItalic", 300, italic);
-@include font-face("Overpass", "../fonts/Overpass-Light", 400);
-@include font-face("Overpass", "../fonts/Overpass-LightItalic", 400, italic);
-@include font-face("Overpass", "../fonts/Overpass-Regular", 600);
-@include font-face("Overpass", "../fonts/Overpass-Italic", 600, italic);
-@include font-face("Overpass", "../fonts/Overpass-Bold", 700);
-@include font-face("Overpass", "../fonts/Overpass-BoldItalic", 700, italic);
+// Titillium Web
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-ExtraLight", 200);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-ExtraLightItalic", 200, italic);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-Light", 300);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-LightItalic", 300, italic);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-Regular", 400);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-Italic", 400, italic);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-SemiBold", 600);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-SemiBoldItalic", 600, italic);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-Bold", 700);
+@include font-face("Titillium Web", "../fonts/TitilliumWeb-BoldItalic", 700, italic);

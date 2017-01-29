@@ -1,86 +1,19 @@
-# thoughtbot Middleman Starter
+This is the repository for *Museum Catalogues in the Digital Age: A Final Report on the Getty Foundation’s Online Scholarly Catalogue Initiative*, published February 2017 by the Getty Foundation, Los Angeles. This free online edition and a downloadable PDF are available at [www.getty.edu/foundation/osci-report](http://www.getty.edu/foundation/osci-report).
 
-## About
+The book was created with Getty Publications’ [middleman book template](https://github.com/gettypubs/middleman-book-template), which has been used for other digital publications, including catalogues of [ancient terracottas](https://github.com/gettypubs/terracottas) and [roman mosaics](https://github.com/gettypubs/romanmosaics) in the J. Paul Getty Museum. The template was a prototype for an open source package currently under development by the Getty, which will be made available for use by other museums and publishers. Information about the Getty’s digital publishing efforts can be found at [www.getty.edu/publications/digital](http://www.getty.edu/publications/digital/index.html).
 
-This starter kit for Middleman follows the
-[thoughtbot styleguide](https://github.com/thoughtbot/guides) and includes our
-favorite front end tools.
+## About the Book
 
-## About Middleman
+Publishing scholarly collection catalogues is a critical part of a museum’s mission. Based on meticulous research, these catalogues make available detailed information about the individual works in a museum’s collection, ensuring the contents a place in art history. Yet printed volumes are costly to produce and difficult to update regularly; their potential content often exceeds allotted space. Digital publishing presents an alternative, and the Getty Foundation’s Online Scholarly Catalogue Initiative (OSCI) helped museums make the transition from printed volumes to multimedia, web-based publications freely available to anyone with a computer, tablet, or smartphone. The Foundation launched OSCI in 2009 in partnership with the J. Paul Getty Museum and eight other institutions: the Art Institute of Chicago; the Arthur M. Sackler and Freer Gallery of Art; the Los Angeles County Museum of Art; the National Gallery of Art, Washington, D.C.; the San Francisco Museum of Modern Art; the Seattle Art Museum; Tate; and the Walker Art Center. This is the final report of the intiative.
 
-Middleman is a static site generator built in Ruby. This makes it a great fit
-for projects that may end up as a Ruby on Rails app. Its minimalistic structure
-makes it very easy to work with, and includes support for deploying to Github
-Pages.
+## Using this Repository
 
-## Includes
+We are dedicated to maintaining the book at the permanent URL, [www.getty.edu/foundation/osci-report](http://www.getty.edu/foundation/osci-report), and in its various formats and incarnations. Any updates made to the book subsequent to its publication will be recorded here in the commit history of this repository.
 
-* [HAML](http://haml.info):
-  Simple template markup
-* [Coffeescript](http://coffeescript.org):
-  Write javascript with simpler syntax
-* [Sass (LibSass)](http://sass-lang.com):
-  CSS with superpowers
-* [Bourbon](http://bourbon.io):
-  Sass mixin library
-* [Neat](http://neat.bourbon.io):
-  Semantic grid for Sass and Bourbon
-* [Bitters](http://bitters.bourbon.io):
-  Scaffold styles, variables and structure for Bourbon projects.
-* [Middleman Live Reload](https://github.com/middleman/middleman-livereload):
-  Reloads the page when files change
-* [Middleman Deploy](https://github.com/karlfreeman/middleman-deploy):
-  Deploy your Middleman build via rsync, ftp, sftp, or git (deploys to Github Pages by default)
-
-We also recommend [Refills](http://refills.bourbon.io/) for prepackaged interface patterns and [Proteus](http://github.com/thoughtbot/proteus) for a collection of useful
-starter kits to help you prototype faster.
-
-## Getting Started
-
-Set up your project in your code directory
-```
-git clone https://github.com/thoughtbot/proteus-middleman.git your-project-folder
-cd your-project-folder
-git remote rm origin
-git remote add origin your-git-url
-```
-
-Install dependencies:
-```
-bundle install
-```
-
-Run the server
-```
-bundle exec middleman
-```
-
-Deploy to Github Pages
-```
-bundle exec middleman deploy
-```
-
-Or install the [Proteus gem](https://github.com/thoughtbot/proteus) and enjoy some shortcuts.
-
-## Directories
-
-Stylesheets, fonts, images, and JavaScript files go in the `/source/assets/` directory.
-Vendor stylesheets and JavaScripts should go in each of their `/vendor/` directories.
-
-## Contributing
-
-If you have problems, please create a
-[GitHub Issue](https://github.com/thoughtbot/proteus-middleman/issues).
-
-Have a fix or want to add a feature?
-[Pull Requests](https://github.com/thoughtbot/proteus-middleman/pulls) are welcome!
-
-## Credits
-
-[![thoughtbot](http://images.thoughtbot.com/bourbon/thoughtbot-logo.svg)](http://thoughtbot.com)
-
-thoughtbot Middleman Starter is maintained and funded by [thoughtbot, inc](http://thoughtbot.com). Thank you to all of [the contributors](https://github.com/thoughtbot/proteus-middleman/contributors)!
+The primary content pieces of the book can be found in the `data` and `source` directories. The master branch represents the current, published edition at all times, and the revisions branch, when present, will show changes currently under consideration but not yet pushed to the published edition. We invite you to submit suggestions or corrections via pull request on the revisions branch, by posting an issue, or by emailing us at [pubsinfo@getty.edu](mailto:pubsinfo@getty.edu).
 
 ## License
 
-Copyright © 2014–2015 [thoughtbot, inc](http://thoughtbot.com). thoughtbot Middleman Starter is free software, and may be redistributed under the terms specified in the [license](https://github.com/thoughtbot/bourbon/blob/master/LICENSE.md).
+Museum Catalogues in the Digital Age © 2017 J. Paul Getty Trust. This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), with the exception of individual artworks illustrated in the report or within depicted catalogues.
+
+Proteus Middleman © 2014–2015 [thoughtbot, inc](http://thoughtbot.com). Proteus Middleman is free software and may be redistributed under the terms specified in the [license](https://github.com/thoughtbot/bourbon/blob/master/LICENSE.md).

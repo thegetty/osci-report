@@ -1,5 +1,26 @@
 //= require_tree .
 
+// Keep standalone mode links from opening Safari unless
+// they are outbound
+if (("standalone" in window.navigator) && window.navigator.standalone) {
+  var target, remotes = false;
+
+  document.addEventListener('click', function(event) {
+    target = event.target;
+    while(target.nodeName !== "A" && target.nodeName !== "HTML") {
+      target = target.parentNode;
+    }
+
+    if ('href' in target && target.href.indexOf('http') !== -1 && (
+      target.href.indexOf(document.location.host) !== -1 || remotes)
+       ) {
+      event.preventDefault();
+      document.location.href = target.href;
+    }
+  },false);
+}
+
+
 $(document).ready(function() {
   // set up UI
   uiSetup();

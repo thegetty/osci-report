@@ -20,7 +20,7 @@ html { min-height: 100vh; }
 // -----------------------------------------------------------------------------
 .body-copy {
 
-  p, ol, ul {font-size: $base-font-size;}
+  p, ol, ul {font-size: $base-font-size * 1.2;}
   ol { @extend %default-ol; }
   ul { @extend %default-ul; }
 
@@ -29,23 +29,15 @@ html { min-height: 100vh; }
     p { margin-bottom: 0; }
   }
 
-  @include media($medium-screen-up) {
-    p, ol, ul { font-size: $base-font-size * 1.1; }
-  }
-
-  @include media($large-screen-up) {
-    p, ol, ul { font-size: $base-font-size * 1.2; }
-  }
 }
 
 .container {
   @include display(flex);
   @include justify-content(center);
   margin: 0 auto;
-  max-width: 1000px;
   padding: 0 $small-spacing;
 
-  @include media($large-screen-up) { padding: 0; }
+  @include media($large-screen-up) { padding: 0  $base-spacing * 2; }
 }
 
 .footnotes {
@@ -56,7 +48,6 @@ html { min-height: 100vh; }
 
   &::before {
     content: "Notes";
-    font-family: "Freight Text Pro SC";
     font-size: 1.35em;
     letter-spacing: 2px;
     text-transform: lowercase;
@@ -101,4 +92,10 @@ html { min-height: 100vh; }
   .expander-trigger { display: block; }
   .expander-content { margin-bottom: $base-spacing; }
   .expander--hidden { display: none;}
+}
+
+.page-cover,
+.page-content,
+.grid-content {
+  user-select: auto;
 }

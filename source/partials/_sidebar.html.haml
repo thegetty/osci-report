@@ -14,17 +14,13 @@
     %p
       #{data.book.title.subtitle}
     %p
-      Published by the #{data.book.imprint},
-      %br
-      #{data.book.publisher_location}
-      %br
-      #{data.book.rights}
+      Published by the Getty Foundation and licensed under a <a href="#{data.book.license.url}" rel="license">#{data.book.license.type}</a>, with the exception of individual artworks illustrated in the report or within depicted catalogues.
     %p
-      = link_to "Source Code", "#{data.book.repository_url}", { target: "_blank" }, { class: "ion-social-github" }
+      = link_to "Source Code", "#{data.book.repository_url}", { target: "_blank", class: "ion-social-github" }
       %span &#124;
       = link_to "Privacy", "http://www.getty.edu/legal/privacy.html", { target: "_blank" }
       %span &#124;
       = link_to "Terms of Use", "http://www.getty.edu/legal/copyright.html", { target: "_blank" }
-      .nav-logo
-        %a{:href => "http://www.getty.edu/", :target => "_blank", :title => "The Getty" }
-          = tag :img, src: image_path("getty_logo.svg"), class: "nav-logo", alt: "Getty Logo"
+    .nav-logo
+      %a{:href => "#{data.book.publisher.url}", :target => "_blank", :title => "#{data.book.publisher.name}" }
+        <svg><switch><use xlink:href="#getty-logo"></use><foreignObject><img src="assets/images/getty-logo.png" alt="The Getty logo" /></foreignObject></switch></svg>

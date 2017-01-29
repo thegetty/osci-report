@@ -13,9 +13,6 @@ $navbar-height: 60px;
   margin-top: $navbar-height;
   padding: $small-spacing;
 
-  // @include media($medium-screen-up) { height: 300px; }
-  // @include media($large-screen-up) { height: 300px; }
-
 }
 
 .page-title,
@@ -31,6 +28,10 @@ $navbar-height: 60px;
   font-size: 4.5em;
   font-weight: 200;
   margin-bottom: 0;
+  line-height: 1.1em;
+  @include media($small-screen) {
+    font-size: 3.3em;
+  }
 }
 
 .page-author {
@@ -42,7 +43,11 @@ $navbar-height: 60px;
 // Page Content
 // -----------------------------------------------------------------------------
 .page-main-column {
-  padding: 0 ($base-spacing * 2.5);
+  width: 100%;
+  padding: 0 calc( (100% - 800px) * .5 );
+  @include media($small-screen) {
+    padding: 0;
+  }
 }
 
 .page-content {
@@ -113,6 +118,10 @@ $navbar-height: 60px;
   text-align: right;
   width: 65%;
   margin-left: 30%;
+  @include media($phone-screen) {
+    width: 85%;
+    margin-left: 10%;
+  }
   margin-right: 5%;
   margin-top: .2em;
   min-width: 140px;
@@ -133,6 +142,15 @@ $navbar-height: 60px;
   }
 }
 
+.page-content .link-list {
+  color: $action-color;
+  li:active,
+  li:focus,
+  li:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
 .page-content h4 {
   margin-bottom: 1em;
   color: $medium-gray;
@@ -148,6 +166,12 @@ $navbar-height: 60px;
 
   float: right;
   width: 37%;
+  @include media($phone-screen) {
+    width: 94%;
+    float: none;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
   text-align: center;
   position: relative;
   font-family: $heading-font-family;
@@ -196,6 +220,9 @@ $navbar-height: 60px;
   	position: relative;
     margin: ($small-spacing * .5) auto 0;
     background-color: $medium-gray;
+    @include media($phone-screen) {
+      width: 100%;
+    }
   }
   .video-closer {
     width: 8%;
@@ -206,6 +233,9 @@ $navbar-height: 60px;
     line-height: 1.8em;
     color: $dark-orange;
     opacity: 0;
+    @include media($phone-screen) {
+      display: none;
+    }
   }
   .video > iframe {
   	position: absolute;
@@ -221,6 +251,9 @@ $navbar-height: 60px;
     width: 100%;
     height: 100%;
     z-index: 1;
+    @include media($phone-screen) {
+      display: none;
+    }
   }
 }
 
@@ -237,9 +270,16 @@ $navbar-height: 60px;
 
 .download {
   float: right;
-  margin: 0 $small-spacing;
+  margin: 0 $small-spacing $small-spacing;
   min-width: 37%;
   text-align: center;
+  font-size: 1.2em;
+  @include media($phone-screen) {
+    width: 100%;
+    overflow: hidden;
+    float: none;
+    margin: 0 0 $small-spacing;
+  }
 }
 
 .download::before {
@@ -249,6 +289,9 @@ $navbar-height: 60px;
 .award {
   font-style: italic;
   margin-left: $base-spacing;
+  em {
+    font-style: normal;
+  }
 }
 
 .award:before {
@@ -293,25 +336,31 @@ $navbar-height: 60px;
       text-transform: none;
       font-weight: 700;
       font-size: 3em;
+      @include media($phone-screen) {
+        font-size: 1.7em;
+      }
     }
     p {
       font-size: $base-font-size * 1.4;
       font-family: $heading-font-family;
-      line-height: 1.3em;
+      line-height: 1.1em;
       font-weight: 400;
+      @include media($phone-screen) {
+        font-size: $base-font-size * .8;
+      }
     }
   }
   #skim {
     position: absolute;
-    top: 25%;
+    top: 20%;
   }
   #swim {
     position: absolute;
-    top: 50%;
+    top: 45%;
   }
   #dive {
     position: absolute;
-    top: 75%;
+    top: 70%;
   }
 }
 
@@ -367,14 +416,34 @@ figcaption.float {
   margin-left: 3%;
   margin-right: 3%;
   margin-bottom: $small-spacing * 1.5;
-  overflow: auto;
+  display: inline-block;
 }
 
-.figure-gallery img {
+.figure-gallery figure {
   width: 30%;
   float: left;
   margin: 0 3% 0 0;
   padding: 0;
+  @include media($phone-screen) {
+    width: 100%;
+    float: none;
+    margin: 0 0 0 0;
+  }
+}
+
+.figure-gallery .two-by-two {
+  width: 66%;
+  @include media($phone-screen) {
+    width: 100%;
+  }
+  figure {
+    width: 45.5%;
+    margin-bottom:.5em;
+    @include media($phone-screen) {
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .figure-outline {
@@ -393,6 +462,12 @@ figcaption.float {
   margin-left: 3%;
   margin-bottom: $small-spacing;
   clear: both;
+  @include media($phone-screen) {
+    width: 94%;
+    float: none;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
 }
 
 .ref-number {
@@ -410,12 +485,30 @@ figcaption.float {
   vertical-align: super;
 }
 
+
+.user-stat-heading {
+  text-align: center;
+  color: $dark-orange;
+  text-transform: uppercase;
+  font-family: $heading-font-family;
+  font-weight: 400;
+  line-height: 1.3em;
+  p {
+    margin-bottom: 0;
+  }
+}
+
 .user-stat {
   width: 27%;
   float: left;
   margin: 0 3%;
   text-align: center;
   color: $dark-orange;
+  @include media($phone-screen) {
+    width: 100%;
+    float: none;
+    margin: 0 0;
+  }
   h4 {
     font-size: 5em;
     color: $dark-orange;
@@ -427,4 +520,29 @@ figcaption.float {
     font-weight: 400;
     line-height: 1.3em;
   }
+}
+
+.print-fallback {
+  display: none;
+}
+
+.caption-direction {
+  @include media($phone-screen) {
+    display: none;
+  }
+}
+
+.caption-direction-phone {
+  display: none;
+  @include media($phone-screen) {
+    display: inline;
+  }
+}
+
+#emuseum {
+  hyphens: manual;
+}
+
+.long-url {
+  word-break: break-word;
 }

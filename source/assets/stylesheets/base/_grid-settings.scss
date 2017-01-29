@@ -8,9 +8,16 @@ $max-width: 1000px;
 // $visual-grid: true;
 
 // Neat Breakpoints
-$medium-screen: 650px;
-$large-screen: 940px;
+// $medium-screen: 650px;
+// $large-screen: 940px;
 
-$small-screen: new-breakpoint(max-width $medium-screen 12);
+$phone: 480px;
+$medium-screen: 768px;
+$large-screen: 1000px;
+
+$phone-screen: new-breakpoint(max-width $phone 12);
+$small-screen: new-breakpoint(max-width ($medium-screen - 1) 12);
+
 $medium-screen-up: new-breakpoint(min-width $medium-screen 12);
 $large-screen-up: new-breakpoint(min-width $large-screen 12);
+$portrait: new-breakpoint(min-width $medium-screen max-width $large-screen min-height ($medium-screen/3)*4 12);

@@ -3,19 +3,30 @@ title:
   main: Museum Catalogues in the Digital Age
   subtitle: A Final Report on the Getty Foundation’s Online Scholarly Catalogue Initiative
   short: OSCI Final Report
-pub_date:
+pub_date: 2017-02-10
 creators:
-  - first_name:
-    last_name:
-    role:
-    bio:
-author_as_it_appears: Getty Foundation
-publisher: Getty Publications
-publisher_location: Los Angeles
-imprint: Getty Foundation
-rights: © 2016 J. Paul Getty Trust
-description_main:
-description_short:
+publisher:
+  name: The Getty Foundation
+  location: Los Angeles
+  url: http://www.getty.edu/foundation
+  twitter: "@GettyFoundation"
+rights: © 2017 J. Paul Getty Trust
+license:
+  type: Creative Commons Attribution 4.0 International License
+  url: http://creativecommons.org/licenses/by/4.0/
+  logo: cc-by.png
+  exceptions:
+    online:
+    print:
+    both:
+      - ""
+description_main: "The Getty Foundation’s Online Scholarly Catalogue Initiative (OSCI) is helping museums make the transition from printed volumes to multimedia, web-based publications freely available to anyone with a computer, tablet, or smartphone. The Foundation launched OSCI in 2009 in partnership with the J. Paul Getty Museum and eight other institutions: the Art Institute of Chicago; the Arthur M. Sackler and Freer Gallery of Art; the Los Angeles County Museum of Art; the National Gallery of Art, Washington, D.C.; the San Francisco Museum of Modern Art; the Seattle Art Museum; Tate; and the Walker Art Center."
+keywords:
+  - digital
+  - publishing
+  - museum
+  - catalogues
+  - art
 editions:
   - name: Online
     type: InteractiveResource
@@ -23,12 +34,12 @@ editions:
     isbn:
     link:
     additional_description:
-  - name: Summary Report
+  - name: Complete Report
     type: Text
     format: application/pdf
     isbn:
-    file_size_mb:
-    link:
+    file_size: 1.1MB
+    link: ../assets/downloads/osci-report.pdf
     additional_description:
 downloads:
   - name: Functional Requirements
@@ -51,4 +62,9 @@ downloads:
     link: ../assets/downloads/osci_glossary.pdf
     file_type: PDF
     file_size: 18KB
+revision_history:
+  - date: February 1, 2017
+    summary:
+      - First edition
 repository_url: https://www.github.com/gettypubs/osci-report
+permanent_url: http://gettypubs.github.io/osci-report

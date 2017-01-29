@@ -11,9 +11,9 @@
         %span.diminutive in the
         %br
         Digital Age
-      %h2.ion-power
+      %h2.ion-power.cover-icon
       %h2.cover-subtitle
-        A Final Report on the Getty Foundation’s
+        A Final Report on the Getty&#160;Foundation’s
         %br
         Online Scholarly Catalogue Initiative
   .cover-copy
@@ -22,11 +22,15 @@
   .cover-colophon
     .cover-colophon-inner
       .colophon-text
-        :markdown
-          Grant report published by the Getty Foundation and licensed under a <br />[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){:rel="license"}, except where otherwise noted.
-        = link_to "Privacy Policy", "http://www.getty.edu/legal/privacy.html", :target => "blank"
-        %span &#124;
-        = link_to "Terms of Use", "http://www.getty.edu/legal/copyright.html", :target => "blank"
+        Published by the Getty Foundation and licensed under a <a href="#{data.book.license.url}" rel="license">#{data.book.license.type}</a>, with the exception of individual artworks illustrated in the report or within depicted catalogues.
+        %p
+          = link_to "Source Code", "#{data.book.repository_url}", { target: "_blank" }, { class: "ion-social-github" }
+          %span &#124;
+          = link_to "Privacy", "http://www.getty.edu/legal/privacy.html", { target: "_blank" }
+          %span &#124;
+          = link_to "Terms of Use", "http://www.getty.edu/legal/copyright.html", { target: "_blank" }
       .colophon-logo
-        %a{:href => "http://www.getty.edu/foundation", :target => "_blank", :title => "The Getty" }
-          = tag :img, :src => image_path("getty_logo_cbb283.svg"), :alt => "Getty Logo"
+        %a{:href => "#{data.book.publisher.url}", :target => "_blank", :title => "#{data.book.publisher.name}" }
+          <svg><switch><use xlink:href="#getty-logo"></use><foreignObject><img src="assets/images/getty-logo.png" alt="The Getty logo" /></foreignObject></switch></svg>
+          .print-logo
+            <img src="assets/images/getty-logo.png" alt="The Getty logo" />

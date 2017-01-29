@@ -8,29 +8,31 @@ Three basic approaches emerged from the initiative:
 1. [The OSCI Toolkit](#the-osci-toolkit)
 2. [Web Content Management](#web-content-management)
 3. [Museum System/eMuseum](#emuseum)
+{:.link-list}
 
-All three share a tripartite process: start with raw collections data; transform that data into authored, publishable material; and then design a public presentation of that data as a Web interface. It is critically important that core data remains separate from its transformation and presentation, as it allows the institution to change how that data might be publicly presented in the future without having to re-enter it. That same data can also be repurposed for other uses, such as in-gallery interpretations or museum tours using handheld devices.
+While there are other solutions, these three approaches best characterize the choices made by the OSCI partners. All three share a tripartite process: start with raw collections data; transform that data into authored, publishable material; and then design a public presentation of that data as a Web interface. It is critically important that core data remains separate from its transformation and presentation, as it allows the institution to change how that data might be publicly presented in the future without having to re-enter it. That same data can also be repurposed for other uses, such as in-gallery interpretations or museum tours using handheld devices.
 
-The bottom layer of these tripartite structures is composed of the databases, systems, and documents containing information about the collection and its artworks. The middle layer—the OSCI Toolkit, eMuseum, or Web content management system—transforms this data, arranging it into desired relationships. This content is then published to the website, which represents the top layer, in predesigned formats and layouts.
+The first layer of these tripartite structures is composed of the databases, systems, and documents containing information about the collection and its artworks. The middle layer—the OSCI Toolkit, eMuseum, or Web content management system—transforms this data, arranging it into the desired relationships. This content is then published to the website, which forms the presentation layer, in predesigned formats and layouts.
 
 <figure class="inline-figure" markdown="0">
-  <img src="/assets/images/osci_digitalpipeline.gif" alt="tripartite structure" />
+  <img src="/assets/images/animation_digitalpipeline.gif" alt="tripartite structure" class="animation"/>
+  <img src="/assets/images/animation_digitalpipeline_fallback.png" alt="" class="print-fallback"/>
   <figcaption>All the OSCI catalogues share a tripartite process: start with raw collections data in <strong>databases <span class="ref-number">1</span></strong>; transform that data into authored, publishable material with a <strong>content management system <span class="ref-number">2</span></strong>; and then design a public presentation of that data as a <strong>Web interface <span class="ref-number">3</span></strong>.</figcaption>
 </figure>
 
 ## The OSCI Toolkit
 {: id="the-osci-toolkit"}
 
->*“We chose this model so we could have adaptable and user-friendly layouts, which allows us to accommodate the specific content needs of individual catalogues. For the design of the platform we decided to produce a more book-like appearance with citability that would give stability and authority to our publications within the ever-changing digital environment.”*
+>*“We chose this model so we could have adaptable and user-friendly layouts that allow us to accommodate the specific content needs of individual catalogues. For the design of the platform we decided to produce a more book-like appearance with citability that would give stability and authority to our publications within the ever-changing digital environment.”*
 >
 >Sarah Guernsey, Executive Director of Publishing, Art Institute of Chicago
 >{:.attribution}
 
 The OSCI Toolkit originated with the Art Institute of Chicago’s online catalogue. The Art Institute conceived and managed the development of what they called the ChicagoCodeX (CCX), which served as the basis of the Toolkit. The coding and technical implementation was researched and executed by the IMA Lab (the media and technology wing at the Indianapolis Museum of Art), and the software is open source.
 
-The OSCI Toolkit enables museums to build a <span class="popup popup-definition" data-definition='<%= define_term("microsite") %>'>*microsite*</span> with a more “book-like” experience that is still flexible and customizable. The goal of this digital publishing solution is “write once, deploy everywhere.” The Toolkit is based on the widely used Drupal <span class="popup popup-definition" data-definition='<%= define_term("cms") %>'>*content management system*</span>, and uses a series of <span class="popup popup-definition" data-definition='<%= define_term("api") %>'>*application programming interfaces (APIs)*</span> to access the data held in various repositories and to communicate between the Drupal content and the Web presentation. These APIs support navigation, content, notes, search, figures, footnotes, and citations in both MLA and Chicago publication styles.  The types of illustrations that are supported are not restricted; they can be embedded videos, sound, or zoomable images. Additionally, to better support the existing publication workflows of institutions, the Toolkit has support for pasting documents from Word, and in the future will include models of importing content from <span class="popup popup-definition" data-definition='<%= define_term("dams") %>'>*DAMS*</span>.
+The OSCI Toolkit enables museums to build a <span class="popup popup-definition" data-definition='<%= define_term("microsite") %>'>*microsite*</span> with a more “book-like” experience that is still flexible and customizable. The goal of this digital publishing solution is “write once, deploy everywhere.” The Toolkit uses a series of <span class="popup popup-definition" data-definition='<%= define_term("api") %>'>*application programming interfaces (APIs)*</span> to access the data held in various repositories and to communicate between the content management system and the Web presentation. These APIs support navigation, content, notes, search, figures, footnotes, and citations in both MLA and Chicago publication styles.  The types of illustrations that are supported are not restricted; they can be embedded videos, sound, or zoomable images. Additionally, to better support the existing publication workflows of institutions, the Toolkit has support for pasting documents from Word, and in the future will include models of importing content from <span class="popup popup-definition" data-definition='<%= define_term("dams") %>'>*DAMS*</span>.
 
-With funding from the Getty Foundation, the IMA Lab is currently completing enhancements to the OSCI Toolkit that make the software easier to install and more user-friendly. A set of five standardized “themes,” or presentations, are in development which Museum staff will be able to deploy as templates that can be  customized for their own needs.  IMA Lab is also creating a demonstration website to allow potential users to try out the software. Through conference presentations, workshops, and “hackathons,” the IMA Lab staff is helping to build a community of developers who will carry the OSCI Toolkit forward. Updates and innovations will be posted to the OSCI Toolkit website, [www.oscitoolkit.org](http://www.oscitoolkit.org).
+With funding from the Getty Foundation, the IMA Lab has recently completed enhancements to the OSCI Toolkit that make the software easier to install and more user-friendly, including a set of five standardized “themes,” or presentation templates, that can be customized for a Museum’s needs. Technology used in the current version of the OSCI Toolkit was appropriate to implementation when it was first developed in 2012. Recognizing the quick pace at which technology changes, and based on feedback from users at workshops and presentations, IMA Lab is currently considering a more significant overhaul of the OSCI Toolkit in consultation with current users. Updates and innovations will be posted to the OSCI Toolkit website, [www.oscitoolkit.org](http://www.oscitoolkit.org){:target="_blank"}.
 
 <div class="figure-gallery" markdown="0">
   <figure>
@@ -53,16 +55,13 @@ With funding from the Getty Foundation, the IMA Lab is currently completing enha
 - Information can be updated on a regular basis if desired.
 - The Toolkit is available for free on the Web.
 - The Toolkit works with different information delivery systems and devices.
-- The Toolkit is based in Drupal, and there is a good hiring pool of programmers with Drupal expertise.
 - The OSCI Toolkit can be a good choice for museums that have less robust websites, as the entire package can be built outside the museum and then exported to the website.
 
 #### OSCI Toolkit Disadvantages
 
-- It is not as simple as using the TMS/eMuseum systems that are already in use in many museums, and requires Drupal expertise, either on contract or on staff.
+- It is not as simple as using the TMS/eMuseum systems that are already in use in many museums.
 - A seasoned Web developer or the money to hire one is vital.
-- The backend and other systems require at least some level of ongoing updates to maintain.
-
-More information on current developments of the OSCI Toolkit and links to the source code are available at [http://oscitoolkit.org](http://oscitoolkit.org).
+- While TMS and eMuseum usage is common among museums, the developer base for these programs in not as wide as other content management systems.
 
 ## Web Content Management
 {: id="web-content-management"}
@@ -72,28 +71,27 @@ More information on current developments of the OSCI Toolkit and links to the so
 >Sarah Roberts, Andrew W. Mellon Associate Curator of Painting and Sculpture, SFMOMA
 >{:.attribution}
 
-SFMOMA, NGA, Tate, and the Walker Art Center created their catalogues using a content management system (CMS) that integrated the catalogue into the museum’s existing website. This approach uses and enhances the systems that museums have already developed to present their collections online. Generally, one group of technical staff can provide maintenance for both the website and the catalogue. Depending on the configuration, these systems can publish just to a desktop or, with responsive design, can be published out to other devices as well. They are Web publications and typically support a scrolling (rather than page-turning) experience. And like other websites, they can contain zoomable images, audio and video clips, and PDFs that can be downloaded and printed.
+SFMOMA, NGA, Tate, and the Walker Art Center created their catalogues using a content management system (CMS) that integrated the catalogue into each museum’s existing website. This approach uses and enhances the systems that museums have already developed to present their collections online. Generally, one group of technical staff can provide maintenance for both the website and the catalogue. Depending on the configuration, these systems can publish just to a desktop or, with responsive design, can be published out to other devices as well. They are Web publications and typically support a scrolling (rather than page-turning) experience. And like other websites, they can contain zoomable images, audio and video clips, and PDFs that can be downloaded and printed.
 
 <div class="figure-gallery" markdown="0">
-  <figure>
-    <a href="https://www.sfmoma.org/rauschenberg-research-project/" target="_blank"><img src="/assets/images/projects/sfmoma_th_square.jpg" alt="SFMOMA" /></a>
-  </figure>
-  <figure>
-    <a href="http://www.nga.gov/content/ngaweb/research/online-editions.html" target="_blank"><img src="/assets/images/projects/nga_th_square.jpg" alt="NGA" /></a>
-  </figure>
+  <div class="two-by-two">
+    <figure>
+      <a href="https://www.sfmoma.org/rauschenberg-research-project/" target="_blank"><img src="/assets/images/projects/sfmoma_th_square.jpg" alt="SFMOMA" /></a>
+    </figure>
+    <figure>
+      <a href="http://www.nga.gov/content/ngaweb/research/online-editions.html" target="_blank"><img src="/assets/images/projects/nga_th_square.jpg" alt="NGA" /></a>
+    </figure>
+    <figure>
+      <a href="http://www.tate.org.uk/art/research-publications/camden-town-group" target="_blank"><img src="/assets/images/projects/tate_th_square.jpg" alt="Tate" /></a>
+    </figure>
+    <figure>
+      <a href="http://www.walkerart.org/collections/publications" target="_blank"><img src="/assets/images/projects/walker_th_square.jpg" alt="Walker" /></a>
+    </figure>
+  </div>
   <figcaption class="float">
-    <a href="https://www.sfmoma.org/rauschenberg-research-project/" target="_blank">SFMOMA</a>, the <a href="http://www.nga.gov/content/ngaweb/research/online-editions.html" target="_blank">National Gallery of Art</a>, the <a href="http://www.tate.org.uk/art/research-publications/camden-town-group" target="_blank">Tate</a>, and <a href="http://www.walkerart.org/collections/publications" target="_blank">Walker Art Center</a> all used their existing web content management systems to create and present their online catalogues.
+    <a href="https://www.sfmoma.org/rauschenberg-research-project/" target="_blank">SFMOMA</a>, the <a href="http://www.nga.gov/content/ngaweb/research/online-editions.html" target="_blank">National Gallery of Art</a>, <a href="http://www.tate.org.uk/art/research-publications/camden-town-group" target="_blank">Tate</a>, and <a href="http://www.walkerart.org/collections/publications" target="_blank">Walker Art Center</a> all used their existing web content management systems to create and present their online catalogues.
   </figcaption>
 </div>
-<div class="figure-gallery" markdown="0">
-  <figure>
-    <a href="http://www.tate.org.uk/art/research-publications/camden-town-group" target="_blank"><img src="/assets/images/projects/tate_th_square.jpg" alt="Tate" /></a>
-  </figure>
-  <figure>
-    <a href="http://www.walkerart.org/collections/publications" target="_blank"><img src="/assets/images/projects/walker_th_square.jpg" alt="Walker" /></a>
-  </figure>
-</div>
-
 
 #### Web Content Management Advantages
 
@@ -107,7 +105,7 @@ SFMOMA, NGA, Tate, and the Walker Art Center created their catalogues using a co
 - Users, particularly academic users, don’t always understand when they are “inside” the catalogue and when they are not; search results may not always make this clear, and the navigation for the catalogue and other online collection pages can be the same.
 - The workload of the Web group or technicians, who will need to maintain the catalogue in addition to other Web content, may increase significantly; additional staff may be required.
 
-## Museum System/<span class="lowercase">e</span>Museum
+## Museum System/&shy;<span class="lowercase">e</span>Museum
 {: id="emuseum"}
 
 >*“We wanted to pull the information from the TMS database, and this model allowed us to do that. We didn’t want the staff to have to learn a new system; we wanted to use tools that we already had. Our solution also helps other museums that use TMS in the future, especially midsized museums with lean technology staff.”*
@@ -115,7 +113,7 @@ SFMOMA, NGA, Tate, and the Walker Art Center created their catalogues using a co
 >Mimi Gardner Gates, Director Emerita, SAM
 >{:.attribution}
 
-The Museum System (TMS) is a commonly used collections management system, and eMuseum is the affiliated software that publishes information from TMS to the Web. Both are products of Gallery Systems. Through the OSCI initiative, eMuseum has been enhanced to allow the addition of in-depth scholarly content to individual object records. The model developed by SAM in conjunction with Gallery Systems uses templates created by TMS and eMuseum for the institution; Gallery Systems can create other templates as well. eMuseum, the publishing program, pulls information directly from TMS and migrates the data into existing templates. eMuseum has the capacity to translate information from TMS to any Web content management system.
+The Museum System (TMS) is a commonly used collections management system, and eMuseum is the affiliated software that publishes information from TMS to the Web. Both are products of software vendor Gallery Systems. Through the OSCI initiative, eMuseum has been enhanced to allow the addition of in-depth scholarly content to individual object records. The model developed by SAM in conjunction with Gallery Systems uses templates created by TMS and eMuseum for the institution; Gallery Systems can create other templates as well. eMuseum, the publishing program, pulls information directly from TMS and migrates the data into existing templates. eMuseum has the capacity to translate information from TMS to any Web content management system.
 
 SAM has chosen to have its online catalogue information updated directly and regularly, creating an open-ended and constantly evolving online catalogue, which represents a significant departure from the standard printed version. It is flexible and will continue to change as the museum’s collection of Chinese painting and calligraphy expands.
 
@@ -142,4 +140,4 @@ For museums interested in exploring the use of TMS and eMuseum, software vendor 
 
 - It is a one-vendor system, which could also be seen as a disadvantage.
 - The online presentation is not as flexible as the other two OSCI approaches.
-- While TMS and eMuseum usage is common among museums, the developer base for these programs is not as wide as Drupal (used in the OSCI Toolkit) or other content management systems.
+- The developer base is not as wide as other content management systems.

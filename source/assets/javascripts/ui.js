@@ -38,23 +38,18 @@ function footnoteScroll() {
 
 function keyboardNav(){
   $(document).keydown(function(event) {
-    var prev, next, photoswipeActive;
+    var prev, next;
     prev = document.getElementById("prev-link");
     next = document.getElementById("next-link");
-
-    // Make sure photoswipe is not active
-    photoswipeActive = $(".pswp").hasClass("pswp--visible");
-    if (!(photoswipeActive)) {
-      // 37 = left arrow key
-      if (event.which === 37 && prev) {
-        prev.click();
-        event.preventDefault();
-      }
-      // 39 = right arrow key
-      else if (event.which === 39 && next) {
-        next.click();
-        event.preventDefault();
-      }
+    // 37 = left arrow key
+    if (event.which === 37 && prev) {
+      prev.click();
+      event.preventDefault();
+    }
+    // 39 = right arrow key
+    else if (event.which === 39 && next) {
+      next.click();
+      event.preventDefault();
     }
   });
 }
@@ -172,16 +167,10 @@ function resetPage() {
   });
 }
 
-function gifPlayer() {
-  $(".animate-on-hover").mouseover(function() {
-    var gifSource = $(this).attr("data-alt");
-    $(this).attr("src",gifSource);
-  });
-}
-
 function submarineTracker() {
-  $("#skim-swim-dive").mousemove(function() {
-    var mousePosition = event.pageY;
+  $("#skim-swim-dive").mousemove(function(e) {
+    e = e || window.event;
+    var mousePosition = e.pageY;
     var elementPosition = $("#skim-swim-dive").position();
     var subHeight = $("#submarine").height();
     var subPosition = mousePosition - elementPosition.top - subHeight/2;
@@ -192,8 +181,6 @@ function submarineTracker() {
     } else {
       spotlightOpacity = 0;
     }
-
-    // var spotlightOpacity = subPosition / $("#water").height();
     console.log( mousePosition, elementPosition.top, subPosition, subHeight, $("#water").height() );
     if (( subPosition < $("#water").height() - subHeight ) && ( subPosition >= $("#water").height() * .1 )) {
       $("#submarine").css( { "top": subPosition, "transition": "top 1.5s ease-in-out"} );
@@ -412,7 +399,6 @@ function uiSetup() {
   sidebarExpander();
   popupSetup();
   gridExpander();
-  gifPlayer();
   submarineTracker();
   videoExpander();
   resetPage();

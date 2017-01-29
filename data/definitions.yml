@@ -12,7 +12,7 @@
   definition: "a list of all of the technical specifications that are desired for a given project"
 
 - id: usability-studies
-  definition: "a method of product evaluation in which users are asked to complete tasks, typically while they are being observed by a researcher, to see where they encounter problems and experience confusion"
+  definition: "a method of evaluation of online applications in which users are asked to complete tasks, typically while they are being observed by a researcher, to see where they encounter problems and experience confusion"
 
 - id: permanent-url
   definition: "an address that identifies the location of a file on the Internet"

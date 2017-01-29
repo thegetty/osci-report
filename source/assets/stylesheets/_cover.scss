@@ -31,55 +31,64 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   padding: 2em 0.5em;
   text-align: center;
   width: 100%;
-
-  h2 { margin-top: 0; }
-  @include media($medium-screen-up) { padding: 4em 2em; }
-
+  h2 {
+    margin-top: 0;
+  }
 }
+
 // scss-lint:enable VendorPrefix
 // scss-lint:enable NameFormat
 
 .cover-title {
   font-family: 'Titillium Web', sans-serif;
-  font-size: 4em;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  font-size: 11vh;
+  margin-top: 12vh;
+  @include media($large-screen-up) {
+    font-size: 13vh;
+    margin-top: 9vh;
+  }
+  @include media($phone-screen) {
+    font-size: 9.1vh;
+    margin-top: 15vh;
+  }
   font-weight: 200;
   letter-spacing: 1%;
-  line-height: 1.1em;
-  margin-bottom: $small-spacing * 0.25;
-  margin-top: 3rem;
-  text-transform: uppercase;
-
+  margin-bottom: $small-spacing * .25;
   .diminutive {
-    display: block;
-    font-size: 1rem;
+    text-transform: none;
     font-weight: 300;
     height: 0;
-    margin-bottom: -(0.75em);
-    margin-top: -(0.75em);
-    text-transform: none;
-
-    &::before { content: "— "; }
-    &::after { content: " —"; }
+    margin-top: -3vh;
+    margin-bottom: -3vh;
+    display: block;
   }
-
-  @include media($medium-screen-up) {
-    font-size: 5em;
-    .diminutive { font-size: 1.5rem; }
+  .diminutive:before {
+    content: '— '
   }
+  .diminutive:after {
+    content: ' —'
+  }
+}
 
+.cover-title .diminutive,
+.cover-icon,
+.cover-subtitle {
+  font-size: 3.4vh;
   @include media($large-screen-up) {
-    font-size: 6em;
-    .diminutive { font-size: 2rem; }
+    font-size: 4vh;
+  }
+  @include media($phone-screen) {
+    font-size: 2.8vh;
   }
 }
 
 .cover-subtitle {
   font-family: 'Titillium Web', sans-serif;
-  font-size: 1em;
   font-weight: 300;
-
-  @include media($medium-screen-up) { font-size: 1.5em; }
-  @include media($large-screen-up) { font-size: 2em; }
+  padding-left: $small-spacing;
+  padding-right: $small-spacing;
 }
 
 .cover-author {
@@ -87,11 +96,6 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   font-weight: 400;
   margin: 0 auto;
   max-width: 30em;
-
-  @include media($medium-screen-up) {
-    font-size: 1.5em;
-    margin: 1em auto;
-  }
 }
 
 .cover-copy {
@@ -114,44 +118,79 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
 }
 
 .cover-copy-inner {
-  @include media($medium-screen-up) {
-    @include span-columns(10);
-    p + p { text-indent: 0; }
+  padding: 0 $base-spacing;
+  @include media($large-screen-up) {
+    padding: 0 ($base-spacing * 2.5);
+  }
+  @include media($small-screen) {
+    padding: 0;
   }
 }
 
 .cover-colophon {
   color: $beige;
   font-family: $heading-font-family;
-  font-weight: 400;
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
-
+  font-weight: 600;
+  color: $beige;
   a {
+    font-weight: 600;
     color: $beige;
     text-decoration: underline;
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($beige, 10%);
+    }
   }
 }
 
-.cover-colophon-inner { height: $navbar-height * 1.5; }
+.cover-colophon-inner {
+  height: $navbar-height * 2;
+  margin-bottom: $small-spacing;
+}
 
 .colophon-text {
-  @include media($large-screen-up) {
-    float: left;
-    margin-left: $base-spacing;
+  float: left;
+  margin-left: $base-spacing;
+  p { margin-bottom: $small-spacing * .5; }
+  max-width: 520px;
+  @include media($small-screen) {
+    float: none;
+    text-align: center;
+    line-height: 1.7em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-  p { margin-bottom: 0; }
 }
 
 .colophon-logo {
   opacity: 0.7;
   padding-top: $base-spacing;
-  width: $navbar-height;
-
-  @include media($large-screen-up) {
-    float: right;
-    margin-right: $base-spacing;
-    padding-top: 0;
+  svg, svg img {
+    width: $navbar-height;
+    height: $navbar-height;
+    transition: fill .25s ease-in-out;
+    fill: $beige;
   }
+  opacity: .7;
+  float: right;
+  margin: .5em $base-spacing 0;
+  padding-top: 0;
+  @include media($small-screen) {
+    float: none;
+    text-align: center;
+    margin: $small-spacing auto $base-spacing;
+  }
+  &:active,
+  &:focus,
+  &:hover {
+    svg {
+      fill: darken($beige, 10%);
+    }
+  }
+}
+
+.print-logo {
+  display: none;
 }

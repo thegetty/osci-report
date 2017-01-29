@@ -9,6 +9,21 @@ type: grid
 {::options parse_block_html="true" /}
 
 <div class="grid">
+
+<div class="grid-toc">
+
+- [Art Institute of Chicago](#aic-content){: .grid-trigger-link}
+- [Freer Gallery of Art and Arthur&#160;M.&#160;Sackler Gallery](#freersackler-content){: .grid-trigger-link}
+- [Los Angeles County Museum of&#160;Art](#lacma-content){: .grid-trigger-link}
+- [National Gallery of Art](#nga-content){: .grid-trigger-link}
+- [San Francisco Museum of Modern&#160;Art](#sfmoma-content){: .grid-trigger-link}
+- [Seattle Art Museum](#seattle-content){: .grid-trigger-link}
+- [Tate](#tate-content){: .grid-trigger-link}
+- [Walker Art Center](#walker-content){: .grid-trigger-link}
+
+</div>
+
+
 <div class="grid-content" id="aic-content">
 
 <div class="grid-reset ion-grid"></div>
@@ -21,13 +36,13 @@ type: grid
 
 ##### Art Institute of Chicago
 
-### [Monet Paintings and&#160;Drawings](https://publications.artic.edu/monet/reader/paintingsanddrawings){:target="blank"}
+### [Monet Paintings and Drawings](https://publications.artic.edu/monet/reader/paintingsanddrawings){:target="blank"}
 
-### [Renoir Paintings<br /> and&#160;Drawings](https://publications.artic.edu/renoir/reader/paintingsanddrawings){:target="blank"}
+### [Renoir Paintings and Drawings](https://publications.artic.edu/renoir/reader/paintingsanddrawings){:target="blank"}
 
-The Art Institute of Chicago’s OSCI publications focus on the museum’s renowned collection of Impressionist masterpieces by Claude Monet (1840–1926) and Auguste Renoir (1841–1919). Organized as two separate catalogues, the volumes foreground conservation documentation using innovative functionality such as sliding, interactive image filters that reveal new research on how the artists changed their compositions over time. Another key feature is a customized citation tool for researchers to encourage scholarly use of the catalogues.
+The Art Institute of Chicago’s OSCI publications focus on the museum’s renowned collection of Impressionist masterpieces by Claude Monet (1840–1926) and Auguste Renoir (1841–1919). Organized as two separate catalogues, the volumes foreground conservation documentation using innovative functionality such as interactive image filters that reveal new research on how the artists changed their compositions over time. Another key feature is a customized citation tool for researchers to encourage scholarly use of the catalogues.
 
-AAM Bronze MUSE Award, Interactive Kiosks (2014) for Renoir’s True Colors, which utilized components of the Renoir OSCI catalogue
+AAM Bronze MUSE Award, Interactive Kiosks (2014) for <em>Renoir’s True Colors</em>, which utilized components of the Renoir OSCI catalogue
 {:.award .ion-ribbon-b}
 
 </div>
@@ -45,7 +60,7 @@ AAM Bronze MUSE Award, Interactive Kiosks (2014) for Renoir’s True Colors, whi
 
 ### [The World of the Japanese Illustrated Book](http://pulverer.si.edu/){:target="blank"}
 
-The Freer/Sackler catalogue builds on the recently acquired Gerhard Pulverer Collection of Japanese illustrated books, one of the most important collections of these distinctive hand-made works of art. The publication focuses on artist Katsushika Hokusai (1760–1849), whose unique style had a marked influence on European and American modern artists. The catalogue’s special features include a “digital study room” that allows readers to save their annotations, notes, searches, and favorites in their own password protected part of the site. Users can search the catalogue contents in either Roman or Kanji script, and a clickable timeline lets readers see at a glance how many books in the collection were published in any given year.
+The Freer/Sackler catalogue centers on the Gerhard Pulverer Collection of Japanese illustrated books, one of the most important collections of these distinctive hand-made works of art. The scholarly essays focus on artist Katsushika Hokusai (1760–1849), whose unique style had a marked influence on European and American modern artists. The catalogue’s special features include a “digital study room” that allows readers to save their annotations, notes, searches, and favorites in their own password protected part of the site. Users can search the catalogue contents in either Roman or Kanji script, and a clickable timeline lets readers see at a glance how many books in the collection were published in any given year.
 
 Bronze “Telly” Award (2015) for the catalogue’s Ukiyo-e technique video
 {:.award .ion-ribbon-b}
@@ -82,9 +97,9 @@ Detailed object entries and new interpretive essays form the centerpiece of LACM
 
 ### [Dutch Paintings of the Seventeenth Century](http://www.nga.gov/content/ngaweb/research/online-editions/17th-century-dutch-paintings.html/){:target="blank"}
 
-The National Gallery of Art’s (NGA) OSCI publication is an updated and expanded digital version of Arthur Wheelock Jr.’s key reference work. Among the volumes special features are a sophisticated image comparison tool, a customized reading environment, and new multimedia content, including a series of video tours of the NGA’s Dutch paintings galleries led by Wheelock. The OSCI publication is the first release for NGA Online Editions, an ongoing effort that provides access to the most current in-depth information on the Gallery’s collections along with smart tools for citing, comparing, sharing, exporting, viewing, printing, and storing texts and images.
+The OSCI publication of the National Gallery of Art (NGA) is an updated and expanded digital version of Arthur Wheelock Jr.’s key reference work. Among the volume’s special features are a sophisticated image comparison tool, a customized reading environment, and new multimedia content, including a series of video tours of the NGA’s Dutch paintings galleries led by Wheelock. The OSCI publication was the first release for NGA Online Editions, an ongoing effort that provides access to the most current in-depth information on the Gallery’s collections along with smart tools for citing, comparing, sharing, exporting, viewing, printing, and storing texts and images.
 
-ARLIS’ George Wittenborn Award (2015) for excellence in art publishing
+ARLIS’s George Wittenborn Award (2015) for excellence in art publishing
 {:.award .ion-ribbon-b}
 
 </div>
@@ -102,7 +117,7 @@ ARLIS’ George Wittenborn Award (2015) for excellence in art publishing
 
 ### [The Rauschenberg Research Project](http://www.sfmoma.org/explore/collection/project/rauschenberg_research_project){:target="blank"}
 
-SFMOMA’s completed OSCI publication, *The Rauschenberg Research Project*, provides access to the equivalent of 600+ print pages of new research, vibrant illustrations, and multimedia content about the celebrated American artist Robert Rauschenberg. Users can watch video clips of the artist talking about how artworks were created, view annotated images that show how Rauschenberg altered some of his most famous pieces after they were initially exhibited, and read curatorial documents that were previously difficult to access, such as detailed correspondence revealing the artist’s secret “recipe” for tinting collaged fabric.
+SFMOMA’s OSCI publication, *The Rauschenberg Research Project*, provides access to the equivalent of 600+ print pages of new research, vibrant illustrations, and multimedia content about the celebrated American artist Robert Rauschenberg. Users can watch video clips of the artist talking about how artworks were created, view annotated images that show how Rauschenberg altered some of his most famous pieces after they were initially exhibited, and read curatorial documents that were previously difficult to access, such as detailed correspondence revealing the artist’s secret “recipe” for tinting collaged fabric.
 
 AAMC Awards for Excellence, Honorable Mention in Exhibition Catalogues category (2013)
 {:.award .ion-ribbon-b}
@@ -157,9 +172,9 @@ Tate’s OSCI publication is on the British Post-Impressionist circle known as t
 
 ##### Walker Art Center
 
-### [Living Collections Catalogue: Volume I](http://www.walkerart.org/collections/publications/performativity){:target="blank"}
+### [Living Collections Catalogue](http://www.walkerart.org/collections/publications/performativity){:target="blank"}
 
-The Walker’s *Living Collections Catalogue* is a series of thematic publications devoted to the museum’s multidisciplinary collections. The two volumes supported through OSCI are *On Performativity* and *Art Expanded, 1958–1978*. Both editions feature new essays by leading scholars that integrate video, audio, still images, and archival material into a crisp, responsive-design environment that adapts to your viewing device. Essays are versioned and citable with the assurances of a permanent address to the information referenced, while links out to entries in the collections database provide information about individual artworks that is updated dynamically.
+The Walker’s *Living Collections Catalogue* is a series of thematic publications devoted to the museum’s multidisciplinary collections. The two volumes supported through OSCI are *On Performativity* and *Art Expanded, 1958–1978*. Both editions feature new essays by leading scholars that integrate video, audio, still images, and archival material into a crisp, responsive-design environment that adapts to different viewing devices. Essays are versioned and citable with the assurances of a permanent address to the information referenced, while links out to entries in the collections database provide information about individual artworks that is updated dynamically.
 
 Museums and the Web, Best of the Web Award for Research/Collections Online (2015)
 {:.award .ion-ribbon-b}

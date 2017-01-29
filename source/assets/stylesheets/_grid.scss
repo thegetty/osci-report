@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.grid-toc {
+  display: none;
+}
+
 .grid-trigger { display: block; }
 .grid--hidden { display: none; }
 
@@ -20,16 +24,13 @@
   margin-top: $navbar-height;
   padding: $small-spacing;
 
-  // @include media($medium-screen-up) { height: 250px; }
-  // @include media($large-screen-up) { height: 250px; }
-
   .page-title {
     color: $dark-blue;
   }
 
   .header-reset {
     cursor: pointer;
-    display: inline-block;
+    display: block;
     text-align: center;
     margin: 0 auto;
     font-family: $heading-font-family;
@@ -39,18 +40,29 @@
     span {
       margin-left: 2px;
     }
+    @include media($small-screen) {
+      margin-top: .5em;
+    }
   }
   .header-reset:hover {
     color: $dark-gray;
   }
+
 }
 
 .grid-nav {
-  height: 120vh;
+  height: 57em;
   background-color: $action-color;
   #trigger-3, #trigger-6, #trigger-9 {
     margin-right: 0px;
     float: right;
+  }
+  @include media($large-screen-up) {
+    height: 66em;
+  }
+  @include media($small-screen) {
+    background-color: transparent;
+    height: auto;
   }
 }
 
@@ -59,13 +71,22 @@
   cursor: pointer;
   background-color: #fff;
   width: 33.26%;
-  height: 40vh;
+  height: 19em;
   margin-right: .11%;
   margin-bottom: 1px;
-
+  @include media($large-screen-up) {
+    height: 22em;
+  }
+  @include media($small-screen) {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    height: auto;
+    border-bottom: 1px solid $action-color;
+  }
   background-position: center top;
   float: left;
-  padding: ($small-spacing * 2) $small-spacing;
+  padding: ($small-spacing * 2) ($small-spacing * .5);
   h3, h4 {
     color: $dark-blue;
   }
@@ -80,11 +101,14 @@
     font-family: "Titillium Web";
     font-weight: 300;
     font-size: 2em;
+    @include media($large-screen-up) {
+      font-size: 2.35em;
+    }
     text-transform: uppercase;
     text-align: center;
     .diminutive {
       text-transform: none;
-      font-size: 1rem;
+      font-size: .7em;
       font-weight: 400;
       display: block;
     }
@@ -120,11 +144,11 @@
   text-align: center;
 }
 
-.grid-trigger:hover {
-  .trigger-effect {
-    display: block;
-  }
-}
+// .grid-trigger:hover {
+//   .trigger-effect {
+//     display: block;
+//   }
+// }
 
 .image-trigger {
   cursor: pointer;
@@ -132,21 +156,36 @@
   @include flex-direction(column);
   @include justify-content(center);
   position: relative;
-  width: calc(33% - 1em);
-  height: 45vh;
-  margin-right: .5em;
-  margin-left: .5em;
-  margin-bottom: 1em;
+  width: calc(33% - .5em);
+  height: 19em;
+  margin-right: .25em;
+  margin-left: .25em;
+  margin-bottom: .5em;
+  @include media($large-screen-up) {
+    width: calc(33% - 1em);
+    height: 22em;
+    margin-right: .5em;
+    margin-left: .5em;
+    margin-bottom: 1em;
+  }
+  @include media($small-screen) {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    height: auto;
+  }
   border-right: 0px solid #fff;
   border-bottom: 0px solid #fff;
   z-index: 0;
   h2 {
     color: #fff;
     text-align: center;
-    // margin-top: $small-spacing * .25;
-    font-weight: 300;
-    font-size: 2.7em;
+    font-weight: 400;
+    font-size: 2em;
     margin: 0;
+    @include media($large-screen-up) {
+      font-size: 2.35em;
+    }
   }
 }
 
@@ -166,7 +205,7 @@
   h3 {
     font-weight: 400;
     .diminutive {
-      font-weight: 400;
+      font-weight: 600;
     }
   }
   .grid-overlay {
@@ -174,18 +213,29 @@
   }
 }
 
+
+.grid-main-column {
+  width: 100%;
+  max-width: 1080px;
+}
+
 .grid-content {
+  width: 100%;
+  padding: 0 calc( (100% - 800px) * .5 );
   margin-top: $small-spacing * .5;
   margin-bottom: $base-spacing * 2;
   background-color: #fff;
   border-radius: $base-border-radius;
-  padding: 0 ($base-spacing * 2.5);
   .grid-reset {
     cursor: pointer;
     float: right;
     color: $medium-gray;
     font-size: $base-font-size * 1.75;
     margin-left: $base-spacing;
+    @include media($phone-screen) {
+      margin-left: 0;
+      line-height: 0;
+    }
     font-family: "Titillium Web";
     font-weight: 700;
   }
@@ -199,6 +249,11 @@
     float: left;
     width: 40%;
     margin-right: $base-spacing;
+    @include media($phone-screen) {
+      float: none;
+      width: 80%;
+      margin-right: 0;
+    }
     figcaption {
       padding-top: 0;
     }
@@ -207,6 +262,12 @@
       font-family: $ionicons-font-family;
     }
   }
+  @include media($phone-screen) {
+    .cover-image + h5 {
+      margin-top: $small-spacing;
+    }
+  }
+
   h3 {
     font-weight: 400;
     margin-top: 0;
