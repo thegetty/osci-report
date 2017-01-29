@@ -14,6 +14,6 @@ The primary content pieces of the book can be found in the `data` and `source` d
 
 ## License
 
-Museum Catalogues in the Digital Age © 2017 J. Paul Getty Trust. This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), except where otherwise noted.
+Museum Catalogues in the Digital Age © 2017 J. Paul Getty Trust. This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), with the exception of individual artworks illustrated in the report or within depicted catalogues.
 
 Proteus Middleman © 2014–2015 [thoughtbot, inc](http://thoughtbot.com). Proteus Middleman is free software and may be redistributed under the terms specified in the [license](https://github.com/thoughtbot/bourbon/blob/master/LICENSE.md).
