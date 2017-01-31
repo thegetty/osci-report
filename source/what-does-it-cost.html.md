@@ -1,5 +1,5 @@
 ---
-title: What Does It Cost?
+title: What Does it Cost?
 sort_order: 5
 layout: page
 ---

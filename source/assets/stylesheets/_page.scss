@@ -470,6 +470,10 @@ figcaption.float {
   }
 }
 
+blockquote + .float-figure {
+  margin-top: .5em;
+}
+
 .ref-number {
   background-color: $orange;
   color: #fff;
@@ -520,6 +524,10 @@ figcaption.float {
     font-weight: 400;
     line-height: 1.3em;
   }
+}
+
+.user-stat + p {
+  clear: both;
 }
 
 .print-fallback {

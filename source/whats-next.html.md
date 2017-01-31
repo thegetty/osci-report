@@ -1,5 +1,5 @@
 ---
-title: What’s Next?
+title: What’s Next
 sort_order: 8
 layout: page
 ---
@@ -14,7 +14,7 @@ All of the OSCI partners are already working on new catalogues, some of which pr
 
 - The Art Institute of Chicago has already released online collection catalogues on Caillebotte, Gaugin, Pissarro, and Roman Art, as well as three exhibition catalogues and in-gallery interpretive kiosks that use the OSCI Toolkit technology. An additional seven catalogues are in production.
 - Subsequent to the OSCI initiative, Tate published *Henry Moore: Sculptural Process and Public Identity* (2015), *The Art of the Sublime* (2013), and part of its J.&#160;M.&#160;W. Turner collection of sketchbooks, drawings, and watercolors, and is continuing to add to its Turner catalogue.  
-- The Freer and Sackler Galleries have produced four additional catalogues on Korean Goryeo paintings, Chinese jades, mainland Southeast Asian ceramics, and Song and Yuan dynasty painting and calligraphy.
+- After completing the OSCI publication, the Freer and Sackler Galleries released two more online catalogues on ancient Chinese jades and Korean ceramics.
 - LACMA is in production on an online publication for the Carter Collection of Dutch Paintings.
 - The National Gallery of Art has released two more online catalogues, *Italian Paintings of the Thirteenth and Fourteenth Centuries* and *American Paintings, 1900–1945*, and is currently in production on two other catalogues: *Nineteenth-Century French Painting (Van Gogh and Gaugin)* and *Sixteenth-Century Italian Painting (Titian, Tintoretto, Veronese)*. Several others are slated for production in the years ahead.
 - SFMOMA received a grant from the Andrew W. Mellon Foundation to investigate and publish five areas of the collection, working in conjunction with the artists themselves: photography in the 1970s, Bay Area high-tech design, and the work of artists Ellsworth Kelly, Vija Celmins, and Julia Scher. These investigations will be published using the tools developed during the OSCI project.
