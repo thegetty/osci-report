@@ -40,7 +40,7 @@ type: grid
 
 ### [Renoir Paintings and Drawings](https://publications.artic.edu/renoir/reader/paintingsanddrawings){:target="blank"}
 
-The Art Institute of Chicago’s OSCI publications focus on the museum’s renowned collection of Impressionist masterpieces by Claude Monet (1840–1926) and Auguste Renoir (1841–1919). Organized as two separate catalogues, the volumes foreground conservation documentation using innovative functionality such as interactive image filters that reveal new research on how the artists changed their compositions over time. Another key feature is a customized citation tool for researchers to encourage scholarly use of the catalogues.
+The Art Institute of Chicago’s OSCI publications focus on the museum’s renowned collection of Impressionist masterpieces by Claude Monet (1840–1926) and Pierre-Auguste Renoir (1841–1919). Organized as two separate catalogues, the volumes foreground conservation documentation using innovative functionality such as interactive image filters that reveal new research on how the artists changed their compositions over time. Another key feature is a customized citation tool for researchers to encourage scholarly use of the catalogues.
 
 AAM Bronze MUSE Award, Interactive Kiosks (2014) for <em>Renoir’s True Colors</em>, which utilized components of the Renoir OSCI catalogue
 {:.award .ion-ribbon-b}
@@ -60,7 +60,7 @@ AAM Bronze MUSE Award, Interactive Kiosks (2014) for <em>Renoir’s True Colors<
 
 ### [The World of the Japanese Illustrated Book](http://pulverer.si.edu/){:target="blank"}
 
-The Freer/Sackler catalogue centers on the Gerhard Pulverer Collection of Japanese illustrated books, one of the most important collections of these distinctive hand-made works of art. The scholarly essays focus on artist Katsushika Hokusai (1760–1849), whose unique style had a marked influence on European and American modern artists. The catalogue’s special features include a “digital study room” that allows readers to save their annotations, notes, searches, and favorites in their own password protected part of the site. Users can search the catalogue contents in either Roman or Kanji script, and a clickable timeline lets readers see at a glance how many books in the collection were published in any given year.
+The Freer|Sackler catalogue centers on the Gerhard Pulverer Collection of Japanese illustrated books, one of the most important collections of these distinctive hand-made works of art. The scholarly essays focus on artist Katsushika Hokusai (1760–1849), whose unique style had a marked influence on European and American modern artists. The catalogue’s special features include a “digital study room” that allows readers to save their annotations, notes, searches, and favorites in their own password protected part of the site. Users can search the catalogue contents in either Roman or Kanji script, and a clickable timeline lets readers see at a glance how many books in the collection were published in any given year.
 
 Bronze “Telly” Award (2015) for the catalogue’s Ukiyo-e technique video
 {:.award .ion-ribbon-b}
@@ -80,7 +80,7 @@ Bronze “Telly” Award (2015) for the catalogue’s Ukiyo-e technique video
 
 ### [Southeast Asian Art at LACMA](http://seasian.catalog.lacma.org/){:target="blank"}
 
-Detailed object entries and new interpretive essays form the centerpiece of LACMA’S catalogue focused on highlights from its fine collection of Southeast Asian bronze and metal sculpture. The publication features high-resolution, zoomable images, conservation documentation, videos, maps, and photographs that visually connect the museum’s objects to their place of origin. Select objects can be studied in the round with a user-controlled 360-degree image viewer. An online citation tool makes it easy to reference the catalogue for scholarly purposes, while social media plug-ins allow general sharing on a variety of platforms.
+Detailed object entries and new interpretive essays form the centerpiece of LACMA’S catalogue focused on highlights from its fine collection of Southeast Asian sculpture. The publication features high-resolution, zoomable images, conservation documentation, videos, maps, and photographs that visually connect the museum’s objects to their place of origin. Select objects can be studied in the round with a user-controlled 360-degree image viewer. An online citation tool makes it easy to reference the catalogue for scholarly purposes, while social media plug-ins allow general sharing on a variety of platforms.
 
 </div>
 <div class="grid-content" id="nga-content">
@@ -135,7 +135,7 @@ AAMC Awards for Excellence, Honorable Mention in Exhibition Catalogues category 
 
 ##### Seattle Art Museum
 
-### [Chinese Painting & Caligraphy](http://chinesepainting.seattleartmuseum.org/OSCI/){:target="blank"}
+### [Chinese Painting & Calligraphy](http://chinesepainting.seattleartmuseum.org/OSCI/){:target="blank"}
 
 Seattle Art Museum (SAM) houses one of the premier collections of Chinese art in North America, but prior to OSCI the material had not been studied in depth and was largely unpublished. SAM’s online catalogue contains a detailed assessment of each object, new photography, in-depth comparative research, and essays from experts. The works’ inscriptions and seals—both of which are of critical historic and artistic significance—were also fully translated, a feature that is rarely available in traditional print catalogues. The zoom function shows images in great detail, and users can also create their own collections of favorite works, as well as add comments in a discussion thread. Since many of these scrolls are not regularly opened and on public view, the online catalogue provides unprecedented access to these fragile works.
 
@@ -165,14 +165,14 @@ Tate’s OSCI publication is on the British Post-Impressionist circle known as t
 <div class="grid-reset ion-grid"></div>
 
 <figure class="cover-image" markdown="0">
-  <a href="http://www.walkerart.org/collections/publications/performativity" target="blank">
+  <a href="http://www.walkerart.org/collections/publications" target="blank">
   <img alt="Walker" src="/assets/images/projects/walker_th_square.jpg"/></a>
-  <figcaption><a href="http://www.walkerart.org/collections/publications/performativity" target="blank">View the Catalogue <span class="icon">&#xf39c;</span></a></figcaption>
+  <figcaption><a href="http://www.walkerart.org/collections/publications" target="blank">View the Catalogues <span class="icon">&#xf39c;</span></a></figcaption>
 </figure>
 
 ##### Walker Art Center
 
-### [Living Collections Catalogue](http://www.walkerart.org/collections/publications/performativity){:target="blank"}
+### [Living Collections Catalogue](http://www.walkerart.org/collections/publications){:target="blank"}
 
 The Walker’s *Living Collections Catalogue* is a series of thematic publications devoted to the museum’s multidisciplinary collections. The two volumes supported through OSCI are *On Performativity* and *Art Expanded, 1958–1978*. Both editions feature new essays by leading scholars that integrate video, audio, still images, and archival material into a crisp, responsive-design environment that adapts to different viewing devices. Essays are versioned and citable with the assurances of a permanent address to the information referenced, while links out to entries in the collections database provide information about individual artworks that is updated dynamically.
 
