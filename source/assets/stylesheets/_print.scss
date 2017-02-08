@@ -163,8 +163,13 @@ h2, h3, h4, h5, h6 {
   .video-closer,
   .video,
   .animation,
-  .animation-caption {
+  .animation-caption,
+  .online-license {
     display: none;
+  }
+
+  .print-license {
+    display: inline;
   }
 
   .projects-at-a-glance,
