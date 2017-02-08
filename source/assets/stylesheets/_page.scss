@@ -530,7 +530,8 @@ blockquote + .float-figure {
   clear: both;
 }
 
-.print-fallback {
+.print-fallback,
+.print-license {
   display: none;
 }
 

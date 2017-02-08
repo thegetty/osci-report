@@ -153,7 +153,7 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   float: left;
   margin-left: $base-spacing;
   p { margin-bottom: $small-spacing * .5; }
-  max-width: 520px;
+  max-width: 560px;
   @include media($small-screen) {
     float: none;
     text-align: center;
