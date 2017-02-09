@@ -125,6 +125,15 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   @include media($small-screen) {
     padding: 0;
   }
+  .button {
+    display: block;
+    width: 10em;
+    text-align: center;
+    margin: 0 auto;
+    .ion-chevron-right {
+      margin-left: .5em;
+    }
+  }
 }
 
 .cover-colophon {
