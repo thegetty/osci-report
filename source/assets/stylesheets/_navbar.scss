@@ -19,7 +19,7 @@ $navbar-z-index: 9999;
   line-height: $navbar-height;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: $navbar-z-index;
 
   .logo {
