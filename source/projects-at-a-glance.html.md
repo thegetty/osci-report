@@ -60,7 +60,7 @@ AAM Bronze MUSE Award, Interactive Kiosks (2014) for <em>Renoir’s True Colors<
 
 ### [The World of the Japanese Illustrated Book](http://pulverer.si.edu/){:target="blank"}
 
-The Freer|Sackler catalogue centers on the Gerhard Pulverer Collection of Japanese illustrated books, one of the most important collections of these distinctive hand-made works of art. The scholarly essays focus on artist Katsushika Hokusai (1760–1849), whose unique style had a marked influence on European and American modern artists. The catalogue’s special features include a “digital study room” that allows readers to save their annotations, notes, searches, and favorites in their own password protected part of the site. Users can search the catalogue contents in either Roman or Kanji script, and a clickable timeline lets readers see at a glance how many books in the collection were published in any given year.
+The Freer\|Sackler catalogue centers on the Gerhard Pulverer Collection of Japanese illustrated books, one of the most important collections of these distinctive hand-made works of art. The scholarly essays focus on artist Katsushika Hokusai (1760–1849), whose unique style had a marked influence on European and American modern artists. The catalogue’s special features include a “digital study room” that allows readers to save their annotations, notes, searches, and favorites in their own password protected part of the site. Users can search the catalogue contents in either Roman or Kanji script, and a clickable timeline lets readers see at a glance how many books in the collection were published in any given year.
 
 Bronze “Telly” Award (2015) for the catalogue’s Ukiyo-e technique video
 {:.award .ion-ribbon-b}
