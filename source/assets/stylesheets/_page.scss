@@ -44,10 +44,7 @@ $navbar-height: 60px;
 // -----------------------------------------------------------------------------
 .page-main-column {
   width: 100%;
-  padding: 0 calc( (100% - 800px) * .5 );
-  @include media($small-screen) {
-    padding: 0;
-  }
+  max-width: 800px;
 }
 
 .page-content {
