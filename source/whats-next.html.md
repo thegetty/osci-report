@@ -32,7 +32,7 @@ All of the OSCI partners are already working on new catalogues, some of which pr
     <img src="/assets/images/projects/nga_americanpaintings.jpg" alt="Other publications from the Tate Gallery" />
   </figure>
   <figcaption>
-    Museums have continued publishing online catalogues using their OSCI systems and workflows, inlcuding these from the Art Institue of Chicago, Tate, and the National Gallery of Art.
+    Museums have continued publishing online catalogues using their OSCI systems and workflows, inlcuding these from (from <span class="caption-direction">left to right</span><span class="caption-direction-phone">top to bottom</span>) the Art Institue of Chicago, Tate, and the National Gallery of Art.
   </figcaption>
 </div>
 
