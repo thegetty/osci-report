@@ -44,14 +44,13 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
   text-transform: uppercase;
   line-height: 1.1em;
   font-size: 11vh;
-  margin-top: 12vh;
+  margin-top: 8vh;
   @include media($large-screen-up) {
     font-size: 13vh;
-    margin-top: 9vh;
   }
   @include media($phone-screen) {
     font-size: 9.1vh;
-    margin-top: 15vh;
+    margin-top: 4vh;
   }
   font-weight: 200;
   letter-spacing: 1%;
@@ -129,7 +128,8 @@ $rgb-gr-stop2: rgba(0, 0, 0, 0.85);
     display: block;
     width: 10em;
     text-align: center;
-    margin: 0 auto;
+    margin: $base-spacing auto 0;
+    padding: 1em;
     .ion-chevron-right {
       margin-left: .5em;
     }

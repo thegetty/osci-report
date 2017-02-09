@@ -11,6 +11,8 @@ $navbar-z-index: 9999;
   @include justify-content(space-between);
   @include link-color($navbar-text-color);
 
+  box-shadow: -2px -2px 20px $medium-gray;
+
   background-color: $navbar-bg-color;
   color: $navbar-text-color;
   font-family: $heading-font-family;
@@ -57,6 +59,7 @@ $navbar-z-index: 9999;
 
 .navbar-right {
   text-align: right;
+  margin-left: $navbar-height * .5;
 }
 
 .navbar-left {
@@ -72,7 +75,7 @@ $navbar-z-index: 9999;
 
 // Inside center unit
 .navbar-center-info {
-  margin: 0 $base-spacing;
+  margin: 0 $small-spacing;
   text-align: center;
 }
 
