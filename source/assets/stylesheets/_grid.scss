@@ -106,36 +106,8 @@
     }
     text-transform: uppercase;
     text-align: center;
-    .diminutive {
-      text-transform: none;
-      font-size: .7em;
-      font-weight: 400;
-      display: block;
-    }
-    .diminutive:before {
-      content: '— '
-    }
-    .diminutive:after {
-      content: ' —'
-    }
-    .underline {
-      display: inline-block;
-      position: relative;
-    }
-    .underline:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      display: inline-block;
-      height: 1em;
-      width: 100%;
-      border-bottom: 2px solid;
-      margin-top: .35em;
-    }
   }
 }
-
-
 
 .trigger-effect {
   color: $action-color;
@@ -143,12 +115,6 @@
   margin: 0 auto;
   text-align: center;
 }
-
-// .grid-trigger:hover {
-//   .trigger-effect {
-//     display: block;
-//   }
-// }
 
 .image-trigger {
   cursor: pointer;
@@ -204,9 +170,6 @@
 .grid-trigger:hover {
   h3 {
     font-weight: 400;
-    .diminutive {
-      font-weight: 600;
-    }
   }
   .grid-overlay {
     opacity: .3;
