@@ -6,9 +6,9 @@
       - data.book.editions.each do |edition|
         - if edition.name != "Online"
           - if edition.link != nil
-            %li= link_to "#{edition.name} (#{edition.file_size})", edition.link, :target => "blank", :class => "no-smoothState"
+            %li= link_to "#{edition.name} (#{edition.file_size})", "#{data.book.permanent_url}#{edition.link}", :target => "blank", :class => "no-smoothState"
           - else
             %li= "#{edition.name} <em>— Coming soon</em>"
     %ul
       - data.book.downloads.each do |download|
-        %li= link_to "#{download.name}", download.link, :target => "blank", :class => "no-smoothState"
+        %li= link_to "#{download.name}", "#{data.book.permanent_url}#{download.link}", :target => "blank", :class => "no-smoothState"
