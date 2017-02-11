@@ -149,6 +149,9 @@ h2, h3, h4, h5, h6 {
 
   .page-content {
     font-size: $print-base-font-size;
+    h1, h2, h3, h4, h5, h6 {
+      page-break-after: avoid;
+    }
   }
   .page-title {
     padding-top: .5in;
