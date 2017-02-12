@@ -59,11 +59,10 @@ $navbar-z-index: 9999;
 
 .navbar-right {
   text-align: right;
-  margin-left: $navbar-height * .5;
 }
 
 .navbar-left {
-  margin: 0 ($navbar-height * .25);
+  text-align: left;
 }
 
 .navbar-center {
@@ -114,4 +113,5 @@ $navbar-z-index: 9999;
 .navbar-menu-icon {
   @extend .ion-navicon;
   font-size: $navbar-icon-size * 1.5;
+  margin-left: $navbar-height * .25;
 }
