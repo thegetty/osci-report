@@ -149,6 +149,9 @@ h2, h3, h4, h5, h6 {
 
   .page-content {
     font-size: $print-base-font-size;
+    h1, h2, h3, h4, h5, h6 {
+      page-break-after: avoid;
+    }
   }
   .page-title {
     padding-top: .5in;
@@ -163,8 +166,14 @@ h2, h3, h4, h5, h6 {
   .video-closer,
   .video,
   .animation,
-  .animation-caption {
+  .animation-caption,
+  .online-license,
+  .cover-copy-inner .button {
     display: none;
+  }
+
+  .print-license {
+    display: inline;
   }
 
   .projects-at-a-glance,

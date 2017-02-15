@@ -19,7 +19,6 @@ $navbar-height: 60px;
 .page-author {
   text-align: center;
   color: $dark-blue;
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -44,10 +43,7 @@ $navbar-height: 60px;
 // -----------------------------------------------------------------------------
 .page-main-column {
   width: 100%;
-  padding: 0 calc( (100% - 800px) * .5 );
-  @include media($small-screen) {
-    padding: 0;
-  }
+  max-width: 800px;
 }
 
 .page-content {
@@ -530,7 +526,8 @@ blockquote + .float-figure {
   clear: both;
 }
 
-.print-fallback {
+.print-fallback,
+.print-license {
   display: none;
 }
 

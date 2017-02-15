@@ -106,36 +106,8 @@
     }
     text-transform: uppercase;
     text-align: center;
-    .diminutive {
-      text-transform: none;
-      font-size: .7em;
-      font-weight: 400;
-      display: block;
-    }
-    .diminutive:before {
-      content: '— '
-    }
-    .diminutive:after {
-      content: ' —'
-    }
-    .underline {
-      display: inline-block;
-      position: relative;
-    }
-    .underline:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      display: inline-block;
-      height: 1em;
-      width: 100%;
-      border-bottom: 2px solid;
-      margin-top: .35em;
-    }
   }
 }
-
-
 
 .trigger-effect {
   color: $action-color;
@@ -143,12 +115,6 @@
   margin: 0 auto;
   text-align: center;
 }
-
-// .grid-trigger:hover {
-//   .trigger-effect {
-//     display: block;
-//   }
-// }
 
 .image-trigger {
   cursor: pointer;
@@ -204,9 +170,6 @@
 .grid-trigger:hover {
   h3 {
     font-weight: 400;
-    .diminutive {
-      font-weight: 600;
-    }
   }
   .grid-overlay {
     opacity: .3;
@@ -221,9 +184,11 @@
 
 .grid-content {
   width: 100%;
-  padding: 0 calc( (100% - 800px) * .5 );
+  max-width: 800px;
   margin-top: $small-spacing * .5;
   margin-bottom: $base-spacing * 2;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   border-radius: $base-border-radius;
   .grid-reset {
@@ -233,7 +198,6 @@
     font-size: $base-font-size * 1.75;
     margin-left: $base-spacing;
     @include media($phone-screen) {
-      margin-left: 0;
       line-height: 0;
     }
     font-family: "Titillium Web";
@@ -256,6 +220,7 @@
     }
     figcaption {
       padding-top: 0;
+      margin-bottom: 1em;
     }
     figcaption .icon {
       margin-left: 4px;
